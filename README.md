@@ -26,6 +26,11 @@ O AvaBook é um software desenvolvido para automatizar o processo de download, c
 *   **Interface de usuário intuitiva**: O software oferece uma interface de usuário fácil de usar, permitindo que os usuários configurem as opções de download e compressão de acordo com suas necessidades.
 
 
+## Para Fazer funcionar O AVABOOK você Precisa
+voce precisa  Baixar a DLL e colocar na pasta 124.0....
+
+Endereço pra Baixar : [https://github.com/dvizioon/VIZIOON-AVABOOK/releases/tag/BAIXAR_SEFRO_MOTOR](https://github.com/dvizioon/VIZIOON-AVABOOK/releases/tag/BAIXAR_SEFRO_MOTOR)
+
 
 ## Requisitos do Sistema
 -------------------------
