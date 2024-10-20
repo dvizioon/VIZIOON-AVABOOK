@@ -375,7 +375,7 @@ class Ui_Dialog(object):
                         self.selecionar_usuarios.setGeometry(QtCore.QRect(10, 190, 221, 31)) 
                         self.selecionar_usuarios.setObjectName("Selecione o Usuário...")
                         # Definir o texto padrão para o item zero
-                        self.selecionar_usuarios.addItem("Escolha a Materia...")
+                        self.selecionar_usuarios.addItem("Escolha o usuário...")
                         # Desabilitar o item zero
                         # self.selecionar_usuarios.setItemData(0, False)  # Remove or comment out this line
                         

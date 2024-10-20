@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg-fmt">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary-fmt">Utilização de banco de dados</h2>
+<p class="text-left texto-destaque">Criação de banco de dados relacional para armazenamento das informações da rota do robô e sua integração com Java.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/u4s2_fmt_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/fmt_u4s2.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase mb-3 mt-80 text-primary-fmt">SEM MEDO DE ERRAR<br/></h4>
+<p class="mb-3">A <em>startup </em>em que você trabalha lhe passou um conjunto de atividades, como: </p>
+<ul>
+<li class="mb-3">Instalar o XAMPP para acessar o MySQL e o phpMyAdmin.<br/></li>
+<li class="mb-3">Criar um banco de dados para o robô.<br/></li>
+<li class="mb-3">Criar uma tabela nesse banco para armazenar a rota do robô.<br/></li>
+<li class="mb-3">Integrar a aplicação em Java com o banco que foi criado utilizando o phpMyAdmin.<br/></li>
+</ul>
+<p class="mb-3">Após instalados o XAMPP com MySQL e phpMyAdmin, você decidiu criar um BD chamado bd_simulador_robo e uma tabela chamada rota por meio do phpMyAdmin; para isso, você escreveu o Código 4.13 a seguir. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.13 | Comandos SQL para criação do BD e da tabela no MySQL</figcaption><pre><code class="sql hljs">CREATE DATABASE `bd_simulador_robo`;
+
+CREATE TABLE `bd_simulador_robo`.`rota`( 
+    `posx` DECIMAL(10) DEFAULT NULL, 
+    `posy` DECIMAL(10) DEFAULT NULL, 
+    `codigo` INT(10) NOT NULL AUTO_INCREMENT, 
+    PRIMARY KEY(`codigo`)
+) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = latin1; 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Após isso, você decidiu partir do Código 4.6 e adicionar os recursos em Java que armazenam as posições do robô no BD. Dessa maneira, você escreveu o Código 4.14 (repare que foram destacadas apenas as partes em que houve alteração, e o código completo pode ser acessado no GitHub do autor). Nas linhas 4 a 6, temos a declaração três novas variáveis para comunicação com o BD; nas linhas 12, 17, 22 e 27, temos uma invocação do BD para inserir a posição atual do robô toda vez que ele se mover, dessa maneira, no BD, ficará armazenado toda a rota percorrida pelo robô; por fim, nas linhas 34 a 49, temos a declaração da classe Consultas, em que definimos o método inserir posição, e um programa pronto com todas as alterações requisitadas.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.14 | Adaptações na implementação para suportar armazenar a rota do robô</figcaption><pre><code class="java hljs">... // diversas importações foram omitidas
+public class AppGUI extends Application {
+    ... // diversas declarações foram omitidas
+    private final ConexaoBD conBD = new ConexaoBD();
+    private final Connection connection = conBD.getConexao();
+    private final Consultas consultas = new Consultas();
+    ... // o método main foi omitido
+    public void start(Stage janela) {
+        cena.setOnKeyPressed((evt) -&gt; {
+            if (evt.getCode() == KeyCode.UP) {
+                ... // algumas linhas foram omitidas
+                consultas.inserirPos(connection,
+                       robo.getPosicaoX(), robo.getPosicaoY());
+            }
+            if (evt.getCode() == KeyCode.DOWN) {
+                ... // algumas linhas foram omitidas
+               consultas.inserirPos(connection,
+                       robo.getPosicaoX(), robo.getPosicaoY());
+            }
+            if (evt.getCode() == KeyCode.LEFT) {
+                ... // algumas linhas foram omitidas
+                consultas.inserirPos(connection,
+                       robo.getPosicaoX(), robo.getPosicaoY());
+            }
+            if (evt.getCode() == KeyCode.RIGHT) {
+                ... // algumas linhas foram omitidas
+                consultas.inserirPos(connection,
+                       robo.getPosicaoX(), robo.getPosicaoY());
+            }
+        });
+    }
+}
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class Consultas {    
+   public void inserirPos(Connection conn, float posX, float posY){
+        try {
+            Statement st = conn.createStatement();
+            String sql = "INSERT INTO `rota` (posx, posy) " + 
+                    "VALUES (" + posX + ", " + posY + ")";
+            st.executeUpdate(sql);
+            st.close();
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+    }
+}
+
+//Foi adicionado uma classe chamada ConexaoBD que é semelhante à //mostrada no Código 4.12 nas linhas 19 a 60. 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

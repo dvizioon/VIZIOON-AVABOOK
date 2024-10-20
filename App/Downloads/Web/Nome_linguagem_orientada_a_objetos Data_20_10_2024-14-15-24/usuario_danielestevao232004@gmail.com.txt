@@ -1,0 +1,8 @@
+Data e hora atual: 20_10_2024-14-15-24
+Email: danielestevao232004@gmail.com
+Nome de usuário: DANIEL ESTEVAO MARTINS MENDES
+Nome da Matéria: Nome_linguagem_orientada_a_objetos Data_20_10_2024-14-15-24
+ID da atividade: 4138504
+Local_Comprimido: ./App/Downloads/Comprimidos
+Local_Fragmentado: ./App/Downloads/Fragmentados
+UUID: 769503_1869319e-7ba9-4f4f-9ee4-7c0edac06ac0

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary">Aplicações que utilizam <em>threads</em></h2>
+<p class="text-left texto-destaque">As <em>threads </em>são utilizadas para destravar parte da aplicação quando algum processamento pesado está sendo executado e acelerar o processamento em alguma aplicação que possa ser paralelizada.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/u4s3_npf_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/npf_u4s3.mp3" type="audio/mpeg"/>
+</audio>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase text-primary mb-3 mt-80">PRATICAR PARA APRENDER<br/></h4>
+<p class="mb-3">Caro aluno, bem-vindo à terceira seção da quarta e última unidade de estudos sobre Linguagem Orientada a Objetos. Qual desenvolvedor nunca desejou criar uma aplicação que execute em paralelo ou que não trave quando um processo pesado inicia a sua execução? Acredito que muitos desenvolvedores já desejaram isso. Atualmente, a maioria dos processadores vendidos são <em>multicores</em>, ou seja, possuem mais de um núcleo de processamento, mas pouco adianta ter um <em>hardware </em>robusto sem que o <em>software </em>consiga extrair o máximo desse <em>hardware</em>. Nesta seção, estudaremos as <em>threads </em>que nos auxiliam a criar programas que executem em paralelo ou concorrentemente. </p>
+<p class="mb-3">De forma a contextualizar a sua aprendizagem, lembre-se de que você está trabalhando em um simulador de robô e que seu gestor reviu o seu código e percebeu que na sala em que o robô opera, você ainda não colocou, na sua simulação, a máquina que carrega as caixas da área de depósito. Ele explicou que o seu simulador ficará mais realista se possuir uma pequena animação dessa máquina, tal como na aplicação que desenvolveu usando a ferramenta Greenfoot. Diante disso, ele pediu a você que colocasse a máquina carregadora de caixas e criasse uma pequena animação em zigue-zague para ela, bem como recomendou que utilize <em>threads </em>para isso, de forma que a animação da máquina carregadora seja independente do movimento executado pelo robô.<br/></p>
+<p class="mb-3">Diante do desafio que lhe foi apresentado, como você criará essa animação da máquina? Como você criará essa <em>thread </em>em Java? O que é uma <em>thread</em>? Para que servem as <em>threads</em>? Esta seção o auxiliará na resposta de tais perguntas.<br/></p>
+<p class="mb-3">Muito bem, agora que você foi apresentado à sua nova situação-problema, estude esta seção e compreenda como a linguagem Java trata as <em>threads</em>; esse conceito é fundamental para que você consiga fazer grandes projetos de programação. <br/></p>
+<p class="mb-3">E aí, vamos juntos compreender esses conceitos e resolver esse desafio?<br/></p>
+<p class="mb-3">Bom estudo!<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">CONCEITO-CHAVE<br/></h4>
+<p class="mb-3">A presente seção tem por objetivo lhe mostrar como criar aplicações em Java para serem executadas em paralelo ou concorrentemente, logo, vamos estudar alguns aspectos de <em>hardware </em>e <em>software </em>que permitem a concorrência e o paralelismo. Os aspectos de <em>hardware </em>estudados são processadores <em>single-core</em> e <em>multi-core</em>, já os aspectos de <em>software </em>estudados são processos e <em>threads</em>. <br/></p>
+<p class="mb-3">Um computador, de forma simples, possui um conjunto de dispositivos de <em>hardware </em>que auxiliam no seu funcionamento, como processador, memória cache, memória RAM, disco rígido e dispositivos de entrada e saída de dados. <br/></p>
+<h3 class="text-uppercase mb-3 marcador mt-80">Processadores <br/></h3>
+<p class="mb-3">De forma a avançarmos nesta seção, vamos nos concentrar apenas no processador. Existem, basicamente, dois tipos de processadores, que são: <em>single-core</em> (com apenas um núcleo) ou <em>multi-core</em> (com mais de um núcleo), como ilustra a Figura 4.11.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 4.11 | Esquema representando os processadores <em>single-core</em> e <em>multi-core</em></figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/figura_4.11.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Na Figura 4.11, à esquerda, temos uma ilustração de um processador com um único núcleo (<em>core</em>). Os processadores <em>single-core</em> são mais simples e só conseguem executar uma tarefa por vez; eles foram criados primeiro e não suportam a execução em paralelo devido ao único núcleo; apesar disso, diversas aplicações podem ser executadas concorrentemente por meio de mecanismos de compartilhamento do tempo de processamento. <br/></p>
+<p class="mb-3">Já os processadores à direita, na Figura 4.11, possuem 2, 4 e 8 núcleos (<em>cores</em>), logo, são processadores <em>multi-core</em>. Esse tipo de processador foi criado depois e é um pouco mais complexo; nesse tipo de arquitetura de <em>hardware</em>, é permitida a execução em paralelo. <br/></p>
+<p class="mb-3">Os processadores <em>multi-core</em> estão ficando cada vez mais presentes no mercado e o número de núcleos tem aumentado, tornando o poder de processamento cada vez mais poderoso. Atualmente, a maioria dos computadores, celulares e dispositivos de computação embarcada, como Raspberry Pi, é <em>multi-core</em>.<br/></p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Dica</strong><br/></h6>
+<p class="text-left">Leitor, procure descobrir quantos núcleos o seu processador possui, pois a resposta a essa questão o auxiliará na compreensão do restante da seção e na construção de aplicações paralelas.</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Processos e <em>threads </em><br/></h3>
+<p class="text-left">Bem, até aqui, falamos dos aspectos de <em>hardware</em>, agora, vamos falar de dois conceitos importantes de software, que são: os processos e as <em>threads</em>. Um <strong>processo </strong>tem o seu próprio ambiente de execução e seu próprio espaço de memória, além disso, é muito comum associar um processo a um programa ou aplicação, no entanto, isso não é exatamente correto e tais detalhes são estudados na disciplina de Sistemas Operacional (SO). Apesar disso, neste livro, para simplificarmos as coisas, podemos pensar em um processo como sendo uma aplicação, sem grandes perdas de generalidade, pois a maioria das aplicações em Java roda em apenas um processo. Uma <strong><em>thread </em></strong>é uma linha de execução; ao criarmos uma <em>thread</em>, esta cria também um ambiente de execução, mas compartilha recursos como memória e arquivos abertos. É importante que saiba que cada processo tem, pelo menos, uma <em>thread</em>, mas que é possível criar mais <em>threads </em>dentro desse processo se desejar. Um dos aspectos interessantes das <em>threads </em>é que elas são mais leves do que os processos, e a execução de uma <em>thread </em>pode ser interrompida quantas vezes forem necessárias, continuando, sempre, do ponto em que parou. É uma tarefa do SO, em específico do escalonador de processos, decidir qual <em>thread </em>executará e em qual núcleo do processador.<br/></p>
+<p class="text-left">Inicialmente, vamos mostrar uma simples aplicação em Java que apenas imprime o nome da <em>thread </em>principal que está em execução. Dessa maneira, analise o Código 4.15.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.15 | Aplicação básica com um processo e uma <em>thread</em></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class SimplesApp {
+    public static void main(String[] args) {
+        Thread thFluxo = Thread.currentThread();
+        System.out.printf("Nome Thread: %s%n", thFluxo.getName());
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="text-left page-break">Nas linhas 1 e 2 do Código 4.15, temos a declaração da classe e a definição do método principal (<em>main</em>); na linha 3, foi criado um objeto chamado thFluxo, que recebe a <em>thread </em>atual; e na linha 4, é impresso na tela o nome da <em>thread </em>atual em execução. <br/></p>
+<p class="text-left">Bem, até aqui, discutimos o código, mas não vimos o seu comportamento durante o fluxo de execução, assim, imagine que você desenvolveu esse código e clicou no botão para iniciar a sua execução; dessa maneira, a JVM criará um processo para que essa aplicação possa ser executada (toda aplicação está associada a um processo); em seguida, a JVM criará, também, uma <em>thread </em>dentro desse processo, e é importante que se lembre de que cada processo possui pelo menos uma <em>thread</em>, e a partir desse ambiente criado (processo + <em>thread</em>), a aplicação possa ser executada. Dessa forma, essa aplicação imprimirá o nome da <em>thread</em>, que se chama “main”. (Experimente implementar e executar esse código.) <br/></p>
+<p class="text-left">A Figura 4.12 é uma ilustração que nos auxilia a entender as relações possíveis entre processos e <em>threads</em>. Dito isso, analise esta figura:<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 4.12 | Esquema representando as possíveis relações entre processos e <em>threads</em></figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="a figura ilustra quatro relações entre processos e threads, nomeadas de a a e.  Na representação a, há um círculo que é o processo e uma linha ondulada verde na vertical que é a thread.  Na representação b, temos um círculo que é o processo e duas linhas onduladas verdes na vertical que são as threads.  Na representação c, há um círculo que é o processo e três linhas onduladas verdes na vertical que são as threads. Na representação d, há dois círculos que são os processos e em cada um deles há uma linha ondulada verde na vertical que são as threads. Na representação e, há dois círculos que são os processos e em cada um deles há duas linhas onduladas verdes na vertical que são as threads." class="img-fluid mb-0" src="assets/img/figura_4.12.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Na Figura 4.12 (a), temos a relação mais simples possível na construção de uma aplicação em que temos um processo e uma <em>thread </em>que está vinculada a ele. Esse tipo de relação ilustra, por exemplo, o Código 4.15 e todos os outros códigos anteriormente vistos neste livro. A Figura 4.12 (b) nos mostra um processo que possui duas <em>threads </em>vinculadas a ele; já a Figura 4.12 (c) nos mostra, de forma genérica, que um processo pode estar vinculado a várias <em>threads</em>. <br/></p>
+<p class="mb-3">A seguir, neste livro, construiremos exemplos de aplicações que funcionam como representado na Figura 4.12 (b) e (c). Na Figura 4.12 (d), temos a relação em que uma aplicação cria vários processos e cada processo possui apenas uma <em>thread</em>; na Figura 4.12 (e), temos uma última relação possível na construção de aplicações em que podemos criar vários processos e cada processo pode possuir várias <em>threads</em>; já as Figuras 4.12 (d) e (e) nos mostram relações mais complexas e não serão tratadas neste livro, pois necessitam de um curso mais avançado de Java. <br/></p>
+<h4 class="text-uppercase mb-3 marcador mt-80"><em>Threads </em><br/></h4>
+<p class="mb-3">O exemplo do Código 4.15 foi utilizado apenas para discutirmos as ideias de processos e <em>threads</em>; a partir de agora, vamos nos concentrar apenas nas <em>threads </em>e trabalharmos com apenas o processo principal. </p>
+<p class="mb-3 page-break">É muito importante sabermos quando utilizar as <em>threads</em>; no geral, elas são utilizadas para: </p>
+<ul>
+<li class="mb-3">Destravar alguma parte da aplicação quando algum processamento pesado está sendo executado. Neste caso, pode-se utilizar <em>threads </em>em computadores com apenas um único núcleo ou <em>multicores</em>. <br/></li>
+<li class="mb-3">Acelerar o processamento em alguma aplicação que possa ser paralelizada. Neste caso, faz sentido utilizar as <em>threads </em>apenas em computadores que possuem mais de um núcleo, caso contrário, não haverá qualquer ganho de desempenho. <br/></li>
+</ul>
+<p class="mb-3">De forma a ilustrar o primeiro caso de aplicação, vamos considerar a Figura 4.13 mostrada a seguir. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 4.13 | Exemplo de aplicação com <em>loops </em>que necessita de <em>threads </em>para destravar</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A  figura ilustra um exemplo de código de aplicação de loops. No topo está escrito Programa {, com o texto explicativo: início. Na sequência, há reticências na vertical que indicam algumas linhas de código e abaixo está escrito, o comando while (true){ , reticências na horizontal e }, com o texto explicativo: loop infinito. Na sequência, há reticências na vertical que indicam algumas linhas de código e abaixo está escrito o comando for (long i = 0; i &lt; 100000000000;i++) {, reticências na horizontal e }, com o texto explicativo: loop super pesado, na sequência, há reticências na vertical que indicam algumas linhas de código e abaixo está escrito o comando do {, reticências na horizontal, } while (condicaoLoop); com o texto explicativo: loop condição complexa. Abaixo há reticências na vertical que indicam linhas de código e depois } com o texto explicativo: fim." class="img-fluid mb-0" src="assets/img/figura_4.13.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">A Figura 4.13 nos mostra o rascunho de código de um programa qualquer em que as reticências na vertical indicam linhas de código que possuem processamento leve e que não queremos destacar; em seguida, nesse código, temos um <em>loop </em>infinito que executa alguma verificação rotineira, porém importante; posteriormente, temos um <em>loop </em>que executa algum cálculo super pesado que demora alguns minutos ou até horas para ser executado; por fim, temos um <em>loop </em>com uma condição que não sabemos quando será satisfeita. <br/></p>
+<p class="mb-3 page-break">Esse código da Figura 4.13, apesar de ser abstrato, pode representar um código que desejamos implementar em alguma aplicação do mundo real, no entanto, de acordo com os estudos, sabemos que o código nunca sairá do primeiro <em>loop</em>, pois se trata de um <em>loop </em>infinito. As <em>threads</em>, por sua vez, solucionam problemas de travamento de código como esse, logo, basta colocar uma <em>thread </em>para executar cada um dos <em>loops </em>mostrados, e é importante destacarmos que duas ou mais tarefas podem ser executadas ao mesmo tempo, mesmo que haja apenas um processador. Esse tipo de execução é chamado de concorrente, pois a aplicação concorre à utilização do processador, e isso é feito de forma automática pelo sistema operacional, que escalona as tarefas a ocuparem o núcleo do processador.<br/></p>
+<p class="mb-3">O Código 4.16 a seguir nos mostra como seria uma implementação da ideia sugerida na Figura 4.13. Por esse código ser simples, não será explicado. <br/></p>
+<p class="mb-3">Implemente este código e veja qual será a saída. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.16 | Aplicação construída sobre o exemplo da Figura 4.13 sem <em>threads</em><br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class ProgramaLoopSemThread {
+    public static void main(String[] args) {
+        ProgramaLoopSemThread p = new ProgramaLoopSemThread();
+        p.programa();
+    }
+    public void programa() {
+        System.out.println("inicio");
+        while (true) {
+            if (1 % 2 == 2) break;//artimanha p/ compilar o código
+            System.out.println("loop infinito");
+        }
+        System.out.println("passou do primeiro loop");
+        for (long i = 0; i &lt; 1000000000000l; i++) {
+            System.out.println("loop super pesado");
+        }
+        System.out.println("passou do segundo loop");
+        boolean condicaoLoop = true;
+        do {
+            System.out.println("loop condição complexa");
+        } while (condicaoLoop);        
+        System.out.println("fim");
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Você deve ter percebido que a aplicação ficou travada no primeiro <em>loop</em>, assim, as linhas 12 a 21 do Código 4.16 nunca serão executadas. Vamos, agora, mostrar como colocar <em>threads </em>nessa aplicação genérica para que os três <em>loops </em>sejam executados concorrentemente ou paralelamente (se tiver mais de um núcleo em seu processador). <br/>Analise o código 4.17 a seguir. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.17 | Aplicação construída sobre o exemplo da Figura 4.13 com <em>threads</em><br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class ProgramaLoopComThread {
+    public static void main(String[] args) {
+        ProgramaLoopComThread p = new ProgramaLoopComThread();
+        p.programa();
+    }
+    public void programa() {
+        System.out.println("inicio");
+        Thread thread1 = new Thread(loop1());
+        thread1.start();        
+        System.out.println("passou do primeiro loop");
+        Thread thread2 = new Thread(loop2());
+        thread2.start();
+        System.out.println("passou do segundo loop");
+        Thread thread3 = new Thread(loop3());
+        thread3.start();        
+        System.out.println("fim");
+    }
+    public Runnable loop1() {
+        Runnable run1 = new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    if (1 % 2 == 2) break;//artimanha p/ compilar
+                    System.out.println("loop infinito");
+                }
+            }
+        };
+        return run1;
+    }
+    public Runnable loop2() {
+        Runnable run2 = new Runnable() {
+            @Override
+            public void run() {
+                for (long i = 0; i &lt; 1000000000000l; i++) {
+                    System.out.println("loop super pesado");
+                }
+            }
+        };
+        return run2;
+    }
+    public Runnable loop3() {
+        Runnable run3 = new Runnable() {
+            @Override
+            public void run() {
+                boolean condicaoLoop = true;
+                do {
+                    System.out.println("loop condição complexa");
+                } while (condicaoLoop);
+            }
+        };
+        return run3;
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Nas linhas 18 a 29 do Código 4.17, colocamos o <em>loop </em>infinito dentro de um objeto do tipo Runnable (na Unidade 3, Seção 2, estudamos um pouco sobre a interface Runnable), que se trata de uma interface que possui um método chamado <em>run</em>, que deve ser obrigatoriamente sobrescrito; de forma geral, colocamos dentro do método <em>run </em>tudo o que queremos paralelizar ou executar de forma concorrente. Na linha 28, por sua vez, retornamos o objeto Runnable criado; de forma semelhante, nas linhas 30 a 40, o <em>loop </em>super pesado foi colocado dentro de um objeto também do tipo Runnable, e o mesmo foi feito nas linhas 41 a 52 com o <em>loop </em>que possui a condição complexa. Já na linha 8, criamos um objeto do tipo Thread que recebe como argumento um objeto Runnable (nesse caso, a primeira <em>thread </em>executará o <em>loop </em>infinito); na linha 9, mandamos a <em>thread </em>para ser executada, de fato, por meio do método <em>start</em>; nas linhas 11 e 12, criamos uma nova <em>thread </em>que executará o <em>loop </em>super pesado; por fim, nas linhas 14 e 15, criamos a nossa última <em>thread</em>, que executará o <em>loop </em>com condição complexa. <br/></p>
+<p class="mb-3">Implemente esse código e analise a saída impressa; compare essa saída com a saída do Código 4.16, que não possuía <em>threads</em>; faça diversas execuções e repare que, cada vez que executar o programa, a saída será diferente, pois, a cada vez, o escalonador de processos do SO selecionará as <em>threads </em>de outra forma. <br/></p>
+<p class="mb-3">Vamos, agora, criar uma aplicação em que desejamos realizar algum processamento em paralelo. Para isso, vamos criar um simples programa que calcula se um número de entrada é primo ou não; caso seja primo, então, o número será impresso na tela. Analise o Código 4.18 a seguir.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.18 | Aplicação paralelizada para acelerar a detecção de números primos<br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class Primo implements Runnable {
+    private final int inicio;
+    private final int fim;
+    public Primo(int inicio, int fim) {
+        this.inicio = inicio;
+        this.fim = fim;
+    }
+    public boolean isPrime(int n) {
+        if (n &lt; 2) {
+            return false;
+        }
+        for (int i = 2; i &lt; (int)(Math.sqrt(n) + 1); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    @Override
+    public void run() {
+        for (int i = inicio; i &lt; fim; i++) {
+            boolean ehPrimo = isPrime(i);
+            if (ehPrimo) {
+                System.out.println("é primo: " + i);
+            }
+        }
+    }
+}
+public class AppPrimoThread {
+    public static void main(String[] args) {
+        Thread thr1 = new Thread(new Primo(0, 1000000));
+        thr1.start();
+        Thread thr2 = new Thread(new Primo(1000001, 2000000));
+        thr2.start();
+        Thread thr3 = new Thread(new Primo(2000001, 3000000));
+        thr3.start();
+        Thread thr4 = new Thread(new Primo(3000001, 4000000));
+        thr4.start();
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Na linha 1 do Código 4.18, criamos uma classe chamada Primo, que implementa a interface Runnable (lembre-se de que a ideia é, a partir da implementação dessa interface, paralelizarmos os cálculos dos números primos); nas linhas 2 e 3, definimos duas variáveis para armazenar o número de início e fim dos cálculos de números primos; nas linhas 4 a 7, criamos o construtor da classe com a especificação dos valores de início e de fim; nas linhas 8 a 18, definimos um método que, dado um número de entrada, verifica se este é primo ou não; nas linhas 19 a 27, sobrescrevemos o método <em>run </em>da interface Runnable e colocamos o cálculo que deverá ser paralelizado (neste caso, queremos calcular todos os números primos do intervalo início ao fim e imprimir, na tela, apenas os que forem primos); nas linhas 29 a 40, criamos uma classe para testar a nossa aplicação; na linha 31, foi criado um objeto do tipo Thread que recebe um objeto do tipo Runnable (neste caso, queremos calcular, nessa <em>thread</em>, todos os primos de 0 a 1.000.000); na linha 32, mandamos iniciar essa execução; por fim, o mesmo raciocínio foi posto em prática nas linhas 33 a 38, em que mais três <em>threads </em>foram criadas com novos valores de início e fim do cálculo. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Assimile</strong><br/></h6>
+<p class="text-left">Quando temos uma aplicação semelhante à mostrada no Código 4.18 e queremos acelerar os cálculos, devemos sempre pensar na arquitetura de <em>hardware </em>que executará o programa. Por exemplo: imagine que o processador que executará esse código é um Intel i5 com oito núcleos, assim, o número máximo de <em>threads </em>que faz sentido de se criar é oito. Se quisermos, até podemos criar mais <em>threads</em>, pois elas são entidades lógicas, porém, se fizermos isso, não conseguiremos extrair o máximo do <em>hardware</em>. Lembre-se de que, ao se criar mais <em>threads </em>do que o número de núcleos da CPU, um <em>overhead </em>é gerado nas trocas de contexto das <em>threads</em>. É importante lembrar, também, que as <em>threads </em>ficam concorrendo para fazer uso dos núcleos da CPU e executarem o processamento, dessa maneira, caso o seu computador seja um <em>dual core</em> com dois núcleos, para obter um maior desempenho, remova duas <em>threads </em>do Código 4.18.</p>
+</div>
+<p class="text-left">No Código 4.18, a classe Primo implementou a interface Runnable e, assim, sobrescreveu o método <em>run</em>. Existe outra forma de se fazer a criação da classe Primo, que é herdando da classe Thread em vez de implementar a interface Runnable, e as duas formas são equivalentes e funcionam perfeitamente. Sugerimos, até mesmo, que você, aluno, após implementar o Código 4.18, faça essa alteração e confirme essa informação. <br/></p>
+<p class="text-left">A seguir, seguem as partes que podem ser alteradas e que obtêm o mesmo efeito na paralelização de código.<br/></p>
+<p class="text-left">Classe Primo implementado Runnable: <code><code class="tx-blue">public class</code> Primo <code class="tx-blue">implements</code> Runnable</code><br/></p>
+<p class="text-left">Classe Primo herdando Thread: <code><code class="tx-blue">public class</code> Primo <code class="tx-blue">extends</code> Thread</code><br/></p>
+<p class="text-left page-break">Abaixo, listamos alguns métodos estáticos e não estáticos importantes da classe Thread: <br/></p>
+<ul>
+<li class="mb-3"><strong>Thread.sleep(long milissegundos):</strong> faz com que o encadeamento da execução adormeça pelo número especificado em milissegundos. <br/></li>
+<li class="mb-3"><strong>Thread.currentThread():</strong> retorna uma referência ao objeto da <em>thread </em>atualmente em execução.<br/></li>
+<li class="mb-3"><strong>getId(): </strong>retorna um identificado da <em>thread</em>, e o tipo do retorno é <em>long</em>.<br/></li>
+<li class="mb-3"><strong>getName():</strong> retorna o nome da <em>thread</em>, e o tipo do retorno é String.<br/></li>
+<li class="mb-3"><strong>getPriority():</strong> retorna a prioridade da <em>thread</em>, e o tipo do retorno é <em>int</em>.<br/></li>
+<li class="mb-3"><strong>interrupt():</strong> interrompe a execução da <em>thread</em>. <br/></li>
+<li class="mb-3"><strong>isAlive():</strong> testa se a <em>thread </em>está viva, e o tipo do retorno é <em>boolean</em>.<br/></li>
+<li class="mb-3"><strong>isInterrupted(): </strong>testa se a <em>thread </em>tem sido interrompida, e o tipo do retorno é <em>boolean</em>.<br/></li>
+<li class="mb-3"><strong>join():</strong> aguarda até que a <em>thread </em>atual termine. <br/></li>
+<li class="mb-3"><strong>setName(String nome):</strong> troca o nome da <em>thread</em>. <br/></li>
+<li class="mb-3"><strong>setPriority(int prioridade):</strong> troca a prioridade da <em>thread</em>.<br/></li>
+<li class="mb-3"><strong>Thread.State.getState():</strong> retorna o estado atual da <em>thread</em>.<br/></li>
+</ul>
+<p class="text-left">Caro aluno, procure criar aplicações simples, que utilizem os métodos acima da classe Thread, para ver, na prática, a sua utilização. <br/></p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">Um método muito importante das <em>threads</em> é o <em>sleep</em>, que faz com que a <em>thread </em>atual durma por um determinado tempo. Esse método recebe como argumento um valor em milissegundos, que indica quanto tempo a <em>thread </em>deverá dormir. De forma a ilustrar esse método, analise o Código 4.19.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.19 | Exemplo básico de utilização do método estático <em>sleep </em><br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">System.out.println("inicio");
+try {
+    System.out.println("inicio sleep");
+    Thread.sleep(5000); //valor em milissegundos
+    System.out.println("fim sleep");
+} catch (InterruptedException ex) {
+    System.out.println(ex);
+}
+System.out.println("fim");
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="text-left">No código acima, podemos reparar que o método <em>sleep </em>pode lançar uma exceção do tipo InterruptedException, e isso se dá quando a <em>thread </em>que está dormindo é interrompida por meio do método <em>interrupted</em>. <br/></p>
+<p class="text-left">Frente a isso, sugerimos que você, aluno, tente criar uma aplicação simples e que force a interrupção da <em>thread </em>enquanto ela estiver dormindo para ver essa exceção sendo lançada.<br/></p>
+</div>
+<p class="mb-3"><em>As threads</em>, ao serem criadas, podem assumir qualquer um dos seguintes estados: </p>
+<ul>
+<li class="mb-3"><strong>NEW:</strong> estado da Thread para uma <em>thread </em>que ainda não foi iniciada.<br/></li>
+<li class="mb-3"><strong>RUNNABLE: </strong>estado da Thread para uma <em>thread </em>que está em execução.<br/></li>
+<li class="mb-3"><strong>TERMINATED: </strong>estado da Thread para uma <em>thread </em>que foi encerrada.<br/></li>
+<li class="mb-3"><strong>WAITING: </strong>estado da Thread para uma <em>thread </em>que está em espera.<br/></li>
+<li class="mb-3"><strong>TIMED_WAITING: </strong>estado da Thread para uma <em>thread </em>que está em espera cronometrada.<br/></li>
+<li class="mb-3"><strong>BLOCKED: </strong>estado da Thread para uma <em>thread </em>que está bloqueada, aguardando um bloqueio de monitor.<br/></li>
+</ul>
+<p class="mb-3">A Figura 4.14 nos mostra o fluxo seguido do ciclo de vida dos estados de uma <em>thread </em>dentro da linguagem Java. Inicialmente, quando a <em>thread </em>é criada, ela se encontra no estado NEW, em seguida, com o comando <em>start</em>, a <em>thread </em>muda para o estado RUNNABLE, e ela pode permanecer nesse estado até terminar, indo, então, para TERMINATED. A <em>thread </em>pode também ir do estado RUNNABLE para TIMED_WAITING com o comando <em>sleep</em>, e quando o intervalo de tempo expirar, ela voltará para RUNNABLE, bem como pode ir do estado RUNNABLE para WAITING se usado o comando <em>wait</em>, e uma vez utilizado o comando <em>notifiy</em>, voltar ao estado RUNNABLE. O estado BLOCKED também pode ser atingido a partir de RUNNABLE por meio de solicitações de Entrada e Saído (E/S) ou quando outra <em>thread </em>estiver utilizando o recurso (<em>syncronized</em>), e quando essa solicitação terminar, o estado RUNNABLE retornará. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Figura 4.14 | Ciclo de vida dos estados de uma <em>thread </em>dentro do Java</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A  figura ilustra um diagrama que mostra o ciclo de vida dos estados de uma thread dentro do Java. No topo está escrito início, na sequência uma seta aponta para um círculo amarelo com o estado NEW (novo), na sequência uma seta aponta para um círculo verde com o estado RUNNABLE (executável), entre eles há o texto quando a thread dar start. Abaixo estão os estados WAITING (espera), TIME_WAITING (espera cronometrada) em círculos laranjas, TERMINATED (terminado) em um círculo lilás, e BLOCKED (bloqueado) em um círculo rosa. Do estado WAITING (espera) sai uma seta que aponta para RUNNABLE (executável) com o texto: quando dar um notify ou notifyall, e recebe uma seta de RUNNABLE (executável) com o texto quando dar um wait. Do estado WAITING (espera) também sai uma seta que aponta para TERMINATED (terminado) com o texto: se lançar exceção. Do estado TIMED_WAITING (espera cronometrada) sai uma seta que aponta para RUNNABLE (executável) com o texto: quando dar um sleep, e recebe uma seta de RUNNABLE (executável) com o texto: quando expirar o tempo.  Do estado TIMED_WAITING (espera cronometrada) também sai uma seta que aponta para TERMINATED (terminado) com o texto: se lançar exceção. Do estado RUNNABLE (executável) sai uma seta que aponta para TERMINATED (terminado) com dois textos: quando a tarefa terminar e se lançar exceção. Do estado BLOCKED (bloqueado) sai uma seta que aponta para RUNNABLE (executável) com dois textos: quando dar uma interrupt e quando a E/S termina, e recebe uma seta de RUNNABLE (executável) com o texto: quando solicitar E/S ou quando a instrução é syncronized.   Do estado TERMINATED (terminado) também sai uma seta que aponta para o texto fim." class="img-fluid mb-0" src="assets/img/figura_4.14.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: adaptada de Deitel; Deitel (2016).</figcaption>
+</figure>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Reflita</strong><br/></h6>
+<p class="text-left">A Figura 4.14 nos mostra os ciclos de vida de uma <em>thread </em>a partir do momento de sua criação até o seu término. Diante disso, gostaríamos de convidá-lo a refletir sobre cada uma dessas transições de estados do ciclo de vida; utilize essa figura e tente descrever quais foram os estados ocupados pelas <em>threads </em>criadas nos códigos 4.17 e 4.18. Neles, teve algum estado não atingido? Se sim, quais? Reflita também sobre o porquê desses estados não terem sido atingidos.</p>
+</div>
+<p class="text-left">Caro estudante, nesta seção você estudou os conteúdos relacionados à criação de <em>threads</em>; foram dados alguns exemplos de como as <em>threads </em>são criadas e como auxiliam na construção de aplicações concorrentes e paralelas na linguagem Java. Frente a isso, lembre-se de que todos os códigos aqui mostrados podem ser acessados no GitHub do autor. </p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Referências<br/></h4>
+<p class="text-left">ARANTES, J. da S. <strong>Livro-POO-Java</strong>. 2020. Disponível em: <a href="https://github.com/jesimar/Livro-POO-Java/" target="_blank">https://bit.ly/3eiUMcF</a>. Acesso em: 8 set. 2020.<br/></p>
+<p class="text-left">DEITEL, P. J.; DEITEL, H. M. <strong>Java: como programar</strong>. 10. ed. São Paulo: Pearson Education, 2016.<br/></p>
+<p class="text-left page-break">LOIANE GRONER. <strong>Curso de Java 67: </strong>criando threads + métodos start, run e sleep. 2016. Disponível em: <a href="https://www.youtube.com/watch?v=v5l30QMKv6c" target="_blank">https://bit.ly/2HaVs9f</a>. Acesso em: 8 set. 2020.<br/></p>
+<p class="text-left">LOIANE GRONER.<strong> Curso de Java 68:</strong> threads: interface runnable. 2016. Disponível em: <a href="https://www.youtube.com/watch?v=oWoU0uTEaA0" target="_blank">https://bit.ly/32Ghd9m</a>. Acesso em: 8 set. 2020.<br/></p>
+<p class="text-left">LOIANE GRONER. <strong>Curso de Java 69:</strong> criando várias threads + métodos isAlive e join. Disponível em: <a href="https://www.youtube.com/watch?v=f8wwWSwi6bo" target="_blank">https://bit.ly/3iIR1k5</a>. 2016. Acesso em: 8 set. 2020.<br/></p>
+<p class="text-left">ORACLE. <strong>Enum Thread State</strong>. [s.d.]. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Thread.State.html" target="_blank">https://bit.ly/32IZiio</a>. Acesso em: 8 set. 2020.<br/></p>
+<p class="text-left">ORACLE. <strong>Thread</strong>. [s.d.]. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Thread.html" target="_blank">https://bit.ly/3mDcVYq</a>. Acesso em: 8 set. 2020.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

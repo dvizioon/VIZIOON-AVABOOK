@@ -83,7 +83,6 @@ class BeautifulGraph(QLabel):
             painter.drawLine(x1, y1, x2, y2)
 
 
-
 def BuscarLivroGrapichs(username,password,materia):
     
     """Função que realiza a busca e gera logs"""
@@ -98,20 +97,25 @@ def BuscarLivroGrapichs(username,password,materia):
         return ua.random
     
     random_user_agent = get_random_user_agent()
-    log_event(f"User-Agent Aleatório:{random_user_agent}")
+    print("User-Agent Aleatório:", random_user_agent)
+    
 
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")
     chrome_options.binary_location = "124.0.6367.91\chrome.exe"
     service = Service(options=chrome_options,executable_path='./chromedriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     driver.get("https://www.colaboraread.com.br")
-    # Define o tamanho da janela do navegador
+     # Define o tamanho da janela do navegador
+    # chrome_options.add_argument("--headless")
     # driver.set_window_size(1920, 1080)
+    # Defina o nível de zoom da página (por exemplo, 80% de zoom)
+    # zoom_level = 90  # Isso representa 80%
+    # driver.execute_script(f"document.body.style.zoom='{zoom_level}%'")
     # Configura o User-Agent nas opções do Chrome
-    chrome_options.add_argument(f"user-agent={random_user_agent}")
+    # Maximizar a janela
     driver.maximize_window()
+    chrome_options.add_argument(f"user-agent={random_user_agent}")
 
     # Criação do driver do Chrome com as opções configuradas
     # driver = webdriver.Chrome(options=chrome_options)
@@ -120,21 +124,21 @@ def BuscarLivroGrapichs(username,password,materia):
     cookies = driver.get_cookies()
     
     try:
-        nome   = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "username")))
-        senha  = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "password")))
-        submit = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,"//*[@id='loginForm']/button")))
-        
+        nome = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "username")))
+        senha = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "password")))
+        submit = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[@id='loginForm']/button")))
+
         time.sleep(2)
-        
+
         # ==========================================#
         log_event(f"Elemento Nome Encontrado => {nome}")
         log_event(f"Elemento Senha Encontrado => {senha}")
         log_event(f"Elemento Submit Encontrado => {submit}")
         # ==========================================#
-        
+
         nome.send_keys(username)
         senha.send_keys(password)
-
+        
         try:
             
 
@@ -156,166 +160,107 @@ def BuscarLivroGrapichs(username,password,materia):
 
         except TimeoutException:
             log_event("O elemento não foi encontrado na página dentro do tempo limite.")
-            submit.click()
+            # submit.click()
         
         submit.click()
-        
-        time.sleep(3)
-        
 
-        buttonEntrarMaterias = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH,"//*[@id='navbar-content-aluno-cursos']/div/div[1]/div/div[3]/form/div[2]/button")))
+        time.sleep(3)
+
+        buttonEntrarMaterias = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, "//*[@id='navbar-content-aluno-cursos']/div/div[1]/div/div[3]/form/div[2]/button")))
         buttonEntrarMaterias.click()
         time.sleep(2)
-        
+
         log_event(f"MATERIA ESCOLHIDA  => {materia}")
-                
-        #Aqui ele Retorna a UL dentro de Cada ul > li > Table > tbody > tr > td
-        MateriasBusca = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME,"list-line")))
+
+        # Aqui ele retorna a UL dentro de cada ul > li > Table > tbody > tr > td
+        MateriasBusca = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "list-line")))
         log_event(f"BUSCA MATERIAS ELEMENTO UL => {MateriasBusca}")
-        #Aqui ele Retorna a Li dentro da UL
-        MateriaBusca_li = WebDriverWait(MateriasBusca, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME,"atividadesCronograma")))
+
+        # Aqui ele retorna a Li dentro da UL
+        MateriaBusca_li = WebDriverWait(MateriasBusca, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "atividadesCronograma")))
         log_event(f"BUSCA MATERIAS ELEMENTO LI => {MateriaBusca_li}")
-        
-        # aqui ele me Retorna todas as Class da LI com Cada elementos Respectivo
-        for index,li in enumerate(MateriaBusca_li):
+
+        # Aqui ele me retorna todas as Class da LI com cada elemento respectivo
+        for index, li in enumerate(MateriaBusca_li):
             try:
-                log_event(f"{index}) ELEMENTOS LI INDEPENDENTS ENCONTRADOS => {li}")
-                # aqui ele me Retorna todas as Class Table de Cada elementos Respectivo
-                MateriaBusca_Table = WebDriverWait(li, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR,".table > tbody > tr")))
+                log_event(f"{index}) ELEMENTOS LI INDEPENDENTES ENCONTRADOS => {li}")
+
+                # Aqui ele me retorna todas as Class Table de cada elemento respectivo
+                MateriaBusca_Table = WebDriverWait(li, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".table > tbody > tr")))
                 log_event(f"ELEMENTOS TABLE => DO IX:{index} > TBODY > TR ENCONTRADOS => {MateriaBusca_Table}")
-                # aqui ele me Retorna todas as Class TR de Cada elementos Table Encontrado Respectivo
-                MateriaBusca_Td = WebDriverWait(MateriaBusca_Table, 30).until(EC.presence_of_element_located((By.CLASS_NAME,"atividadesCronogramaTableNome")))
+
+                # Aqui ele me retorna todas as Class TR de cada elemento Table encontrado respectivo
+                MateriaBusca_Td = WebDriverWait(MateriaBusca_Table, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "atividadesCronogramaTableNome")))
                 log_event(f"ELEMENTOS TR => DO IX:{index} > ENCONTRADOS => {MateriaBusca_Td}")
-                # aqui ele me Retorna todas aa Tags A de Cada elementos Tr Encontrado Respectivo
-                MateriaBusca_a = WebDriverWait(MateriaBusca_Td, 30).until(EC.presence_of_element_located((By.TAG_NAME,"a")))
+
+                # Aqui ele me retorna todas as tags A de cada elemento Tr encontrado respectivo
+                MateriaBusca_a = WebDriverWait(MateriaBusca_Td, 30).until(EC.presence_of_element_located((By.TAG_NAME, "a")))
                 log_event(f"ELEMENTOS A => DO IX:{index} > ENCONTRADOS => {MateriaBusca_a}")
-                ################################# Atualizando os Atributios ====================================
+
+                # Atualizando os atributos
                 Title_Materia = MateriaBusca_a.get_attribute("title")
-                Href_Materia  = MateriaBusca_a.get_attribute("href")
-                log_event(f"ATRIBUTOS A => [{index}] TARGET:{Title_Materia} LINK:{Href_Materia}") 
-                
-                #Aqui Verica se a materia Escolhida pelo usuario Correponde com algun title
-                
-                # Convertendo ambas as strings para minúsculas e removendo espaços extras
+                Href_Materia = MateriaBusca_a.get_attribute("href")
+                log_event(f"ATRIBUTOS A => [{index}] TARGET:{Title_Materia} LINK:{Href_Materia}")
+
+                # Verifica se a matéria escolhida pelo usuário corresponde a algum título
                 if materia.strip().lower() == Title_Materia.strip().lower():
                     log_event(f"MT1:{materia} => MT2:{Title_Materia} VERIFICADO... INICIANDO > TARGET:{Title_Materia} LINK:{Href_Materia}")
                     oferta_diciplina = Href_Materia.split("/aluno/timeline")[1]
                     url_momento_real = driver.current_url
-                    # MateriaBusca_a.click()
-                    # https://www.colaboraread.com.br/aluno/timeline/index/3673690202?ofertaDisciplinaId=2145455
-                    log_event(f"CRACKEANDO URL :{Href_Materia}")
-                    log_event(f"GERANDO DICIPLINA :{oferta_diciplina}")
-                    log_event(f"INICIANDO PROTOCOLO DE CONTENÇÃO...")
                     MateriaBusca_a.click()
+
+                    log_event(f"CRACKEANDO URL: {Href_Materia}")
+                    log_event(f"GERANDO DISCIPLINA: {oferta_diciplina}")
+                    log_event(f"INICIANDO PROTOCOLO DE CONTENÇÃO...")
+
                     time.sleep(5)
                     log_event(f"OBTENDO NOVA URL: {url_momento_real}")
-                    log_event(f"ENCUTANDO URL:  https://www.colaboraread.com.br/aluno/timeline{oferta_diciplina}")
-                    
+                    log_event(f"ENCURTANDO URL: https://www.colaboraread.com.br/aluno/timeline{oferta_diciplina}")
+
                     nova_url = f"https://www.colaboraread.com.br/aluno/timeline{oferta_diciplina}"
-                    
-                    if(nova_url == f"https://www.colaboraread.com.br/aluno/timeline{oferta_diciplina}"):
+                    if nova_url == f"https://www.colaboraread.com.br/aluno/timeline{oferta_diciplina}":
                         log_event("Entrando na Nova URL...")
-                        
-                        titulo_newPage = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH,"/html/body/div[1]/div/header/h2")))
+
+                        titulo_newPage = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/header/h2")))
                         log_event(f"ELEMENTO H2 ENCONTRADO => {titulo_newPage}")
                         log_event(f"ELEMENTO TEXTO H2 => {titulo_newPage.text}")
-                        # Role para baixo até que as ULs sejam visíveis
+
                         driver.execute_script("window.scrollTo(0, 250);")
-                                
-                        #BUSCAR O FILTRO 
+
+                        # BUSCAR O FILTRO
                         try:
                             filtro_checkbox = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "filters-marca-todos")))
                             if filtro_checkbox.is_selected():
                                 log_event("O filtro está marcado.")
                                 filtro_checkbox.click()
                                 log_event("O filtro foi desmarcado.")
-                                filtro_checkbox_all = WebDriverWait(driver, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "checkbox")))
-                                log_event(f"ELEMENTO CHECKBOXS ENCONTRADOS => {filtro_checkbox_all}")
-                                
-                                for ul in filtro_checkbox_all:
-                                    # Encontre todas as LI dentro de cada UL
-                                    Elementos_tools_label = WebDriverWait(ul, 30).until(EC.presence_of_element_located((By.TAG_NAME,"label")))
-                                    log_event(f"ELEMENTO LABEL ENCONTRADO => {Elementos_tools_label}")
-                                    log_event("ELEMENTO LABEL TEXT => {} ".format(Elementos_tools_label.text))
-                                    Elementos_tools_input = WebDriverWait(Elementos_tools_label, 30).until(EC.presence_of_element_located((By.TAG_NAME,"input")))
 
-                                    if Elementos_tools_label.text == "Leitura":
-                                        log_event("ELEMENTO LABEL TEXT => [ by.Tag => {} == by.text.var => leitura]".format(Elementos_tools_label.text))
-                                        log_event("Inciando PROTOCOLO DE DESLOCAMENTO PARA PDF")
-                                        
-                                        if Elementos_tools_input.is_selected():
-                                            log_event("O filtro está marcado.")
-                                        else:
-                                            log_event("O filtro está desmarcado.")
-                                            Elementos_tools_input.click()
-                                        
-                                        
-                                        
-                                Elementos_Box_Tools_ul = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "timeline")))
-                                log_event(f"ELEMENTO CONTAINER TIMELINE ENCONTRADOS TODOS => {Elementos_Box_Tools_ul}") 
+                            filtro_checkbox_all = WebDriverWait(driver, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "checkbox")))
+                            log_event(f"ELEMENTOS CHECKBOX ENCONTRADOS => {filtro_checkbox_all}")
 
-                                try:
-                                    Elementos_Box_Tools_li = WebDriverWait(Elementos_Box_Tools_ul, 30).until(EC.presence_of_all_elements_located((By.TAG_NAME,"li")))
-                                    for index, li in enumerate(Elementos_Box_Tools_li):
-                                        log_event(f"================================= |LI=>[{index}]| =================================")
-                                        log_event(f"-------------------------------- INFORMAÇÃOES GERAIS --------------------------")
-                                        log_event(li.text)
-                                        log_event(f"-------------------------------------------------------------------------------")
-                                        # Obter todas as tags 'a' dentro da tag 'li'
-                                        log_event(f"---------------------------------- LINKS ENCONTRADOS -------------------------------")
-                                        links = li.find_elements(By.TAG_NAME, "a")
-                                        for link in links:
-                                            if link.text == "Livro Didático":
-                                                log_event("ENTRANDO NA URL => INCIANDO SCKT PARA LPDF")
-                                                log_event(f"Link: Nome : {link.text} Target : {link.get_attribute('href')}")
-                                                link.click()
-                                                # Salve os cookies em um arquivo
-                                                with open('./App/Cookie/cookies.pkl', 'wb') as f:
-                                                    pickle.dump(cookies, f)
-                                                time.sleep(1)
-                                                log_event("URL INICIADA EM {} ... FECHANDO ABA -1".format(link.text))
-                                                # driver.close()
-                                                time.sleep(2)
-                                                
-                                                parsed_link = urlparse(link.get_attribute('href'))
-                                                query_params = parse_qs(parsed_link.query)
-                                                url_origem = query_params.get('urlOrigem', [None])[0]
-                                                # driver.get(url_origem)
-                                                log_event(f"URL ORIGINAL {url_origem}")               
-                                                janelas = driver.window_handles
-                                                driver.switch_to.window(janelas[1])  
-                                                driver.close()
-                                                driver.switch_to.window(janelas[0]) 
-                                                log_event("INICIANDO DowloadBook BOOK")
-                                                DowloadBook(materia,link.get_attribute('href'),"",url_origem)
-                                                time.sleep(3)
-                                                driver.quit()
-                                        log_event(f"-------------------------------------------------------------------------------------")
-                                        log_event(f"==================================================================================")
-                                        
-                                        
-                                except NoSuchElementException:
-                                    log_event("TimeLine não foi Encontrada")
-                                
-                            else:
-                                log_event("O filtro não está marcado.")
-                                
+                            for ul in filtro_checkbox_all:
+                                Elementos_tools_label = WebDriverWait(ul, 30).until(EC.presence_of_element_located((By.TAG_NAME, "label")))
+                                log_event(f"ELEMENTO LABEL ENCONTRADO => {Elementos_tools_label}")
+                                log_event(f"ELEMENTO LABEL TEXT => {Elementos_tools_label.text}")
+
+                                Elementos_tools_input = WebDriverWait(Elementos_tools_label, 30).until(EC.presence_of_element_located((By.TAG_NAME, "input")))
+                                if Elementos_tools_label.text == "Leitura":
+                                    log_event(f"Elemento Leitura Encontrado: {Elementos_tools_label.text}")
+                                    if not Elementos_tools_input.is_selected():
+                                        log_event("O filtro está desmarcado.")
+                                        Elementos_tools_input.click()
+
                         except NoSuchElementException:
                             driver.execute_script("window.scrollBy(0, 500);")
                             log_event("Elemento do filtro checkbox não encontrado. A página foi rolada para baixo.")
 
-                        
             except StaleElementReferenceException:
-                log_event(f"Elemento estático foi referenciado. Alterando URL :)")
-                # Refresh the elements before interacting with them again
+                log_event(f"Elemento estático foi referenciado. Alterando URL...")
                 MateriaBusca_li = WebDriverWait(driver, 20).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "atividadesCronograma")))
-                continue        
-                
+                continue
+
     except TimeoutException:
         log_event("O elemento não foi encontrado na página dentro do tempo limite.")
-    
-    driver.quit()
-
 
 
 
@@ -333,7 +278,7 @@ class Janela_Busca_livro(QDialog):
         layout = QVBoxLayout(self)
 
         # Adicionando o gráfico bonito (simulado aqui)
-        graph_widget = BeautifulGraph()
+        graph_widget = QLabel("Processamento Requisições Hand")
         layout.addWidget(graph_widget)
 
         cards_layout = QHBoxLayout()

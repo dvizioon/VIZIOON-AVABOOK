@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg-fmt">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary-fmt">Criação de <em>threads</em></h2>
+<p class="text-left texto-destaque">Utilização de <em>threads </em>na criação de uma animação de movimento para a máquina carregadora de caixas, independente do movimento do robô.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/u4s3_fmt_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/fmt_u4s3.mp3" type="audio/mpeg"/>
+</audio>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase mb-3 mt-80 text-primary-fmt">Sem medo de errar<br/></h4>
+<p class="mb-3">A <em>startup </em>em que você trabalha está muito satisfeita com o seu simulador de robô. Como tarefa final de desenvolvimento, o seu gestor pediu a você que desenvolvesse duas tarefas: </p>
+<ul>
+<li class="mb-3">Criar uma animação em zigue-zague que contivesse a máquina carregadora de caixas em operação. <br/></li>
+<li class="mb-3">Fazer utilização de <em>threads </em>nessa animação de forma que o movimento (animação) da máquina carregadora fosse independente do movimento do robô. <br/></li>
+</ul>
+<p class="mb-3">Após revisar as sugestões de seu gestor, você, então, decidiu partir do Código 4.14 que havia desenvolvido. A primeira coisa que decidiu fazer foi criar uma classe chamada Carregador para conter a modelagem da máquina que operará na sala com o robô. O Código 4.20 abaixo destaca as principais alterações feitas, sendo que, na classe Carregador, temos quatro atributos (linhas 3 a 6), que são: as posições da máquina, um objeto que contém a referência da imagem usada para sua renderização e a velocidade de operação dela. Repare que a classe Carregador implementa a interface Runnable, assim, o método <em>run </em>deve ser sobrescrito (linhas 12 a 34). O código do método <em>run </em>é uma adaptação do método <em>act </em>que foi desenvolvido utilizando-se a ferramenta Greenfoot na Seção 3 da Unidade 1. A ideia geral é fazer com que essa máquina se mova para frente e para trás, em zigue-zague. Poucas alterações foram feitas na classe AppGUI, sendo elas a criação de alguns atributos para inserção da máquina carregadora e a instanciação da <em>thread </em>que iniciará os movimentos da máquina carregadora (linhas 47 e 48). <br/></p>
+<p class="mb-3">Após esses passos, o seu programa ficou pronto, com todas as alterações requisitadas pelo seu gestor. No Código 4.20, diversas partes foram omitidas, mas o código completo pode ser acessado no GitHub do autor.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 4.20 | Criação da classe Carregador e novas modificações na classe AppGUI</figcaption><pre><code class="java hljs">import javafx.scene.image.ImageView;
+public class Carregador implements Runnable {
+    private float posicaoX;
+    private float posicaoY;
+    private final ImageView viewCarregador;
+    private final int velocidade = 3;
+    public Carregador(float posX, float posY, ImageView view) {
+        this.posicaoX = posX;
+        this.posicaoY = posY;
+        this.viewCarregador = view;
+    }
+    @Override
+    public void run() {
+        boolean isMoveRight = true;
+        while (true) {
+            if (isMoveRight) {
+                posicaoX += velocidade;
+            } else {
+                posicaoX -= velocidade;
+            }
+            if (isMoveRight &amp;&amp; posicaoX &gt; 350) {
+                isMoveRight = false;
+            } else if (!isMoveRight &amp;&amp; posicaoX &lt; 190) {
+                isMoveRight = true;
+            }
+            viewCarregador.setTranslateX(posicaoX);
+            viewCarregador.setTranslateY(posicaoY);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException ex) {
+                System.out.println(ex);
+            }            
+        }
+    }  
+}
+
+... //as importações foram omitidas
+public class AppGUI extends Application {
+    ... //algumas declarações foram omitidas
+    private final String IMG_CAR = "recursos/Carregador.png";
+    private final Image imgCar = new Image(getClass()
+                              .getResourceAsStream(IMG_CAR));    
+    private final ImageView viewCar = new ImageView(imgCar);
+    private final Carregador car = new Carregador(250, 270, viewCar);
+    @Override
+    public void start(Stage janela) {
+        Thread threadCarregador = new Thread(car);
+        threadCarregador.start();
+        ... //algumas linhas de código foram omitidas
+        grupo.getChildren().add(viewCarregador);
+        ... //algumas linhas de código foram omitidas
+    }
+}
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Ao executar o Código 4.20, uma tela semelhante à Figura 4.15 deve ser mostrada. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 4.15 | Interface gráfica final do simulador de robótica com a máquina carregadora</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A figura ilustra uma interface que simula um robô. Na imagem da janela há os botões fechar, minimizar, maximizar e o título da janela: Simulador de Robótica. Dentro da janela há um espaço na lateral superior esquerda com as figuras de três caixas abertas. Na parte superior central há um espaço com três posições. No centro também há um espaço com três posições. Na lateral superior direita há um espaço com três caixas fechadas. Na parte inferior esquerda há um espaço com o texto R-ATM. Na parte inferior central há um espaço com o contorno pontilhado com a imagem de uma empilhadeira com várias caixas sendo manobrada por um homem indo em direção ao depósito. Na parte inferior direita há um espaço com o texto Depósito Há também um robô à esquerda, virado para o lado direito, posicionado entre espaço ao centro e o espaço onde está a empilhadeira." class="img-fluid mb-0" src="assets/img/figura_4.15.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Parabéns, você chegou ao final deste estudo sobre Linguagens Orientadas a Objetos com foco em Java. Acreditamos que o seu estudo sobre OO e Java ainda não terminou, pois ainda há muito o que aprender sobre esse imenso universo, mas acreditamos que as principais bases foram transmitidas. <br/></p>
+<p class="mb-3">Boa sorte em sua jornada pelo aprendizado.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

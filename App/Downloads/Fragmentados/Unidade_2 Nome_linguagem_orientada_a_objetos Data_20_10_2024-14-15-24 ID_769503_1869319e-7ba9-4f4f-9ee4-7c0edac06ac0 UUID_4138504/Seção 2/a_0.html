@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary">Estruturas de controle, tomadas de decisão e laços de repetição</h2>
+<p class="text-left texto-destaque">Utilização de estruturas básicas, mas que são de extrema importância, pois rompem o fluxo linear do código tornando-o mais dinâmico.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/npf_u2s2_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shuttersock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/npf_u2s2.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Praticar para Aprender<br/></h4>
+<p class="mb-3">Caro estudante, bem-vindo à segunda seção da segunda unidade de estudos sobre Linguagem Orientada a Objetos. <br/></p>
+<p class="mb-3">Comecemos com uma questão: qual desenvolvedor nunca utilizou, em seus códigos, estruturas de decisão, de repetição, operadores aritméticos, relacionais e lógicos? A maioria dos desenvolvedores, se não todos, já utilizou, mas qual a melhor estrutura de tomada de decisão a ser utilizada? Qual a melhor estrutura de repetição a ser utilizada? Nesta seção, você terá a oportunidade de aprender a sintaxe básica por trás dos comandos if, if-else, operador ternário, switch, for, while e do-while, bem como conhecerá todos os tipos primitivos de dados presentes no Java.<br/></p>
+<p class="mb-3">Como forma de contextualizar sua aprendizagem, lembre-se de que você é contratado de uma <em>startup </em>e que seu chefe quer apresentar um simulador completo de robô em Java capaz de transportar caixas em uma sala. Ele está muito satisfeito com o que você está desenvolvendo, mas sabe que ainda há muito trabalho a se fazer. Assim, ele lhe pediu a criação de uma classe que modele a sala em que o robô irá operar e uma classe que modele a entidade caixa. Percebendo que o robô que você modelou não possui nenhum atributo que defina a sua orientação, solicitou, também, um atributo em que a orientação do robô seja especificada e que a manipulação desse atributo utilize alguma estrutura de decisão. A fim de testar a aplicação, ele lhe pediu um robô que se deslocasse em forma de um quadrado, utilizando laços de repetição, mas percebeu que o projeto do simulador do robô estava apenas na sua máquina e lhe pediu para que começasse a utilizar o GitHub, mantendo o código sempre seguro e versionado.<br/></p>
+<p class="mb-3">Diante do desafio que lhe foi apresentado, como você irá criar essa sala que representa o mundo do seu robô? Como você irá criar as caixas que comporão o cenário? Como você irá criar esse atributo orientação? Qual estrutura de decisão você irá utilizar para definir a orientação. Como você irá trabalhar com essas diversas classes e como você irá conectá-las? Esta seção irá ajudá-lo a ter um maior domínio das tarefas requisitadas pelo seu chefe, e agora que você foi apresentado à sua nova situação-problema, estude esta seção e compreenda algumas das estruturas básicas da linguagem Java. Essas estruturas, apesar de básicas, são de extrema importância para a construção de qualquer aplicação de pequeno e grande porte. <br/></p>
+<p class="mb-3">E aí, vamos juntos compreender esses conceitos e resolver esse desafio?<br/></p>
+<p class="mb-3">Bom estudo! <br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Conceito-chave<br/></h4>
+<p class="mb-3">A linguagem Java, assim como a maioria das linguagens de programação, possui estruturas de controle, como tomadas de decisão e laços de repetição. Outro aspecto inerente à maioria das linguagens de programação diz respeito aos operadores aritméticos, relacionais e lógicos. A linguagem Java é fortemente tipada, ou seja, os tipos das variáveis são importantes para a manipulação de dados e devem ser declarados no início de criação da variável. Mas calma, todos esses aspectos mencionados serão abordados com mais detalhes nesta seção. <br/></p>
+<p class="mb-3">Antes de darmos continuidade, gostaríamos de ressaltar dois pontos importantes: <br/></p>
+<ul>
+<li class="mb-3">A maioria dos exemplos apresentados nesta seção traz apenas fragmentos de código. Dessa maneira, é importante que o aluno implemente o restante da aplicação, por exemplo, criando classe, método <em>main </em>e até assinatura do método para o fragmento de código aqui disponível. <br/></li>
+<li class="mb-3">Realize testes de mesa de forma manual para compreender as ideias propostas, bem como testes de mesa de forma automática, utilizando-se o site Java Tutor.<br/></li>
+</ul>
+<h3 class="text-uppercase mb-3 marcador mt-80 page-break">Estruturas de decisão<br/></h3>
+<p class="mb-3">Antes de explicarmos a estrutura de decisão, é bom lembrarmos que a linguagem Java, assim como a maioria das linguagens de programação, executa o seu código de forma sequencial e de cima para baixo, linha a linha. Às vezes, é necessário romper com essa execução sequencial, e queremos executar um trecho do código somente se alguma coisa ocorrer. Essas tomadas de decisão rompem com o fluxo linear do código, criando bifurcações que ajudam a tornar o código mais dinâmico.<br/></p>
+<h4 class="text-uppercase mb-3 marcador mt-80">Comando <em>if </em>e <em>if-else </em><br/></h4>
+<p class="mb-3">A principal estrutura de decisão é o comando <em>if </em>e <em>if-else</em>. Esses comandos também podem ser concatenados sucessivamente por outros <em>ifs</em>, como em <em>if-elseif-else</em>, etc. A Figura 2.3 mostra, de forma gráfica, como ocorre o fluxo de execução em cada um desses comandos mencionados. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.3 | Diferentes fluxos de execução para os comandos de decisão</figcaption>
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 text-center p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/Figura%202.3.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Na Figura 2.3, podemos perceber que esses três comandos rompem com o fluxo sequencial do código se uma determinada condição (D1 ou D2) for satisfeita. Assim, se o valor de D1 for verdadeiro, o comando C1 será executado; se o valor de D1 for falso, um outro comando será executado. Ainda, na Figura 2.3, C1, C2, C3 e C4 indicam comandos a serem executados, já D1 e D2 indicam tomadas de decisão a serem avaliadas.<br/></p>
+<p class="mb-3">As estruturas dos comandos de decisão em nível de código podem ser sintetizadas conforme o Quadro 2.2 a seguir.<br/></p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.2 | Síntese dos comandos de decisão <em>if</em>, <em>if-else</em> e <em>if-elseif-else</em></span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Comando: if</strong><br/></th>
+<th class='text-center scope="col"'><strong>Comando: if-else</strong><br/></th>
+<th class="text-center"><strong>Comando: if-elseif-else</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code class="code-blue">if</code><code> (ExpLógicaA) {<br/><br/>  SeqDeComandosA;<br/><br/>}<br/><br/></code><br/></td>
+<td><code class="code-blue">if</code> <code> (ExpLógicaA) {<br/><br/>  SeqDeComandosA;<br/><br/>} <code class="code-blue">else</code> {<br/><br/>  SeqDeComandosB;<br/><br/>}<br/></code></td>
+<td><code><code class="code-blue">if</code> (ExpLógicaA) {<br/><br/>  SeqDeComandosA;<br/><br/>} <code class="code-blue">else if</code> (ExpLógicaB){<br/><br/>  SeqDeComandosB;<br/><br/>} <code class="code-blue">else</code> {<br/><br/>  SeqDeComandosC;<br/><br/>} <br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Podemos perceber que a sintaxe é a mesma da linguagem de programação C. Vamos analisar por partes esse comando. Inicialmente, na primeira coluna do Quadro 2.2, temos a palavra reservada <em>if</em>, logo, em seguida, devemos colocar uma expressão que possua um valor lógico (verdadeiro ou falso) dentro de parênteses. Após isso, a abertura do bloco de código utilizando-se as chaves é necessária se a quantidade de comandos a seguir for maior que um. No Quadro 2.2, a sequência SeqDeComandosA só será executada se a expressão ExpLógicaA for verdadeira. Por sua vez, na segunda coluna, o comando SeqDeComandosB só será executado se a expressão ExpLógicaA for falsa. Ainda no Quadro 2.2, na terceira coluna, temos um exemplo de como é feita a concatenação de dois comandos <em>if</em>. </p>
+<h4 class="text-uppercase mb-3 marcador mt-80">Operador ternário<br/></h4>
+<p class="mb-3">Uma forma mais simplificada de se construir comandos do tipo <em>if-else</em> dá-se por meio do operador ternário em Java. O nome operador ternário deve-se ao fato de que o comando é quebrado em três partes separadas pelos símbolos de interrogação (?) e de dois pontos (:). A utilização desse operador é igual ao comando da linguagem C. Considere o seguinte trecho de código em Java no Quadro 2.3, em que foi utilizado, na esquerda, <em>if-else</em> e, na direita, o operador ternário.</p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.3 | Comparação entre<em> if-else </em>e operador ternário em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Comando: if-else</strong><br/></th>
+<th class='text-center scope="col"'><strong>Comando: operador-ternário</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="code-blue">if</code> (ExpLógicaA) {<br/><br/> ComandoA;<br/><br/>} <code class="code-blue">else</code> {<br/><br/> ComandoB;<br/><br/>}<br/></code></td>
+<td><code>ExpLógicaA ? ComandoA : ComandoB; </code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">No Quadro 2.3, os dois códigos são equivalentes. No operador ternário, inicialmente, temos uma expressão lógica que será avaliada (ExpLógicaA), caso ela seja verdadeira, o ComandoA será executado, caso ela seja falsa, o ComandoB será executado. Uma forma muito simples e útil de utilização do operador ternário se dá para o cálculo do máximo e mínimo de dois valores. Analise o Quadro 2.4 a seguir.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.4 | Exemplo de aplicação do operador ternário em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>exemplo máximo</strong><br/></th>
+<th class='text-center scope="col"'><strong>exemplo mínimo</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="code-blue">double</code> max = x &gt; y ? x : y;<br/><br/>System.<code class="code-green">out</code>.println(<code class="code-yellow">"max: "</code> + max);<br/></code></td>
+<td><code><code class="code-blue">double</code> min = x &lt; y ? x : y;<br/><br/>System.<code class="code-green">out</code>.println(<code class="code-yellow">"min: "</code> + min); <br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">No exemplo acima, a variável max irá armazenar o valor máximo entre as variáveis x e y (considere que x e y foram declarados anteriormente), pois, caso o x seja maior que y, então, x será retornado, caso o x não seja maior que y, então, y será retornado. O exemplo ao lado calcula o mínimo e seu funcionamento é semelhante. Implemente o código completo para calcular o máximo e o mínimo e analise o resultado.</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">O operador ternário pode também ser combinado com ele mesmo, criando expressões ainda mais complexas, como nos trechos de códigos mostrados a seguir:</p>
+<p class="text-left">O operador ternário pode também ser combinado com ele mesmo, criando expressões ainda mais complexas, como nos trechos de códigos mostrados a seguir:</p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Código 2.8 | Exemplo de expressões complexas</span><pre><code class="java hljs">String compXY = x&gt;y ? "maior" : x&lt;y ? "menor" :"igual";<br/>String diaSem = dia==0 ? "dom" : dia==1 ? "seg" : <br/>                dia==2 ? "ter" : dia==3 ? "qua" : <br/>                dia==4 ? "qui" : dia==5 ? "sex" :"sab"; <br/></code></pre><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span></div>
+<p class="text-left">Acima, no primeiro exemplo, temos a comparação entre duas variáveis: x e y. Se x for maior que y, retornará “maior”, se x for menor que y, retornará “menor”, se forem iguais, retornarão “iguais”.<br/></p>
+<p class="text-left">No segundo exemplo mostrado acima, temos a comparação entre a variável dia com os números inteiros de 0 a 5. Caso o dia seja 0, então, retornará o valor “dom”, indicando domingo; caso o dia seja 1, então, retornará o valor "seg", representando segunda-feira; e esse raciocínio se repetirá até a sexta-feira, e caso o dia não seja nenhum dos anteriores, então, o valor "sab", indicando o sábado, será retornado.<br/></p>
+<p class="text-left">Caro aluno, acesse o conteúdo no Java Tutor Comparação XY e no Java Tutor DiaDaSemana, presentes no tópico Referências, e execute o código acompanhando a sua execução, linha a linha, para entendê-lo melhor. <br/></p>
+</div>
+<h4 class="text-uppercase mb-3 marcador mt-80">Comando <em>Switch </em><br/></h4>
+<p class="mb-3">Outra estrutura de decisão é o comando switch. Esse comando provê o que chamamos de estrutura de seleção múltipla baseada em alguma variável de controle. A Figura 2.4 mostra, de forma gráfica, como ocorre o fluxo de execução no comando <em>switch-case</em> e <em>switch-case-default</em>.</p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Figura 2.4 | Diferentes fluxos de execução para o comando de decisão switch</figcaption>
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 text-center p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/Figura%202.4.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">A Figura 2.4 mostra que esses dois comandos rompem com o fluxo sequencial do código se uma determinada variável (Var) satisfizer algum dos casos base. Assim, se Var satisfizer o valor V1, então, o comando C1 será executado, se Var satisfizer o valor de V2, então, o comando C2 será executado, e assim sucessivamente. Nessa figura, C1, C2, C3, C4 e C5 indicam comandos a serem executados. No exemplo <em>switch-case</em> existe um fluxo unindo diretamente Var a C4, que será executado somente se nenhum dos casos for satisfeito. Já no exemplo <em>switch-case-default</em>, existe ao menos um comando dentro do <em>switch </em>que deverá ser executado; nesse exemplo, o comando C4 será executado se não for atendido nenhum dos casos anteriores, sendo assim, um comando padrão (<em>default</em>).<br/></p>
+<p class="mb-3">Você deve ter reparado certa semelhança entre a combinação de vários <em>if-else</em> encadeados e o <em>switch-case</em>. De forma geral, quando se tem três ou mais <em>if-else</em> seguidos e existe a possibilidade de se fazer a troca para um <em>switch-case</em>, essa troca é aconselhável. <br/></p>
+<div class="olho">
+<p class="text-center mb-0">A grande maioria dos programadores acha mais elegante e legível um código com switch-case do que com múltiplos <em>if-else</em>, além disso, o <em>switch-case</em> possui um desempenho ligeiramente melhor.</p>
+</div>
+<p class="mb-3">As estruturas básicas dos códigos dos comandos de decisão do tipo switch estão sintetizadas conforme o Quadro 2.5 a seguir.<br/></p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.5 | Comparação entre switch-case e switch-case-default presentes no Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Comando: switch-case</strong><br/></th>
+<th class='text-center scope="col"'><strong>Comando: switch-case-default</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="code-blue">switch</code> (VariávelDeControle) {<br/><br/>  <code class="code-blue">case</code> Valor1:<br/><br/>    Comando1; <code class="code-blue">break</code>;<br/><br/>  <code class="code-blue">case</code> Valor2:<br/><br/>    Comando2; <code class="code-blue">break</code>;<br/><br/>  ...<br/><br/>  <code class="code-blue">case</code> ValorN:<br/><br/>    ComandoN; <code class="code-blue">break</code>;<br/><br/>}<br/></code></td>
+<td><code><code class="code-blue">switch</code> (VariávelDeControle) {<br/><br/>  <code class="code-blue">case</code> Valor1:<br/><br/>    Comando1; <code class="code-blue">break</code>;<br/><br/>  <code class="code-blue">case</code> Valor2:<br/><br/>    Comando2; <code class="code-blue">break</code>;<br/><br/>  ...<br/><br/>  <code class="code-blue" style="color: #3838ee;">case</code> ValorN:<br/><br/>    ComandoN; <code class="code-blue">break</code>;<br/><br/>  <code class="code-blue">default</code>:<br/><br/>    ComandoParaCasoPadrão;<br/><br/>} <br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">As variáveis de controle utilizadas dentro do <em>switch </em>podem ser dos seguintes tipos: <em>byte</em>, <em>short</em>, <em>int</em>, <em>char </em>e <em>String</em>. Nesse ponto, gostaríamos de desafiar o aluno a pensar e criar exemplos de aplicações que utilizam a estrutura de seleção múltipla com esses diversos tipos de dados mencionados. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Reflita</strong><br/></h6>
+<p class="text-left">Dentro do comando <em>switch</em>, no Quadro 2.5, foram utilizados diversos comandos <em>break</em>. O comando break, basicamente, interrompe o fluxo de execução dentro do comando <em>switch</em>. Dessa maneira, reflita sobre o que ocorre ao se esquecer de colocar o comando <em>break </em>em algum dos <em>cases </em>ou em todos os <em>cases</em>. Dica: faça a implementação do comando <em>switch </em>e não coloque o <em>break</em>; em seguida, reflita sobre o que ocorrerá.</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Operadores <br/></h3>
+<h4 class="text-uppercase mb-3 marcador">Operadores aritméticos <br/></h4>
+<p class="mb-3">Outro assunto importante a ser tratado diz respeito aos operadores aritméticos. Os principais operadores aritméticos presentes na linguagem Java são: soma (+), subtração (-), multiplicação (*), divisão (/) e resto da divisão (%). O funcionamento desses operadores é igual na linguagem C, e todos eles necessitam de dois operandos do tipo numérico e retornam um dado do tipo numérico. O Quadro 2.6 sintetiza algumas informações sobre os operadores aritméticos.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.6 | Síntese dos operadores aritméticos em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome Operador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Símbolo</strong><br/></th>
+<th class="text-center"><strong>Exemplo em Java</strong></th>
+<th class="text-center"><strong>Exemplo Numérico</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Soma</td>
+<td class="text-center">+</td>
+<td class="text-center">x + y</td>
+<td class="text-center">5 + 3    (= 8)</td>
+</tr>
+<tr>
+<td>Subtração</td>
+<td class="text-center">-</td>
+<td class="text-center">x - y</td>
+<td class="text-center">5 - 3    (= 2)</td>
+</tr>
+<tr>
+<td>Multiplicação</td>
+<td class="text-center">*</td>
+<td class="text-center">x * y</td>
+<td class="text-center"> 5 * 3    (= 15)</td>
+</tr>
+<tr>
+<td>Divisão</td>
+<td class="text-center">/</td>
+<td class="text-center">x / y</td>
+<td class="text-center"> 5 / 3     (= 1)</td>
+</tr>
+<tr>
+<td>Resto da divisão</td>
+<td class="text-center">%</td>
+<td class="text-center">x % y</td>
+<td class="text-center"> 5 % 3    (= 2)</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Em relação ao Quadro 2.6, duas considerações são importantes: a primeira é sobre o operador da divisão: repare que no exemplo numérico, 5 / 3 deu resultado 1 e não 1.666..., mas por que isso ocorreu? A divisão de dois números inteiros é um valor inteiro, caso os valores numéricos fossem 5.0 / 3 ou 5 / 3.0 ou, ainda, 5.0 / 3.0, aí sim a resposta seria o valor 1.666..., pois o numerador ou o denominador é número em ponto flutuante. Outra consideração importante refere-se ao operador resto da divisão. Nesse operador, tanto o numerador quanto o denominador e o resultado devem ser números inteiros. <br/></p>
+<p class="mb-3">As regras de precedência de operadores em Java funcionam da seguinte forma:<br/></p>
+<ul>
+<li class="mb-3">A multiplicação, a divisão e o resto são avaliados primeiro e possuem o mesmo nível de precedência. <br/></li>
+<li class="mb-3">A soma e a subtração são avaliadas em seguida e possuem o mesmo nível de precedência.<br/></li>
+<li class="mb-3">Caso exista mais de um operador de mesmo nível, então, as expressões serão agrupadas da esquerda para a direita.<br/></li>
+<li class="mb-3">Os parênteses podem ser empregados para se alterar a ordem de precedência dos operadores aritméticos.<br/></li>
+</ul>
+<h4 class="text-uppercase mb-3 marcador mt-80">Operadores relacionais<br/></h4>
+<p class="mb-3">Agora, quando aos operadores relacionais, os principais presentes na linguagem Java são: igualdade (==), diferente (!=), maior que (&gt;), maior ou igual a (&gt;=), menor que (&lt;) e menor ou igual a (&lt;=). O funcionamento desses operadores é igual na linguagem C. Todos eles necessitam de dois operandos de qualquer tipo e retornam um dado do tipo lógico (booleano). O Quadro 2.7 sintetiza algumas informações sobre os operadores relacionais.</p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.7 | Síntese dos operadores relacionais em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome Operador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Símbolo</strong><br/></th>
+<th class="text-center"><strong>Exemplo em Java</strong></th>
+<th class="text-center"><strong>Exemplo Numérico</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Igualdade</td>
+<td class="text-center">==</td>
+<td class="text-center">x == y</td>
+<td class="text-center">  5 == 3     (falso)</td>
+</tr>
+<tr>
+<td>Diferente</td>
+<td class="text-center">!=</td>
+<td class="text-center">x != y</td>
+<td class="text-center">5 != 3    (verdade)</td>
+</tr>
+<tr>
+<td>Maior que</td>
+<td class="text-center">&gt;</td>
+<td class="text-center">x &gt; y</td>
+<td class="text-center">5 &gt; 3     (verdade)</td>
+</tr>
+<tr>
+<td>Maior ou igual a</td>
+<td class="text-center">&gt;=</td>
+<td class="text-center">x &gt;= y</td>
+<td class="text-center">5 &gt;= 3    (verdade)</td>
+</tr>
+<tr>
+<td>Menor que</td>
+<td class="text-center">&lt;</td>
+<td class="text-center">x &lt; y</td>
+<td class="text-center">  5 &lt; 3      (falso)</td>
+</tr>
+<tr>
+<td>Menor ou igual a</td>
+<td class="text-center">&lt;=</td>
+<td class="text-center">x &lt;= y</td>
+<td class="text-center">  5 &lt;= 3     (falso)</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">As regras de precedência de operadores relacionais em Java são da seguinte forma:</p>
+<ul>
+<li class="mb-3">Os operadores (&gt;, &gt;=, &lt;, &lt;=) são avaliados primeiro e possuem o mesmo nível de precedência.<br/></li>
+<li class="mb-3">Os operadores (==, !=) são avaliados em seguida e possuem o mesmo nível de precedência. <br/></li>
+<li class="mb-3">Caso exista mais de um operador de mesmo nível, então, as expressões serão agrupadas da esquerda para a direita.<br/></li>
+<li class="mb-3">Os parênteses podem ser empregados para se alterar a ordem de precedência dos operadores relacionais.<br/></li>
+</ul>
+<h4 class="text-uppercase mb-3 marcador mt-80">Operadores de atribuição<br/></h4>
+<p class="text-left mb-3">Assim como a linguagem C, a linguagem Java também possui operadores de atribuição compostos, e os principais operadores de atribuição são: +=, -=, *=, /=, %=. O Quadro 2.8 sintetiza algumas informações sobre os operadores de atribuição compostos.</p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.8 | Síntese dos operadores de atribuição compostos em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome do Operador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Símbolo</strong><br/></th>
+<th class="text-center"><strong>Exemplo Encurtado</strong></th>
+<th class="text-center"><strong>Significado Exemplo</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Atribuição de adição</td>
+<td class="text-center">+=</td>
+<td class="text-center">x += 3</td>
+<td class="text-center">x = x + 3</td>
+</tr>
+<tr>
+<td>Atribuição de subtração</td>
+<td class="text-center">-=</td>
+<td class="text-center">x -= 3</td>
+<td class="text-center">x = x - 3</td>
+</tr>
+<tr>
+<td>Atribuição de multiplicação</td>
+<td class="text-center">*=</td>
+<td class="text-center">x *= 3</td>
+<td class="text-center">x = x * 3</td>
+</tr>
+<tr>
+<td>Atribuição de divisão</td>
+<td class="text-center">/=</td>
+<td class="text-center">x /= 3</td>
+<td class="text-center">x = x / 3</td>
+</tr>
+<tr>
+<td>Atribuição de resto</td>
+<td class="text-center">%=</td>
+<td class="text-center">x %= 3</td>
+<td class="text-center">x = x % 3</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<h4 class="text-uppercase mb-3 marcador mt-80">Operador de incremento e decremento <br/></h4>
+<p class="mb-3">Outro operador muito importante em Java é o operador de incremento e decremento que está sintetizado no Quadro 2.9. Esse é um operador unário, pois tem somente um operando.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.9 | Síntese dos operadores de incremento e decremento em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome Operador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Símbolo</strong><br/></th>
+<th class="text-center"><strong>Exemplo em Java</strong></th>
+<th class="text-center"><strong>Explicação do Exemplo</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Pré-incremento</td>
+<td class="text-center">++</td>
+<td class="text-center">++x</td>
+<td class="text-center">Incrementa x em 1 e, então, utiliza x na expressão atual.</td>
+</tr>
+<tr>
+<td>Pós-incremento</td>
+<td class="text-center">++</td>
+<td class="text-center">x++</td>
+<td class="text-center">Utiliza x na expressão atual e, então, incrementa x em 1.</td>
+</tr>
+<tr>
+<td>Pré-decremento</td>
+<td class="text-center">--</td>
+<td class="text-center">--x</td>
+<td class="text-center">Decrementa x em 1 e, então, utiliza x na expressão atual.</td>
+</tr>
+<tr>
+<td>Pós-decremento</td>
+<td class="text-center">--</td>
+<td class="text-center">x--</td>
+<td class="text-center">Utiliza x na expressão atual e, então, decrementa x em 1.</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<h4 class="text-uppercase mb-3 marcador mt-80">Operadores lógicos <br/></h4>
+<p class="mb-3">Os principais operadores lógicos presentes em Java são: E lógico (&amp;&amp;), Ou Lógico (||), negação lógica (!). Os operadores E lógico e Ou lógico são operadores binários, já o operador negação lógico é um operador binário. <br/></p>
+<p class="mb-3">O Quadro 2.10 sintetiza os operadores lógicos presentes em Java.<br/></p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.10 | Síntese dos operadores lógicos em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome Operador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Símbolo</strong><br/></th>
+<th class="text-center"><strong>Exemplo em Java</strong></th>
+<th class="text-center"><strong>Exemplo com Valores</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>E Lógico</td>
+<td class="text-center">&amp;&amp;</td>
+<td class="text-center">exp1 &amp;&amp; exp2</td>
+<td class="text-center"><span class="txt-blue">true</span> &amp;&amp; <span class="txt-blue">false</span>     (falso)</td>
+</tr>
+<tr>
+<td>Ou Lógico</td>
+<td class="text-center">||</td>
+<td class="text-center">exp1 || exp2</td>
+<td class="text-center"><span class="txt-blue">true</span> || <span class="txt-blue">false</span>       (verdade)</td>
+</tr>
+<tr>
+<td>Negação Lógico</td>
+<td class="text-center">!</td>
+<td class="text-center">!exp</td>
+<td class="text-center">!<span class="txt-blue">true</span>            (falso) </td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Os operadores lógicos em Java são avaliados conforme as tabelas verdade da lógica matemática. Java faz uma avaliação dos valores lógicos chamada <strong>curto-circuito</strong>, em que a avaliação é interrompida assim que o valor global da expressão puder ser inferido. Por exemplo, caso o operador seja o E lógico e a primeira expressão seja falsa, então, o valor falso será retornado, pois, falso E, qualquer coisa é falsa; caso o operador seja o Ou lógico e a primeira expressão seja verdadeira, então, o valor verdadeiro será retornado, pois, verdadeiro Ou, qualquer coisa é verdadeira.<br/></p>
+<p class="mb-3">As regras de precedência de operadores lógicos em Java são da seguinte forma:<br/></p>
+<ul>
+<li class="mb-3">O operador de negação lógica (!) é avaliado primeiro. A associatividade é feita da direita para a esquerda.<br/></li>
+<li class="mb-3">O operador E lógico (&amp;&amp;) é avaliado em seguida. A associatividade é feita da esquerda para a direita. <br/></li>
+<li class="mb-3">O operador Ou lógico (||) é avaliado por último. A associatividade é feita da esquerda para a direita.<br/></li>
+<li class="mb-3">Os parênteses podem ser empregados para se alterar a ordem de precedência dos operadores lógicos.<br/></li>
+</ul>
+<h3 class="text-uppercase mb-3 marcador mt-80">Tipos de dados <br/></h3>
+<p class="mb-3">Outro ponto importante a ser abordado: os tipos de dados suportados. Java suporta dados do tipo <strong>primitivo </strong>e <strong>derivado</strong>. </p>
+<div class="row my-5">
+<div class="col d-flex">
+<div class="card d-flex justify-content-center align-items-center align-content-center w-100">
+<div class="card-body bg-light w-100">
+<p class="card-text">Os tipos primitivos podem ser do tipo lógico, tipo carácter ou tipo numérico, que pode ser separado em dois grupos: o tipo inteiro e o tipo real (ou ponto flutuante). Eles podem ser classificados em: <em>boolean</em>, <em>char</em>, <em>byte</em>, <em>short</em>, <em>int</em>, <em>long</em>, <em>float </em>e <em>double.</em><br/></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row my-5">
+<div class="col d-flex">
+<div class="card d-flex justify-content-center align-items-center align-content-center w-100">
+<div class="card-body bg-light w-100">
+<p class="card-text">Os tipos de dados derivados podem ser de qualquer classe, como, por exemplo, String, Integer, Double, Array e Object. <br/></p>
+</div>
+</div>
+</div>
+</div>
+<p class="mb-3">A Figura 2.5 mostra a organização dos tipos de dados em Java.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.5 | Organização dos tipos de dados em Java</figcaption>
+<div class="col-xl-10 p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/Figura%202.5.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Atenção</strong><br/></h6>
+<p class="text-left">É importante lembrar que, em Java, os tipos primitivos são passados para métodos por meio da passagem por valor ou cópia; já os tipos derivados são passados por meio da passagem por referência. Em Java, não se costuma falar em ponteiros, tal como na linguagem C, no entanto, vale lembrar que todas as variáveis do tipo derivado são, na verdade, referências (ponteiros) para uma instância da classe.</p>
+</div>
+<p class="mb-3">O Quadro 2.11 apresenta uma síntese com algumas informações dos tipos primitivos em Java. Neste quadro, foram destacados a quantidade de bits e bytes utilizada na representação dos tipos primitivos e os intervalos de valores dos dados. </p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.11 | Síntese dos tipos primitivos em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Nome do Tipo</strong><br/></th>
+<th class='text-center scope="col"'><strong>Tamanho em bits</strong><br/></th>
+<th class="text-center"><strong>Tamanho em bytes</strong></th>
+<th class="text-center"><strong>Intervalo </strong><br/><strong>de Valores</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><span class="code-blue">boolean</span></td>
+<td class="text-center">1</td>
+<td class="text-center">-</td>
+<td><span class="code-blue">true</span> ou <span class="code-blue">false</span></td>
+</tr>
+<tr>
+<td><span class="code-blue">char</span></td>
+<td class="text-center">16</td>
+<td class="text-center">2</td>
+<td>0 até 65535   ou   <span class="code-yellow">'\u0000'</span> até <span class="code-yellow">'\uffff'</span></td>
+</tr>
+<tr>
+<td><span class="code-blue">byte</span></td>
+<td class="text-center">8</td>
+<td class="text-center">1</td>
+<td>-128 até 127   ou   -2<sup>7</sup> até 2<sup>7</sup>-1</td>
+</tr>
+<tr>
+<td><span class="code-blue">short</span></td>
+<td class="text-center">16</td>
+<td class="text-center">2</td>
+<td>-32.768 até 32.767   ou  -2<sup>15</sup> até 2<sup>15</sup>-1</td>
+</tr>
+<tr>
+<td><span class="code-blue">int</span></td>
+<td class="text-center">32</td>
+<td class="text-center">4</td>
+<td>-2.147.483.648 até 2.147.483.647 ou   -2<sup>31</sup> até 2<sup>31</sup>-1</td>
+</tr>
+<tr>
+<td><span class="code-blue">long</span></td>
+<td class="text-center">64</td>
+<td class="text-center">8</td>
+<td>-2<sup>63</sup> até 2<sup>63</sup> -1</td>
+</tr>
+<tr>
+<td><span class="code-blue">float</span></td>
+<td class="text-center">32</td>
+<td class="text-center">4</td>
+<td>1.4e-45 até 3.4e+38</td>
+</tr>
+<tr>
+<td><span class="code-blue">double</span></td>
+<td class="text-center">64</td>
+<td class="text-center">8</td>
+<td>4.9e-324 até 1.8e+308 </td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Dica</strong><br/></h6>
+<p class="text-left">Ter o hábito de consultar as classes da biblioteca padrão do Java é uma boa prática de programação. Essa consulta ajuda você a ter domínio de quais métodos construtores e constantes estão disponíveis para utilização e qual a sua assinatura. Acima, falamos dos tipos primitivos de dados presentes em Java, e você sabia que Java possui um tipo derivado equivalente a cada um dos tipos primitivos de dados? Esses tipos derivados são: Boolean, Character, Byte, Short, Integer, Long, Float e Double. Tendo isso em mente que tal dar uma olhada nessas classes? </p>
+<div class="row mb-5">
+<div class="col d-flex">
+<div class="card d-flex justify-content-center align-items-center align-content-center w-100">
+<div class="card-body bg-light w-100">
+<p class="card-text"><strong>Observação:</strong> uma forma de consultá-las é acessando cada uma diretamente pela IDE. Não é necessário ler toda a classe, o importante é ter uma visão geral e consultá-la sempre que necessário.<br/></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Estruturas de Repetição<br/></h3>
+<p class="mb-3">Assim como as estruturas de decisão, um outro assunto de extrema importância são as estruturas de repetição. A linguagem Java possui três estruturas de repetição principais, que são: <em>for</em>, while e <em>do-while</em>. A Figura 2.6 mostra de forma gráfica como ocorre o fluxo de execução em cada um desses comandos. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.6 | Diferentes fluxos de execução para os comandos de repetição</figcaption>
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 text-center p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/Figura%202.6.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Na Figura 2.6, podemos perceber que esses três comandos criam laços que se repetem enquanto uma determinada condição (D1) é satisfeita, e assim que essa condição se torna falsa, o laço de repetição é interrompido. Ainda na Figura 2.6, V1 indica a inicialização de uma variável, C1 e C2 indicam comandos a serem executados e I1 indica o incremento de uma variável.</p>
+<h4 class="text-uppercase mb-3 marcador mt-80 page-break">Comandos <em>for</em>, <em>while </em>e <em>do-while </em><br/></h4>
+<p class="mb-3">As estruturas dos comandos de repetição em nível de código podem ser sintetizadas conforme o Quadro 2.12 a seguir.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.12 | Síntese dos comandos de repetição <em>for</em>, <em>while </em>e <em>do-while</em></span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Comando: for</strong><br/></th>
+<th class='text-center scope="col"'><strong>Comando: while</strong><br/></th>
+<th class="text-center"><strong>Comando: do-while</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="code-blue">for</code> (Inicializ; ExpLóg; Inc){<br/><br/>  SeqDeComandosA;<br/><br/>}<br/></code></td>
+<td><code><code class="code-blue">while</code> (ExpLógicaIni){<br/><br/>  SeqDeComandosA;<br/><br/>}<br/></code></td>
+<td><code><code class="code-blue">do</code> {<br/><br/>  SeqDeComandosA;<br/><br/>} <code class="code-blue">while</code> (ExpLógicaFim); <br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">O comando <em>for </em>possui quatro partes principais, que são: inicialização de alguma variável de controle (indicada por <em>Inicializ</em>), avaliação de alguma expressão lógica (indicada por <em>ExpLóg</em>), incremento de alguma variável (indicado por <em>Inc</em>) e, por fim, a sequência de comandos que gostaríamos de executar (indicada por SeqDeComandosA). O comando <em>while </em>possui duas partes principais, que são: avaliação de uma expressão lógica no início e, em seguida, a sequência de comandos a serem executados. O comando <em>do-while</em> possui duas partes principais, que são: a sequência de comandos que serão executados e, somente no final, a avaliação da expressão lógica. Assim, a principal diferença do comando <em>while </em>para o <em>do-while</em> é que, no segundo, temos a garantia de que a sequência de comandos será executada pelo menos uma vez. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Assimile</strong><br/></h6>
+<p class="text-left">As estruturas de repetição estudadas acima são chamadas de estruturas iterativas. A linguagem Java suporta também estruturas recursivas que garantem também a repetição de alguma tarefa. A recursão em Java é feita assim como na linguagem C. Lembre-se de que todo código recursivo pode ser transformado em um código iterativo. O Quado 2.13 apresenta dois códigos para o cálculo do fatorial de um número inteiro n. </p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.13 | Exemplos de códigos iterativo e recursivo para cálculo do fatorial</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Exemplo fatorial iterativo</strong><br/></th>
+<th class='text-center scope="col"'><strong>Exemplo fatorial recursivo</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="code-blue">public static long</code> fat(<code class="code-blue">int</code> n){<br/><br/> <code class="code-blue">long</code> fatorial = 1;<br/><br/> <code class="code-blue">for</code> (<code class="code-blue">int</code> i=1; i &lt;= n; i++) {<br/><br/>  fatorial *= i;<br/><br/> }<br/><br/> <code class="code-blue">return</code> fatorial;<br/><br/>}<br/></code></td>
+<td><code><code class="code-blue">public static long</code> fat(<code class="code-blue">int</code> n){<br/><br/> <code class="code-blue">if</code> (n == 0 || n == 1) {<br/><br/>  <code class="code-blue">return</code> 1;<br/><br/> }<br/><br/> <code class="code-blue">return</code> n * fat(n - 1);<br/><br/>} <br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="text-left">Os códigos acima foram declarados como <em>static</em>, pois o fatorial não depende da classe em si. O resultado é um número inteiro do tipo <em>long </em>para se garantir o retorno do fatorial com 64 bits de precisão. Com esse tipo de dado, os valores de fatoriais de 0 a 20 serão calculados corretamente, pois cabem dentro da representação <em>long</em>. Para valores de n maiores que 20, ocorrem <em>overflow </em>e, assim, os resultados começam a não corresponder ao fatorial. <br/></p>
+<p class="text-left">Faça a implementação dessas funções e execute diversos testes; avalie também valores de n maiores que 20 para entender mais sobre o <em>overflow</em>. Dica: veja o sinal do número retornado. <br/></p>
+<p class="text-left">Caro aluno, acesse o link presente na seção Referências com o tema JavaTutor (Iterativo e Fatorial) e execute o código acompanhando a sua execução, linha a linha, para entendê-lo melhor.<br/></p>
+</div>
+<h4 class="text-uppercase mb-3 marcador mt-80">Comandos <em>break </em>e <em>continue </em><br/></h4>
+<p class="mb-3">O programador pode querer interromper todo o fluxo de um laço de repetição a qualquer momento ou, em vez disso, desejar interromper parte de um trecho de código dentro de um loop e ir diretamente para a estrutura de decisão; para tanto, a palavra reservada <em>break </em>e <em>continue </em>deverão ser utilizadas, respectivamente. Esses comandos <em>break </em>e <em>continue </em>funcionam de forma igual, tanto na linguagem Java quanto na linguagem C.<br/></p>
+<p class="mb-3 page-break">Caro estudante, nesta seção, você estudou os conteúdos relacionados às estruturas de decisão e de repetição, aos comandos <em>if</em>, <em>if-else</em>, ao operador ternário e <em>switch</em>, aos operadores aritméticos, relacionais e lógicos e, por fim, aos comandos <em>for</em>, <em>while </em>e <em>do-while</em>. Foi mostrado diversos exemplos sobre esses conceitos e como esses comandos são implementados em Java. Na seção seguinte, estudaremos melhor como funcionam os modificadores de acesso, o encapsulamento, a herança e o polimorfismo, avançando ainda mais no entendimento da linguagem Java.<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Referências<br/></h4>
+<p class="mb-3">ARANTES, J. da S. <strong>Github</strong>. 2020. Disponível em: <a href="https://github.com/jesimar/Livro-POO-Java/" target="_blank">https://bit.ly/3eiUMcF</a>. Acesso em: 20 mai. 2020.<br/></p>
+<p class="mb-3">CAELUM. <strong>Java e orientação a objetos:</strong> curso FJ-11. [S.l.]: Caleum, [s.d.]. Disponível em: <a href="https://www.caelum.com.br/apostila-java-orientacao-objetos/" target="_blank">https://bit.ly/3iJX34d</a>. Acesso em: 17 mai. 2020. <br/></p>
+<p class="mb-3">CURSO de Java #01 - História do Java - Gustavo Guanabara. [<em>S.l.</em>: s.n.], 2015. 1 vídeo (36 min). Publicado pelo canal Curso em Vídeo. Disponível em: <a href="https://www.youtube.com/watch?v=sTX0UEplF54&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank">https://bit.ly/2YvIJDZ</a>. Acesso em: 22 jul. 2020. <br/></p>
+<p class="mb-3">DEITEL, P. J.; DEITEL, H. M. <strong>Java: como programar</strong>. 10. ed. São Paulo: Pearson Education, 2016.<br/></p>
+<p class="mb-3">GITHUB. 2020. Disponível em: <a href="https://github.com/" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2ZSr1ud</span></a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">LOIANE GRONER. <strong>Curso de Java 18:</strong> comandos break e continue. 2015. Disponível em: <a href="https://www.youtube.com/watch?v=rU-DCmwAtXE" target="_blank">https://bit.ly/32lp8Yo</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Boolean</strong>. [s.d.] Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Boolean.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/31rt76v</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Byte</strong>. [s.d.] Disponível em:  <a href="docs.oracle.com/javase/10/docs/api/java/lang/Byte.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/3jfJDwu</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Character</strong>. [s.d.] Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Character.html" target="_blank">https://bit.ly/2EfvEIb</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Double</strong>. [s.d.]. Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Double.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/3jaYV5u</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Float</strong>.<strong> </strong>[s.d.]. Disponível em: <a href="#"><span style="text-decoration: underline;">https://bit.ly/3gweZgm</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Integer</strong>. [s.d.]. Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Integer.html" target="_blank">https://bit.ly/3lhp4BC</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Long</strong>. [s.d.]. Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Long.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/34sFJw1</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Class Short</strong>. [s.d.]. Disponível em: <a href="docs.oracle.com/javase/10/docs/api/java/lang/Short.html" target="_blank">https://bit.ly/2EufpGO</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">PYTHON TUTOR. <strong>Java tutor - visualize Java code execution to learn Java online</strong>. [s.d.]. Disponível em: <a href="http://pythontutor.com/java.html#mode=display" target="_blank">https://bit.ly/32s8S81</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3 page-break">SIERRA, K.; BATES, B. <strong>Use a cabeça! Java</strong>. 2. ed. Rio de Janeiro: Alta Books, 2005.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

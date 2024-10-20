@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary">Atributos e métodos estáticos, construtores, sobrecarga e sobreposição de métodos</h2>
+<p class="text-left texto-destaque">Esses conceitos auxiliam de forma direta, na modelagem de problemas do mundo real, trazendo uma grande flexibilidade na manipulação de classes e objetos.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/npf_u2s1_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/npf_u2s1.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Convite ao estudo<br/></h4>
+<p class="mb-3 captular">Prezado estudante, bem-vindo à segunda unidade do livro <em>Linguagem Orientada a Objetos</em>. Nesta unidade, estudaremos as principais estruturas do desenvolvimento Orientado a Objetos (OO), bem como estabeleceremos as ideias por trás de atributos e métodos estáticos, construtores, sobrecarga e sobreposição de métodos, assim, após a leitura, você será capaz de identificar quando declarar atributo e método de forma estática. Além disso, mostraremos como fazer a criação de diversos construtores em uma única classe e as formas como esses construtores são invocados, como se criar a sobrecarga e a sobreposição de métodos e uma comparação entre esses conceitos. As estruturas de controle, como tomada de decisão e repetição, também serão estudadas, assim como as teorias por trás da herança, polimorfismo e encapsulamento. Entenderemos, por fim, o quanto esses conceitos auxiliam, de forma direta, na reutilização de código e o tornam mais organizado. <br/></p>
+<p class="mb-3 page-break">Após a leitura desta unidade, espera-se que o leitor seja capaz de criar os seus primeiros programas Java dentro de um Ambiente de Desenvolvimento Integrado (IDE) poderoso, sendo que um bom IDE provê um local de trabalho em que os aspectos de produtividade são acelerados. Espera-se, também, que o leitor comece a se familiarizar com as plataformas de compartilhamento de código, como o GitHub, e este livro apresenta uma série de exemplos práticos que auxiliam na compreensão da teoria. A capacidade de reflexão, modelagem e abstração será treinada ao longo do estudo.<br/></p>
+<p class="mb-3">Esta unidade o ajudará na compreensão da OO dentro da linguagem Java a partir das seguintes seções: a Seção 2.1 apresentará os conceitos por trás dos atributos e métodos estáticos, métodos construtores, sobrecarga e sobreposição de métodos. A Seção 2.2 trará as estruturas de controle como estruturas de decisão e repetição, bem como apresentará os operadores aritméticos, lógicos e relacionais. A Seção 2.3, por fim, mostrará as ideias relacionadas à reutilização de código, como encapsulamento, herança e polimorfismo em programação orientada a objetos.<br/></p>
+<p class="mb-3">Sendo esta uma unidade prática, convido você a implementar as atividades aqui propostas. Lembre-se: a prática leva à perfeição. <br/></p>
+<p class="mb-3">Bons estudos!<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Praticar para Aprender <br/></h4>
+<p class="mb-3">Caro estudante, bem-vindo à primeira seção da segunda unidade dos estudos sobre linguagem orientada a objetos. Qual desenvolvedor nunca se perguntou como construir uma aplicação que tenha grande flexibilidade na invocação de atributos, construtores e métodos? Pois bem, a ideia-chave aqui é a modelagem a partir dos conceitos por trás da Orientação a Objetos (OO). Nesta seção, você terá a oportunidade de aprender os conceitos e as ideias sobre atributos e métodos estáticos, construtores, sobrecarga e sobreposição de métodos. Esses conceitos, por sua vez, o auxiliarão, de forma direta, na modelagem de problemas do mundo real, trazendo uma grande flexibilidade na manipulação de classes e objetos.<br/></p>
+<p class="mb-3">Como forma de contextualizar sua aprendizagem, tenha em mente a <em>startup </em>pela qual você foi contratado. O seu chefe deseja dar continuidade à modelagem do robô que você iniciou na primeira seção da primeira unidade; ele acredita que a modelagem desenvolvida pode ser melhorada ao se incorporar novos recursos que embasem, cada vez mais, o simulador de robô que você deve construir. Assim, após o seu chefe revisar todo o código que você desenvolveu, ele pediu a você que criasse quatro novos construtores para a classe robô, bem como definisse alguns atributos como constantes, argumentando que isso impedirá eventuais erros no código. <br/></p>
+<p class="mb-3 page-break">Quanto ao método <em>move </em>que você criou, ele gostou muito, por isso, quer que você faça a sua sobrecarga, criando novas opções para que seu robô se desloque no cenário. O seu chefe percebeu que você colocou o ponto de entrada da aplicação (método <em>main</em>) dentro da classe robô, no entanto, ele não gostou disso e quer que você o coloque em outra classe. Além disso, ele também percebeu que você está programando a sua aplicação na nuvem (internet), utilizando compilador web, porém, sabendo que a sua aplicação crescerá muito ao longo do tempo, pediu para que instalasse algum IDE em seu computador local, justificando que o IDE instalado localmente lhe dará um suporte melhor durante o seu desenvolvimento. <br/></p>
+<p class="mb-3">Diante do desafio que lhe foi apresentado, como você criará esses construtores para o seu robô? Como fará para tornar alguns de seus atributos constantes? Como irá fazer a sobrecarga do método move? O que é um construtor? O que é sobrecarga de método? Como você colocará a aplicação principal em outra classe? Qual IDE você irá instalar? <br/></p>
+<p class="mb-3">Esta seção o auxiliará nas respostas de tais perguntas.<br/></p>
+<p class="mb-3">Muito bem, agora que você foi apresentado à sua nova situação-problema, estude esta seção e compreenda como a OO pode auxiliá-lo na modelagem de diferentes construtores, constantes e sobrecarga de métodos. Esses conceitos serão fundamentais na OO e trarão uma maior sofisticação à construção do simulador de robô que você deve fazer. E aí, vamos juntos compreender esses conceitos para resolver esse desafio?<br/></p>
+<p class="mb-3">Bom estudo!<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">CONCEITO-CHAVE<br/></h4>
+<p class="mb-3">Uma Linguagem Orientada a Objetos (OO) utiliza diversas abstrações para representar modelos do mundo real ou imaginário. Na unidade anterior, aprendemos como se dá a construção de aplicações básicas em Java a partir do site <em>jdoodle</em>, bem como a de animações tridimensionais a partir da ferramenta Alice e de jogos bidimensionais com a ferramenta <em>Greenfoot</em>. As ferramentas Alice e <em>Greenfoot</em>, na verdade, são mais do que ferramentas, são Ambientes de Desenvolvimento Integrado (IDE).<br/></p>
+<p class="mb-3">O ambiente de programação online jdoodle atende bem às necessidades do programador quanto à construção de um programa ou sistema simples e pequeno. Imagine, agora, que desejamos desenvolver um sistema grande com diversas classes e com muitas linhas de código. Apesar de ser possível desenvolvê-lo por meio do jdoodle, ele não é tão adequado, sendo necessária a utilização de um IDE mais poderoso. <br/></p>
+<p class="mb-3 page-break">IDE é um ambiente que auxilia muito a vida do programador, e um bom ambiente de desenvolvimento colabora com diversos recursos, como: <br/></p>
+<ul>
+<li class="mb-3"><strong>Autocompletar:</strong> todos os possíveis comandos são apresentados conforme você digita.<br/></li>
+<li class="mb-3"><strong>Realce de sintaxe: </strong>o código fica colorido, ressaltando as variáveis, os métodos, a classe, as palavras reservadas, entre outros.<br/></li>
+<li class="mb-3"><strong>Indicativos de erros: </strong>as linhas com erros léxicos e sintáticos são destacadas.<br/></li>
+<li class="mb-3"><strong>Depuração de código (<em>debug</em>): </strong>auxilia na verificação do correto funcionamento de algum programa, reduzindo defeitos. <br/></li>
+<li class="mb-3"><strong>Visualização da documentação (javadoc) dos métodos e de classes: </strong>podemos consultar, de forma rápida, a descrição de como se utilizar o programa.<br/></li>
+<li class="mb-3"><strong>Refatoração de código:</strong> podemos alterar nomes de variáveis, métodos e classes de forma rápida e automatizada.<br/></li>
+<li class="mb-3"><strong>Geração de executável: </strong>um arquivo .jar é criado e pode ser executado em qualquer computador que tenha a <em>Java Virtual Machine</em> (JVM) instalada.<br/></li>
+<li class="mb-3"><strong>Testes de software:</strong> podemos criar testes automatizados de classes e métodos de forma a fazer a verificação e validação dos mesmos.<br/></li>
+</ul>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Dica</strong><br/></h6>
+<p class="text-left">Pesquise mais sobre os IDEs Eclipse, IntelliJ IDEA e NetBeans e selecione e instale o IDE que mais se adequa ao seu perfil. Todos são igualmente bons.</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Atributos e métodos estáticos<br/></h3>
+<p class="mb-3">Imagine que você gostaria de modelar uma classe chamada <em>Matematica </em>para resolver problemas relacionados a essa área do conhecimento. Nessa classe, você gostaria que houvesse as seguintes constantes: número pi (PI), número de Euler (E) e número de ouro (PHI). A constante PI é famosa na matemática e representa a razão entre o comprimento da circunferência e o seu diâmetro; já a constante E representa a base dos logaritmos naturais; e a constante PHI representa uma proporção encontrada em diversas aplicações na natureza. Além disso, você também gostaria que houvesse dois métodos: um para a soma e outro para a multiplicação de inteiros, logo, decide implementar o Código 2.1. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.1 | Versão inicial do programa em Java que modela a classe <em>Matematica</em></figcaption><pre><code class="java hljs">public class Matematica {
+    double PI = 3.1415926535;
+    double E = 2.7182818284;
+    double PHI = 1.6180339887;
+    int soma(int a, int b){
+        return a + b;
+    }
+    int mult(int a, int b){
+        return a * b;
+    }
+    public static void main(String[] args) {
+        Matematica mat = new Matematica();
+        System.out.println("Numero Pi: " + mat.PI);
+        System.out.println("Numero E: " + mat.E);
+        System.out.println("Numero Phi: " + mat. PHI);
+        System.out.println("Soma: " + mat.soma(5, 3));
+        System.out.println("Mult: " + mat.mult(5, 3));
+    }
+} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">As linhas 2, 3 e 4, do Código 2.1, possuem a declaração das constantes matemáticas mencionadas acima; já as linhas 5 a 10 possuem a declaração dos métodos de soma e de multiplicação; por fim, nas linhas de 11 a 18, temos a função <em>main</em>, em que fizemos a utilização da classe <em>Matematica</em>. Você deve ter reparado que tivemos que criar um objeto da classe <em>Matematica</em> para a invocação das constantes (PI, E e PHI) e dos métodos <em>soma </em>e <em>mult</em>.</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Lembre-se</strong><br/></h6>
+<p class="text-left">Os códigos aqui apresentados devem ser implementados em algum IDE que você escolheu e salvou utilizando-se a extensão .java; já o nome do arquivo deve ser o mesmo nome da classe.</p>
+</div>
+<p class="mb-3">A forma como modelamos a classe <em>Matematica </em>não ficou boa, pois, toda vez que tivermos de invocar uma constante ou método dessa classe, teremos de criar um objeto. Repare que essas constantes e os métodos devem ter o mesmo comportamento, independentemente da instância de que fazem parte (eles não manipulam atributos específicos da classe). A melhor forma, neste caso, de implementação das constantes e dos métodos é declará-los como estáticos, evitando-se a construção de um objeto para a invocação de constantes e métodos. Considere o Código 2.2 abaixo.</p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.2 | Modelagem de atributos e métodos de forma estática na classe <em>Matematica</em><br/></figcaption><pre><code class="java hljs">public class Matematica {
+    static final double PI = 3.1415926535;
+    static final double E = 2.7182818284;
+    static final double PHI = 1.6180339887;
+    static int soma(int a, int b){
+        return a + b;
+    }
+    static int mult(int a, int b){
+        return a * b;
+    }
+    public static void main(String[] args) {
+        System.out.println("Numero Pi: " + Matematica.PI);
+        System.out.println("Numero E: " + Matematica.E);
+        System.out.println("Numero Phi: " + Matematica. PHI);
+        System.out.println("Soma: " + Matematica.soma(5, 3));
+        System.out.println("Mult: " + Matematica.mult(5, 3));
+    }
+} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Nas linhas 2 a 4 foi acrescentada a palavra reservada <em>static</em>, que modifica o comportamento das constantes PI, E e PHI. Devido a essa modificação, as constantes são, agora, acessadas sem que se tenha que declarar um objeto da classe <em>Matematica</em>, escrevendo apenas <em>Matematica.PI</em>, <em>Matematica.E</em> e <em>Matematica.PHI</em>, respectivamente. Repare também que, nas linhas 2 a 4, foi acrescentada a palavra reservada <em>final</em>, que transforma, de fato, os atributos PI, E e PHI em constantes. Essa modificação é importante, uma vez que tais valores nunca deveriam ser alterados, evitando-se possíveis tentativas de mudanças. A palavra reservada <em>final </em>em Java tem algumas semelhanças com a palavra reservada <em>const </em>em C.</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Atenção</strong><br/></h6>
+<p class="text-left">A tentativa de atribuição de um valor a um atributo constante gera um erro de compilação. Lembre-se: um valor constante nunca pode ser modificado. Assim, o seguinte código gera um erro de compilação. </p><pre><code class="java hljs">final int ID = 1000;<br/>ID = 1001; //Erro. Atribuição não permitida. </code></pre>
+</div>
+<p class="mb-3 page-break">Ainda em relação ao Código 2.2, as linhas 5 a 10 redefiniram os métodos <em>soma </em>e <em>mult </em>como estáticos, tornando-os, assim, métodos da classe. Dessa maneira, a forma de acesso a esses métodos foi alterada e não é mais necessária a criação de objetos. Nas linhas 15 e 16, a chamada é feita com o nome da própria classe, como <em>Matematica.soma(...)</em> e <em>Matematica.mult(...)</em>; os métodos estáticos são também designados de métodos da classe ou, simplesmente, funções, e a principal diferença entre métodos e funções está relacionada a quem faz a invocação: se invocado por um objeto (instância da classe), trata-se de método, se invocado pelo nome da Classe, então, é uma função (método estático). Talvez, o exemplo mais importante de classe composta por apenas métodos estáticos seja a classe <em>Math </em>(veremos mais exemplos dessa classe adiante).</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Dicas</strong><br/></h6>
+<p class="text-left">A linguagem Java possui uma série de convenções de nomes de variáveis, constantes, métodos, classes, objetos e pacotes. Lembre-se: a linguagem Java é <em>case-sensitive</em>, ou seja, os nomes utilizados são sensíveis a letras maiúsculas e minúsculas. As variáveis são convencionalmente nomeadas com letras minúsculas (exceto quando começar com _ ou $), e caso sejam compostas por mais uma palavra, esta deverá começar com letra maiúscula, notação chamada de <em>lowerCamelCase</em>. Já as constantes são nomeadas com todas as letras maiúsculas, mas em caso de mais de uma palavra, estas deverão ser separadas por <em>underline</em>, notação designada por SCREAMING_SNAKE_CASE. <br/></p>
+<p class="text-left">Os métodos seguem o mesmo padrão de nomeação de variáveis (<em>lowerCamelCase</em>); já as classes são nomeadas com a primeira letra de cada palavra maiúscula e as demais minúsculas, notação chamada de <em>UpperCamelCase</em>. Os objetos, por sua vez, seguem o mesmo padrão de nomeação de variáveis (<em>lowerCamelCase</em>); já os pacotes devem possuir letras minúsculas, não sendo recomentada a utilização de caracteres especiais, mas, se necessário, fazer o uso do <em>underline</em>. Por exemplos, os seguintes nomes são adequados:<br/></p>
+<p class="text-left"><strong>Variáveis:</strong> i, _x, $y, maximo, nomeRobo, idadePessoa, areaQuadradoMaior.<br/></p>
+<p class="text-left"><strong>Constantes: </strong>PI, E, PHI, INDEX, ID_PESSOA, VALOR_CONST_ARRASTO.<br/></p>
+<p class="text-left"><strong>Métodos: </strong>soma, mult, convertString, calculaQuadrado, calculaMaiorValor.<br/></p>
+<p class="text-left"><strong>Classes:</strong> Robo, Animal, SimulacaoRobo, CadastraPessoaBancoDados.<br/></p>
+<p class="text-left"><strong>Objetos:</strong> meuRobo, bob, simRobo, cadastraPessoBD.<br/></p>
+<p class="text-left"><strong>Pacotes: </strong>src, util, view, window, resources, operadores, src_imgs.<br/></p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Métodos construtores <br/></h3>
+<p class="mb-3">O próximo assunto que iremos tratar diz respeito aos métodos construtores. Toda classe em Java possui um método construtor padrão que possui o mesmo nome da classe e não recebe nenhum argumento. O código 2.1, apesar de não ter sido escrito a classe <em>Matematica</em>, possui um construtor padrão da seguinte forma: </p><pre><code class="java hljs">public Matematica(){<br/>} 
+</code></pre>
+<p class="mb-3">Esse construtor sempre existirá de forma explícita (como mostrado acima) ou implícita (como no Código 2.1). É importante reparar que a declaração de um construtor deve sempre possuir o mesmo nome da classe; que não existe nenhum tipo de retorno, nem mesmo a palavra <em>void </em>pode ser especificada; e que alguns outros modificadores de acesso são possíveis, além do <em>public</em>, mas veremos isso nas seções seguintes. <br/></p>
+<p class="mb-3">A fim de que entenda melhor os métodos construtores, vamos criar uma nova classe em Java que modela a entidade <em>Triangulo</em>. O Código 2.3 nos mostra como podemos modelar essa classe, para isso, nas linhas 2 a 4 foram definidos três atributos que representam os lados do triângulo. Da linha 5 até a 9, temos o primeiro construtor, que recebe uma medida de lado de um triângulo e atribui esse valor a todos os lados. Como esse construtor possui parâmetro, o chamamos de construtor não padrão. Dessa forma, repare que esse construtor será chamado quando o nosso triângulo for isósceles, pois os três lados serão iguais. Da linha 10 até a 14, temos um segundo construtor, que recebe três argumentos, representando os lados a, b e c. As linhas 15 até 19 não serão explicadas por enquanto, apenas assuma que elas auxiliam na impressão da informação na tela. Por fim, temos o método <em>main</em>, que é o ponto de entrada da aplicação. Nele, temos a construção de dois objetos do tipo triângulo, em que o primeiro é do tipo isósceles (com lados iguais a 5) e o segundo do tipo escaleno (com lados iguais a 3, 25 e 26). Neste exemplo, criamos dois construtores, porém podemos ter quantos construtores quisermos em nossa aplicação.<br/></p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.3 | Modelagem da classe <em>Triangulo </em>com dois construtores<br/></figcaption><pre><code class="java hljs">public class Triangulo {
+    double ladoA;
+    double ladoB;
+    double ladoC;
+    public Triangulo(double lado) {
+        this.ladoA = lado;
+        this.ladoB = lado;
+        this.ladoC = lado;
+    }
+    public Triangulo(double a, double b, double c) {
+        this.ladoA = a;
+        this.ladoB = b;
+        this.ladoC = c;
+    }
+    @Override
+    public String toString() {
+        return String.format("a: %.2f\nb: %.2f\nc: %.2f", 
+                      this.ladoA, this.ladoB, this.ladoC);
+    }
+    public static void main(String[] args) {
+        Triangulo trianIsosceles = new Triangulo(5);
+        Triangulo trianEscaleno = new Triangulo(3, 25, 26);
+        System.out.println(trianIsosceles);
+        System.out.println(trianEscaleno);
+    }
+}
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Assimile</strong><br/></h6>
+<p class="text-left">Os construtores são sempre invocados utilizando-se a palavra reservada <em>new </em>seguida do nome da classe. O construtor, como o nome já sugere, constrói a classe inicializando-a de forma implícita ou explícita aos atributos dela, bem como aloca a quantidade de memória necessária para utilização do objeto. Caso seja especificado algum tipo de processamento, este pode ser feito dentro do construtor, apesar de não muito indicado. O retorno do operador <em>new </em>é uma referência para o objeto criado.</p>
+</div>
+<p class="mb-3">A Figura 2.1 sintetiza algumas das características dos métodos construtores. Conforme dito, os construtores são classificados em dois tipos: <strong>padrão </strong>e <strong>não padrão</strong>, podendo, também, ser classificados como <strong>implícitos </strong>e <strong>explícitos</strong>. Os construtores explícitos devem ser codificados, de fato; já os construtores não padrão têm que possuir algum tipo de argumento em sua assinatura. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Figura 2.1 | Organograma dos tipos de construtores presentes na linguagem Java</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A figura ilustra em formato de organograma a classificação dos construtores em Construtor Padrão e Construtor não-padrão. O construtor padrão pode ser implícito, quando não possui código e explícito, quando possui código, mas sem argumentos, exemplo: public Triangulo (), O construtor não-padrão é explícito, quando possui código e com argumentos. Exemplo: public Trinagulo (int a)." class="img-fluid mb-0" src="assets/img/Figura-2.1.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Atenção</strong><br/></h6>
+<p class="text-left">Uma observação importante sobre construtores é que, quando um construtor não padrão é declarado, automaticamente, o construtor padrão implícito deixa de existir. Assim, caso seja necessária a existência do construtor padrão, é imprescindível a sua declaração explícita.</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Sobrecarga e sobreposição de métodos<br/></h3>
+<p class="mb-5">Outro assunto muito importante dentro da orientação a objetos é a sobrecarga e sobreposição de métodos. </p>
+<div class="row mb-5">
+<div class="col d-flex">
+<div class="card d-flex justify-content-center align-items-center align-content-center w-100">
+<div class="card-body bg-light w-100">
+<p class="card-text">A sobrecarga caracteriza-se por haver mais de um método em uma mesma classe com o mesmo nome, no entanto, com diferentes tipos de dados ou diferentes quantidades de parâmetros. <br/></p>
+</div>
+</div>
+</div>
+</div>
+<p class="mb-3">Analise o Código 2.4, em que o método <em>mult </em>(responsável pela multiplicação) foi sobrecarregado. Nas linhas 2 a 4, temos o método <em>mult </em>com dois argumentos (a, b) do tipo inteiro como entrada e o resultado, um número inteiro, como saída. Nas linhas 5 a 7, temos o método <em>mult </em>com também dois argumentos (a, b), no entanto, do tipo <em>double</em>, e o resultado como um número do tipo <em>double</em>. Por fim, nas linhas 8 a 10, temos o método <em>mult </em>com três argumentos (a, b, c) do tipo <em>double</em>, sendo a saída um número do tipo <em>double</em>. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.4 | Modelagem da classe <em>Matematica </em>com sobrecarga de método <em>mult</em><br/></figcaption><pre><code class="java hljs">public class Matematica {
+    static int mult(int a, int b){
+        return a * b;
+    }
+    static double mult(double a, double b){
+        return a * b;
+    }
+    static double mult(double a, double b, double c){
+        return a * b * c;
+    }
+    public static void main(String[] args) {
+       System.out.println("Mult: " + Matematica.mult(5, 3));
+       System.out.println("Mult: " + Matematica.mult(3.2, 4.1));
+       System.out.println("Mult: " + Matematica.mult(1.4, 2));
+       System.out.println("Mult: " + Matematica.mult(2, 3.5);
+       System.out.println("Mult: " + Matematica.mult(4.5, 5.2, 2));
+    }
+} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Ainda no Código 2.4, nas linhas 11 a 17, temos o método principal da aplicação. Na linha 12, foi chamado o método <em>mult </em>com dois argumentos do tipo inteiro (5 e 3), dessa forma, qual dos três métodos <em>mult </em>você acha que será executado? Bem, a resposta é o primeiro (das linhas 2 a 4), porque os argumentos são inteiros e o primeiro método recebe argumentos do tipo inteiro. Na linha 13, foi invocado o método <em>mult </em>com dois argumentos do tipo <em>double </em>(3.2 e 4.1), frente a isso, qual dos métodos <em>mult </em>será executado? A resposta é o segundo (das linhas 5 a 7), pois, como os argumentos são do tipo <em>double</em>, então, a única assinatura de método que casa com esse padrão é a segunda. As linhas 14 e 15 também executam chamadas para o segundo método <em>mult</em>, e nesse caso, como apenas um dos argumentos é do tipo <em>double </em>e o outro é do tipo inteiro, então, nenhum método definido acima casa exatamente com esse padrão, porém, como o tipo <em>int </em>é um caso particular do tipo <em>double</em>, logo, o segundo <em>mult </em>será executado. Por fim, na linha 16, temos uma invocação do método <em>mult </em>com três argumentos do tipo <em>double</em>. Nesse caso, o único método <em>mult </em>que casa com esse padrão é o terceiro (das linhas 8 a 11).<br/></p>
+<p class="mb-3">Uma pergunta que você pode fazer relacionada à sobrecarga de métodos é: em qual momento o compilador irá decidir qual método executar? Bem, a resposta é que o compilador fará tal decisão em tempo de compilação. Um leitor atento deve ter reparado que o que fizemos com os construtores no código 2.3 foi um tipo de sobrecarga, só que não de métodos, mas sim de construtores. Assim, o construtor <em>Triangulo(double lado)</em> e <em>Triangulo(double a, double b, double c) </em>foram sobrecarregados, pois o que muda de um para o outro é a quantidade de parâmetros. <br/></p>
+<div class="box page-break">
+<h6 class="text-uppercase text-primary"><strong>Reflita</strong><br/></h6>
+<p class="text-left">No texto acima, mostramos uma série de exemplos de atributos estáticos e métodos estáticos, bem como de sobrecarga de métodos. Acesse o conteúdo Class Math, do site Oracle, cujo link está no tópico Referências, e reflita sobre como foram declaradas as constantes; o porquê de todos os métodos dessa classe serem estáticos; da maioria dos métodos dessa classe possuir sobrecarga; do método <em>abs </em>(que calcula o valor absoluto) possuir quatro assinaturas, que são: <em>static double</em> abs(<em>double </em>a),<em> static float</em> abs(<em>float </em>a), <em>static int</em> abs(<em>int </em>a) e <em>static long</em> abs(<em>long </em>a); do método <em>cos </em>(que calcula o cosseno) possuir apenas uma assinatura, que é:<em> static double</em> cos(<em>double </em>a); de <strong>não </strong>existirem as assinaturas <em>static int</em> cos(<em>int </em>a), <em>static long</em> cos(<em>long </em>a) e<em> static float </em>cos(<em>float </em>a); e, por fim, repare na padronização dos nomes de constantes e métodos presentes nessa classe. Repare que eles seguem a mesma padronização de nomes sugerida neste livro.</p>
+</div>
+<p class="mb-3">Vamos, agora, estudar a sobreposição de métodos.<br/></p>
+<div class="row my-5">
+<div class="col d-flex">
+<div class="card d-flex justify-content-center align-items-center align-content-center w-100">
+<div class="card-body bg-light w-100">
+<p class="card-text">A sobreposição também chamada de sobrescrita de métodos, se caracteriza por possuir mais uma classe, em que a primeira herda a segunda. <br/></p>
+</div>
+</div>
+</div>
+</div>
+<p class="mb-3">Neste momento, vamos abstrair alguns detalhes da herança, que será melhor abordada na seção 3 desta unidade. Analise o Código 2.5 abaixo, em que temos duas classes. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.5 | Modelagem da classe <em>Triangulo </em>com sobreposição do método <em>calcPerimetro</em><br/></figcaption><pre><code class="java hljs">public class Geom2D {
+    double perimetro;
+    double calcPerimetro(){
+        return 0;
+    }
+}
+
+public class Triangulo extends Geom2D { 
+    ...
+    @Override
+    double calcPerimetro() {
+        super.perimetro = this.ladoA + this.ladoB + this.ladoC;
+        return super.perimetro;
+    }
+    public static void main(String[] args) {
+        Triangulo trian = new Triangulo(3, 25, 26);
+        System.out.println("Perimetro: " + trian.calcPerimetro());
+    }
+} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">A primeira classe, nomeada de <em>Geom2D</em>, está descrita nas linhas 1 a 6. Aqui, é importante destacarmos que esse código deve estar em um arquivo chamado Geom2D.java e que a segunda classe nomeada de <em>Triangulo </em>está descrita nas linhas 8 a 19. Essa classe também deve estar em um arquivo separado, chamado Triangulo.java. A primeira classe cria um atributo chamado perímetro e um método que calcula o perímetro <em>(calcPerimetro)</em>. Esse método, inicialmente, retorna zero, mas essa não é a melhor forma de criação deste método, veremos depois como transformá-lo em um método abstrato. A segunda classe herdou a classe <em>Geom2D </em>(utilizando a palavra reservada <em>extends</em>) e, em seguida, algumas linhas de códigos foram omitidas (podemos ver essas linhas no Código 2.3). Das linhas 10 a 14, temos a sobreposição do método <em>calcPerimetro</em>. O método sobrescrito possui a mesma assinatura <em>(double calcPerimetro()) </em>do método da sua superclasse<em> (Geom2D)</em>. Repare a utilização do recurso de anotações do Java em que temos a palavra @Override escrita acima do método sobreposto.<br/></p>
+<p class="mb-3">Nas linhas 15 a 18, temos o método principal, que, basicamente, constrói um triângulo e chama o método <em>calcPerimetro()</em>. A pergunta que devemos fazer aqui é: qual método será executado: o método <em>calcPerimetro </em>em Geom2D ou <em>calcPerimetro </em>em <em>Triangulo</em>? Bem, a resposta para essa pergunta é o método da <em>classe Triangulo</em>. A sobrecarga ficará mais clara quando explicarmos com mais detalhes a herança.<br/></p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">Você deve ter observado no Código 2.5, na linha 12, a utilização das palavras reservadas <em>this </em>e <em>super</em>; mas o que elas fazem? A palavra <em>this </em>é utilizada para fazer referência a elementos da própria classe em que estamos. Por exemplo: os atributos ladoA, ladoB e ladoC foram declarados na classe <em>Triangulo</em>, assim, ao nos referirmos a eles dentro de <em>Triangulo</em>, podemos utilizar o <em>this</em>, como em <em>this.ladoA</em>. A referenciação utilizando-se o <em>this </em>é opcional; em muitos casos, ele ajuda a tornar mais legível o software. Por sua vez, a palavra <em>super </em>é utilizada para se fazer referência a elementos da superclasse. Por exemplo: o atributo perimetro não foi declarado em <em>Triangulo</em>, mas sim em <em>Geom2D</em>, logo, para nos referirmos ao perímetro, podemos utilizar o <em>super</em>, como em <em>super.perimetro</em>. A referenciação utilizando-se o <em>super </em>é opcional; em muitos casos, ele ajuda a tornar mais legível o código. Às vezes, o <em>this </em>é utilizado para desambiguizar a variável a qual estamos nos referindo. Considere o seguinte exemplo: </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.6 | Utilização do <em>this </em>para evitar ambiguidade<br/></figcaption><pre><code class="java hljs">public class Ponto2D {<br/>    double x;<br/>    double y;<br/>    public Ponto2D(double x, double y) {<br/>        this.y = x; //retira a ambiguidade de x = x;<br/>        this.x = y; //retira a ambiguidade de y = y;<br/>    }<br/>} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="text-left">No exemplo acima, o construtor Ponto2D recebe dois parâmetros x e y. Queremos atribuir os valores desses argumentos aos atributos x e y da classe, dessa forma, precisamos utilizar o <em>this </em>para evitarmos ambiguidade, senão, teremos uma linha de código da seguinte forma x=x, não deixando claro a qual x nos referimos: se ao x do argumento ou ao x da classe.</p>
+</div>
+<p class="mb-3">Vamos, agora, fazer um breve comparativo entre a sobrecarga e a sobreposição de métodos. O Quadro 2.1 sintetiza algumas características presentes na sobrecarga e na sobreposição.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.1 | Comparativo entre sobrecarga e sobreposição de métodos</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='scope="col"'><strong>Característica</strong><br/></th>
+<th class='scope="col"'><strong>Sobrecarga</strong><br/></th>
+<th><strong>Sobreposição</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Argumentos</td>
+<td>Devem ser trocados</td>
+<td>Não devem ser trocados</td>
+</tr>
+<tr>
+<td>Tipo de Retorno</td>
+<td>Pode ser trocado</td>
+<td>Não pode ser trocado</td>
+</tr>
+<tr>
+<td>Tipo de Acesso</td>
+<td>Pode ser trocado</td>
+<td>Pode ser trocado por um modificador menos restritivo</td>
+</tr>
+<tr>
+<td>Tipo de Exceção</td>
+<td>Pode ser trocado</td>
+<td>Pode ser trocado por uma exceção menos restritiva</td>
+</tr>
+<tr>
+<td>Classe</td>
+<td>Ocorre em uma classe</td>
+<td>Ocorre entre duas classes</td>
+</tr>
+<tr>
+<td>Herança</td>
+<td>Não envolve herança</td>
+<td>Envolve herança</td>
+</tr>
+<tr>
+<td>Invocação</td>
+<td>Ocorre em tempo de compilação</td>
+<td>Ocorre em tempo de execução</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<div class="box page-break">
+<h6 class="text-uppercase text-primary"><strong>Atenção</strong><br/></h6>
+<p class="text-left">Você deve ter reparado que os códigos aqui desenvolvidos estão em português, mas, mesmo assim, evitamos a utilização de acentos e cê-cedilha. Por exemplo: escrevemos <em>Matematica </em>e <em>Triangulo </em>sem acentuação. A linguagem Java utiliza a codificação unicode, sendo assim, ela dá suporte a nomes de classes, métodos e variáveis com acentos e cê-cedilha, porém, evitamos o uso desses símbolos pois a utilização desses códigos em diferentes arquiteturas de computador e sistemas operacionais pode gerar problemas. <br/></p>
+<p class="text-left">Considere os seguintes exemplos abaixo.<br/></p><pre><code class="java hljs">int númeroDeInterações = 1000; //os acentos são aceitos em Java<br/>int numeroDeInteracoes = 1000; //prefira assim, pois evita erros<br/>double π = 3.141592;  //letras gregas são aceitas em Java<br/>double pi = 3.141592; //prefira assim, pois evita erros 
+</code></pre>
+<p class="text-left">O ideal é utilizar os símbolos presentes na tabela ASCII, a não ser que se tenha a certeza de que o código nunca será executado em uma arquitetura diferente, como, por exemplo, Raspberry Pi, BeagleBone Pi ou Intel Edison.<br/></p>
+</div>
+<div class="my-5">
+<div class="row">
+<div class="col-12">
+<p class="text-center figure-caption mb-2">Figura 2.2 | Síntese sobre atributos</p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Para visualizar o objeto, acesse seu material digital.</p>
+</div>
+<div class="col-12 col-xl-12">
+<p class="sr-only"> Atributos<br/>Classificação<br/>Volatilidade: Constantes (palavra-reservada: final) e Variáveis ((palavra-reservada: nenhuma).<br/>Nível de acesso: Público (palavra-reservada: public), Protegido (palavra-reservada: protected), Privado (palavra-reservada: private) e Público no pacote (palavra-reservada: nenhuma).<br/>Tipos de dados: Inteiro (palavra-reservada: int / long), Real (palavra-reservada: float / double), Caracter (palavra-reservada: char) e ...<br/>Tipo de chamada: Estático (palavra-reservada: static) / Método da classe e Não-estático (palavra-reservada: nenhuma) / Método do objeto.<br/>Regra de nomeação: Variáveis (lowerCamelCase) Constantes (SCREAMING_SNAKE_CASE).<br/></p>
+<p alt="" class="d-print-none tamanho-iframe"><iframe frameborder="0" height="100%" scrolling="no" src="https://www.mindmeister.com/maps/public_map_shell/1593583718/atributos?width=600&amp;height=400&amp;z=auto&amp;t=4w9D7Avrl0&amp;no_share=1&amp;no_logo=1" style="overflow: hidden; margin-bottom: 5px;" width="100%">Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/1593583718/atributos?t=4w9D7Avrl0" target="_blank">Atributos</a> on MindMeister.</iframe></p>
+</div>
+<div class="col-12">
+<p class="text-center figure-caption mb-0 mt-2">Fonte: elaborada pelo autor.</p>
+</div>
+<div class="col text-center d-block d-print-none"><a class="btn btn-primary mt-3" href="pdf/Síntese_Atributos.pdf" role="button" target="_blank"><i class="la la-download mr-2"></i>Se desejar, baixe o texto do objeto.</a></div>
+</div>
+</div>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Pesquise mais </strong><br/></h6>
+<p class="text-left">Foram apresentadas algumas regras para nomeação de variáveis, constantes, métodos, classe, objetos e pacotes. A utilização de bons nomes padronizados auxilia diretamente na legibilidade e no entendimento dos programas. Pesquise mais sobre convenção de nomes nos seguintes materiais: </p>
+<p class="text-left">GEEKSFORGEEEKS. <strong>Java Naming Conventions.</strong> <br/></p>
+<p class="text-left">HOWTODOINJAVA. <strong>Java Naming Conventions. </strong><br/></p>
+<p class="text-left">ORACLE.<strong> 9 - Naming conventions. </strong><br/></p>
+</div>
+<p class="mb-3">Caro estudante, nesta seção, você estudou os conteúdos relacionados a atributos e métodos estáticos, a construtores, à sobrecarga e à sobreposição de métodos, bem como analisou diversos exemplos sobre como esses conceitos são implementados na linguagem Java. Nas seções seguintes, estudaremos melhor como funcionam as estruturas de controle e os operadores relacionais e lógicos, avançando ainda mais no entendimento da linguagem Java.</p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Referências<br/></h4>
+<p class="mb-3">ARANTES, J. da S. <strong>Github</strong>. 2020. Disponível em: <a href="https://github.com/jesimar/Livro-POO-Java/" target="_blank"><span style="text-decoration: underline;">https://bit.ly/3eiUMcF</span></a>. Acesso em: 20 mai. 2020.<br/></p>
+<p class="mb-3">CAELUM. <strong>Java e orientação a objetos:</strong> curso FJ-11. [<em>S.l.</em>]: Caleum, [s.d.]. Disponível em: <a href="https://www.caelum.com.br/apostila-java-orientacao-objetos/" target="_blank">https://bit.ly/3iJX34d</a>. Acesso em: 17 mai. 2020. <br/></p>
+<p class="mb-3">CURSO de Java #01 - História do Java - Gustavo Guanabara. [<em>S.l.: s.n.</em>], 2015. 1 vídeo (36 min). Publicado pelo canal Curso em Vídeo. Disponível em: <a href="https://www.youtube.com/watch?v=sTX0UEplF54&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank">https://bit.ly/2YvIJDZ</a>. Acesso em: 22 jul. 2020. <br/></p>
+<p class="mb-3">DEITEL, P. J.; DEITEL, H. M. <strong>Java:</strong> como programar. 10. ed. São Paulo: Pearson Education, 2016.<br/></p>
+<p class="mb-3">ECLIPSE FOUNDATION.<strong> The 2020 Jakarta Developer Survey Results are Now Available</strong>. 2020. Disponível em: <a href="https://www.eclipse.org/" target="_blank">https://bit.ly/2EknQVi</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">GEEKSFORGEEEKS. <strong>Java Naming Conventions</strong>. [s.d.]. Disponível em: <a href="https://www.geeksforgeeks.org/java-naming-conventions/" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2El7pIs</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">HOWTODOINJAVA.<strong> Java Naming Conventions</strong>. 14 jun. 2020. Disponível em: <a href="https://howtodoinjava.com/java/basics/java-naming-conventions/" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2ExL9uw</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">INTELLIJ IDEA. 2020. Disponível em: <a href="https://www.jetbrains.com/idea/" target="_blank">https://bit.ly/3gwC0A0</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">NETBEANS. [s.d.]. Disponível em: <a href="https://netbeans.org/" target="_blank">https://bit.ly/2FTW56z</a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>9 - Naming Conventions</strong>. [s.d.]. Disponível em: <a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2Qj3wWH</span></a>. Acesso em: 20 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. Class math. [s.d.] Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Math.html" target="_blank">https://bit.ly/32iL725</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">SIERRA, K.; BATES, B. <strong>Use a cabeça! Java</strong>. 2. ed. Rio de Janeiro: Alta Books, 2005.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

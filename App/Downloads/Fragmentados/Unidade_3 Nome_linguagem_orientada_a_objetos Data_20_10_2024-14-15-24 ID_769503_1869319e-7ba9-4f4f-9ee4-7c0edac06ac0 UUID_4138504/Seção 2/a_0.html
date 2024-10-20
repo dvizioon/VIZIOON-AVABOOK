@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary">Interfaces Java</h2>
+<p class="text-left texto-destaque">O conceito de interfaces em Java é o de sanar a limitação da linguagem em não permitir heranças múltiplas, assim uma interface estabelece um contrato a ser seguido ao desenvolver as classes que implementam as interfaces.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/u3s2_npf_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/npf_u3s2.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Praticar para aprender<br/></h4>
+<p class="mb-3">Caro estudante, bem-vindo à segunda seção da terceira unidade de estudos sobre Linguagem Orientada a Objetos. Uma vez que estudamos a respeito de herança, às vezes podemos nos perguntar se há a possibilidade de herdarmos mais de uma classe. A linguagem Java não nos permite fazer a herança de mais de uma classe, no entanto, o Java dá suporte a interfaces que são como contratos, que devem ser desenvolvidos pelas classes que os implementam. Ao unir conteúdo de herança, classe abstrata e interface, a linguagem Java consegue oferecer uma grande reusabilidade de código e fechar o assunto de polimorfismo. Nesta seção, você terá a oportunidade de aprender a sintaxe básica por trás do comando <em>for each</em>, que é muito utilizado para se iterar sobre coleções, como vetores e listas, além de como se faz para passar para métodos uma quantidade variada de argumentos e como trabalhar com enumeração em Java. <br/></p>
+<p class="mb-3 page-break">De forma a contextualizar sua aprendizagem, imagine que você foi contratado em uma <em>startup</em>. A ideia é que você desenvolva um simulador completo de robô que seja capaz de transportar caixas em uma sala. O seu chefe está muito satisfeito com o que você está desenvolvendo, porém sabe que ainda há muito trabalho a se fazer. Após revisar o seu código, percebeu que ele não estava devidamente documentado, então pediu a você que começasse a documentá-lo utilizando a estrutura do <em>javadoc</em>. Além disso, ele também notou que em seu código havia algumas constantes declaradas como <em>static </em>e <em>final</em>, mas que ele acreditava que ficariam melhores utilizando-se enumeradores. O seu chefe também identificou que o seu código não possuía nenhuma descrição de utilização para quando fosse executado via linha de comando, logo, pediu a você que imprimisse algumas informações, caso requisitadas durante a execução pelo terminal. Por fim, ele deseja que o robô possa receber, por meio da execução por linha de comando, uma lista de comandos ou movimentações possíveis, bem como executar esses movimentos automaticamente; para isso, ele disse a você que é possível utilizar o comando <em>for each</em> e a ideia de argumentos variáveis (<em>varargs</em>) do Java. <br/></p>
+<p class="mb-3">Diante desse desafio que lhe foi dado, como documentar o seu código? O que é <em>javadoc</em>? O que é enumeração em Java? Como utilizar o comando <em>for each</em>? O que são argumentos variáveis? <br/></p>
+<p class="mb-3">Esta seção o ajudará a ter um maior domínio dessas tarefas requisitadas pelo seu chefe.<br/></p>
+<p class="mb-3">Agora que você foi apresentado à sua nova situação-problema, estude esta seção e compreenda esses recursos presentes na linguagem Java. Esses recursos são de extrema importância para a construção de qualquer aplicação de pequeno e grande porte. E aí, vamos juntos compreender esses conceitos e, então, resolver esse desafio?<br/></p>
+<p class="mb-3">Bom estudo!<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">CONCEITO-CHAVE<br/></h4>
+<p class="mb-3">A linguagem Java possui suporte para um recurso muito importante, que é a criação de interfaces. Porém, antes de iniciarmos esse assunto, gostaríamos de explicar um pouco a importância da documentação de código, a utilização do comando<em> for each</em> e como passar uma quantidade variável de parâmetros para um método, bem como apresentar um tipo especial de classe, que é a enumeração.<br/></p>
+<h3 class="text-uppercase mb-3 marcador mt-80">Documentação de código<br/></h3>
+<p class="mb-3">Independentemente da linguagem de programação utilizada, construir um código legível e bem documentado é extremamente importante, pois ele necessitará de atualizações e poderá ser lido por outros programadores. A forma mais simples de documentar um código se dá por meio de comentários. <br/></p>
+<p class="mb-3">Existem dois tipos de comentários em Java: <br/></p>
+<ul>
+<li class="mb-3">O primeiro trata-se do comentário de uma única linha, em que se utiliza o comando // para inserção do comentário;<br/></li>
+<li class="mb-3">Já o segundo refere-se aos comentários de múltiplas linhas, em que se utiliza o comando <strong><em>/* conteúdo */</em></strong> para inserção do comentário. <br/></li>
+</ul>
+<p class="mb-3">No entanto, essas duas formas são relativamente pobres e adequadas apenas para pequenos projetos. Dessa maneira, outra forma de se criar a documentação é utilizar o que chamamos de <em>javadoc</em>. Para se criar uma documentação utilizando-se o <em>javadoc</em>, é preciso colocar a documentação dentro da seguinte estrutura<strong><em> /** documentação em javadoc */</em></strong>. De forma a ilustrar como se criar uma documentação em <em>javadoc</em>, analise o Código 3.12 mostrado a seguir. Repare que as linhas 15 a 23 contêm um método totalmente artificial, criado apenas para ilustrar a ideia da documentação.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.12 | Documentação utilizando <em>tags </em>do <em>javadoc </em>em um método qualquer</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">/**
+ * Colocar a descrição do método aqui. Este é um exemplo de método
+ * com dois parâmetros, com retorno e que pode lançar exceções.
+ * @param arg1 colocar a descrição do parâmetro arg1. 
+ * @param arg2 colocar a descrição do parâmetro arg2. 
+ * @return colocar a descrição do valor que é retornado.
+ * @throws java.sql.SQLException
+ * @throws java.io.IOException
+ * @see java.lang.System
+ * @see #exemploMetodoLancaMultiExcecoes
+ * @since 1.0
+ * @version 1.0
+ * @author Jesimar da Silva Arantes
+ */
+public double exemploMetodoCompleto(int arg1, float arg2) 
+        throws SQLException, IOException{
+    if (arg1 &lt; 0) {
+        throw new SQLException()
+    } else if (arg2 &lt; 0) {
+        throw new IOException();
+    }
+    return 0.0;
+}
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">No Código 3.12, podemos perceber que toda a documentação foi colocada dentro da estrutura <strong><em>/** documentação */</em></strong>. Essa estrutura caracteriza uma documentação mais robusta e não apenas um simples comentário. Inicialmente, devemos colocar uma breve descrição do que o método faz, em seguida, podemos acrescentar algumas <em>tags </em>de forma a enriquecer a nossa documentação. Nesse exemplo, foram utilizadas <em>tags </em>como @param, @return, @throws, @see, @since, @version e @author. Analise o Quadro 3.7 para entender para que serve cada uma das <em>tags </em>comentadas. É importante mencionarmos também que esse tipo de <em>tag </em>pode ser utilizado na classe, no método, no construtor, nos atributos e nas interfaces.</p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 3.7 | Algumas das <em>tags </em>disponíveis para construção de documentação em Javadoc</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Tags</strong><br/></th>
+<th class='text-center scope="col"'><strong>Descrição</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>@author</td>
+<td>Nome do autor do código.</td>
+</tr>
+<tr>
+<td>@param</td>
+<td>Descreve o parâmetro recebido pelo método ou construtor.</td>
+</tr>
+<tr>
+<td>@return</td>
+<td>Descreve o que será retornado pelo método.</td>
+</tr>
+<tr>
+<td>@throws</td>
+<td>Descreve a exceção ou o erro lançado pelo método ou construtor.</td>
+</tr>
+<tr>
+<td>@see</td>
+<td>Documenta o código criando um link com outra classe ou método.</td>
+</tr>
+<tr>
+<td>@since</td>
+<td>Documenta a partir de que versão o método foi adicionado.</td>
+</tr>
+<tr>
+<td>@version</td>
+<td>Documenta a versão da classe ou do método.</td>
+</tr>
+<tr>
+<td>@deprecated</td>
+<td>Marca o método como descontinuado ou obsoleto.</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Até agora, essa documentação é parecida com a documentação baseada em comentários, no entanto, contém alguns marcadores. O interessante é que existe uma ferramenta no Java que permite que você gere um código HTML contendo toda a documentação do seu projeto Java. A maioria dos IDEs gera esse HTML apertando-se apenas um botão. Pesquise como fazer isso com a sua IDE de preferência. No Netbeans, basta você ir no menu <strong>Executar </strong>e, em seguida, ir em <strong>Gerar Javador (Nome do Projeto)</strong>. Após esses passos, na pasta <em>dist </em>será criada uma subpasta chamada <em>javadoc</em>, que conterá diversos arquivos; abra o arquivo<em> index.html </em>em algum navegador de internet e pronto. A partir disso, você poderá acessar toda a documentação do seu código com uma excelente organização estrutural. A Figura 3.5 nos mostra o resultado gerado pela ferramenta <em>javadoc</em>.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 3.5 | Documentação gerada utilizando-se o <em>javadoc </em>do Java</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="a figura ilustra uma tela com a documentação gerada pelo javadoc. " class="img-fluid mb-0" src="assets/img/figura_3.5.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: captura de tela do <em>javadoc </em>elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Uma forma de aprender como documentar os seus projetos é observar como são feitas as documentações nas classes nativas do Java. Dessa maneira, entre nas classes Math e System, por exemplo, e observe como elas foram documentadas. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Dica</strong><br/></h6>
+<p class="text-left">Caro aluno, pegue alguns dos códigos em Java que você desenvolveu; em seguida, escreva uma documentação utilizando o que você aprendeu sobre <em>javadoc</em>; gere a documentação em formato HTML; analise-a em um navegador de internet; faça diferentes alterações na documentação e analise a saída.</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Comando <em>for each</em><br/></h3>
+<p class="mb-3">Na Seção 2.2 da Unidade 2, foram vistos alguns laços de repetição, como o <em>for</em>, <em>while </em>e <em>do-while</em>. A linguagem Java suporta outro tipo de comando que controla a repetição, chamado <em>for each</em> (para cada). O comando<em> for each</em> é utilizado, geralmente, para se fazer a iteração em coleções como vetores, matrizes, listas, entre outros. <br/></p>
+<p class="mb-3">Analise o Quadro 3.8 a seguir. <br/></p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 3.8 | Síntese dos comandos de repetição <em>for </em>e <em>for each </em></span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='scope="col"'><br/></th>
+<th class='text-center scope="col"'><strong>Comando: for</strong><br/></th>
+<th class="text-center"><strong>Comando: for each</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td class="text-center"><strong>Sintaxe</strong></td>
+<td><code><code class="tx-blue">for</code> (Inicializ; ExpLóg; Inc) {<br/><br/>  SeqDeComandos;<br/><br/>}<br/></code></td>
+<td><code><code class="tx-blue">for</code> (Tipo elem : ColeçãoIteravel) {<br/><br/>  SeqDeComandos;<br/><br/>}<br/></code></td>
+</tr>
+<tr>
+<td class="text-center"><strong>Exemplo</strong></td>
+<td><code><code class="tx-blue">int</code> soma = 0;<br/><br/><code class="tx-blue">for</code> (<code class="tx-blue">int</code> i = 1; i &lt; 6; i++) {<br/><br/>  soma += i; <br/>}<br/></code></td>
+<td><code><code class="tx-blue">int</code> colecao[] = {1, 2, 3, 4, 5};<br/><br/><code class="tx-blue">int</code> soma = 0;<br/><br/><code class="tx-blue">for</code> (<code class="tx-blue">int</code> elem : colecao) {<br/><br/>  soma += elem;<br/><br/>}<br/></code></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">O Quadro 3.8 apresenta, inicialmente, a forma geral da sintaxe do comando <em>for each</em> em contraste com o comando <em>for </em>(já estudado); em seguida, vemos um simples exemplo que soma os valores de 1 a 5 utilizando-se o comando <em>for </em>e o comando <em>for each</em>. No exemplo do Quadro 3.8, cada elemento da coleção (vetor) é acessado pela variável <em>elem</em>, que é acumulada na variável soma. <br/></p>
+<p class="mb-3">A seguir, no Código 3.13, podemos ver duas aplicações diferentes utilizando-se o comando <em>for each</em>. Implemente esses métodos e analise a saída em cada um deles para compreendê-los melhor.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.13 | Exemplos de utilização do comando <em>for each</em> em Java</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public static void forEachChar(){
+    String livro = "Linguagem Orientada a Objetos";
+    for (char letra : livro.toCharArray()){
+        System.out.println("character: " + letra);
+    }
+}
+</code></pre><pre><code class="java hljs">public static void forEachString(){
+    String livro[] = {"Linguagem", "Orientada", "a", "Objetos"};
+    for (String nome : livro){
+        System.out.println("nome: " + nome);
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Agora, vamos imaginar que temos a intenção de criar um método em Java que some dois números e retorne o resultado. No entanto, precisamos criar também um método que some três números e retorne a soma, bem como criar um método que some quatro números e retorne a soma. O Código 3.14 nos apresenta esses três métodos descritos.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.14 | Métodos em Java que efetuam a soma de 2, 3 e 4 argumentos inteiros</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public static int soma(int a, int b){
+    return a + b;
+}
+public static int soma(int a, int b, int c){
+    return a + b + c;
+}    
+public static int soma(int a, int b, int c, int d){
+    return a + b + c + d;
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<h3 class="text-uppercase mb-3 marcador mt-80">Argumentos variáveis (<em>varargs</em>)<br/></h3>
+<p class="mb-3">Imagine, agora, que queremos criar um método que some os números inteiros que forem passados como argumentos. Se seguirmos a lógica do código 3.14, não conseguiremos nunca, pois teremos de criar infinitos métodos, acrescentando, em cada um deles, um novo argumento. A linguagem Java, por sua vez, permite-nos fazer isso de forma bastante simples, utilizando a ideia de argumentos variáveis ou <em>varargs</em>. O Quadro 3.9 nos mostra a sintaxe básica em dois exemplos de métodos genéricos que utilizam <em>varargs</em>. No primeiro exemplo, o método recebe apenas um argumento do tipo <em>varargs</em>, que é caracterizado por três pontos (...) depois do tipo de argumento. Já no segundo exemplo, o método recebe um argumento normal seguido de um argumento do tipo <em>varargs</em>.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 3.9 | Sintaxe de métodos que receberem argumentos variáveis (varargs)</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Exemplos de métodos com varargs</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><pre><code class="java hljs">modif_acesso tipo_retorno nomeMetodo(TipoArg... args){
+    SeqDeComandos;
+}
+</code></pre></td>
+</tr>
+<tr>
+<td><pre><code class="java hljs">modif_acesso tipo_retorno nomeMetodo(TipoArg arg, TipoArg... args){
+    SeqDeComandos;
+} 
+</code></pre></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">De forma a compreender melhor como funcionam os argumentos variáveis, considere o Código 3.15, que nos mostra como podemos criar um método que soma quaisquer quantidades de argumentos passados. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.15 | Método capaz de somar todos os valores especificados como argumentos </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class ExemploVarargs {
+    public static void main(String[] args) {
+        System.out.println(soma());
+        System.out.println(soma(6));
+        System.out.println(soma(1, 6));
+        System.out.println(soma(3, 5, 4));
+        System.out.println(soma(2, 7, 4, 8));
+        System.out.println(soma(5, 6, 9, 1, 8));
+    }
+    public static int soma(int... args){
+        int valorDaSoma = 0;
+        for (int valor : args){
+            valorDaSoma += valor;
+        }
+        return valorDaSoma;
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Nas linhas 10 a 16 do Código 3.15, temos a definição do método <em>soma </em>que recebe uma quantidade variável de argumentos. Nesse código, foi utilizado o comando<em> for each</em> para se fazer a iteração entre cada um dos argumentos recebidos como parâmetros e acumular na variável valorDaSoma. Já o método <em>main</em>, nas linhas 2 a 9, é responsável pelas chamadas do método soma com diferentes quantidades de argumentos. <br/></p>
+<p class="mb-3">Aluno, frente a isso, implemente o código acima e analise a saída da execução. O link para visualização da execução do site Java Tutor está no tópico Referências.<br/></p>
+<p class="mb-3">Algumas regras devem ser seguidas ao se utilizar <em>varargs</em>. Apenas o último argumento passado pode ser do tipo <em>varargs</em>. Um parâmetro <em>varargs </em>pode receber <strong>zero</strong>, <strong>muitos </strong>ou um <strong>array </strong>de parâmetros, e os argumentos variáveis podem ser utilizados tanto para métodos quanto para construtores.<br/></p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Reflita</strong><br/></h6>
+<p class="text-left">Reflita sobre o porquê de apenas o último argumento passado para um método ou construtor poder ser do tipo <em>varargs</em>. Quais seriam as dificuldades em se permitir que o primeiro argumento seja do tipo <em>varargs</em>? Reflita sobre por que não se pode ter dois argumentos do tipo <em>varargs </em>em um mesmo método ou construtor. Quais seriam as dificuldades em se permitir dois argumentos <em>varargs</em>?</p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Enumeração<br/></h3>
+<p class="mb-3">A linguagem Java dá suporte a um tipo especial de classe chamada enumeração ou, simplesmente, <strong>Enum</strong>. A sua declaração utiliza a palavra-reservada <em>enum</em>. Uma classe do tipo Enum é utilizada para se fazer a organização de um conjunto de constantes, que, em geral, são <em>static </em>e <em>final</em>. Assim, as constantes são declaradas com letras maiúsculas e são separadas simplesmente por vírgula. Analise o Código 3.16 mostrado a seguir. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.16 | Exemplos de declarações de enumerações em Java </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public enum DiaDaSemana { 
+    DOM, SEG, TER, QUA, QUI, SEX, SAB
+}
+</code></pre><pre><code class="java hljs">public enum Mes { 
+    JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ
+}
+</code></pre><pre><code class="java hljs">public enum NivelDeDificuldade { 
+    FACIL, MEDIO, DIFICIL 
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3 page-break">No Código 3.16 mostrado acima, a ideia é que cada um dos tipos <em>enum </em>seja codificado em um arquivo<em> .java </em>separado. No entanto, isso não é uma regra, pois se pode ter tipos <em>enum </em>dentro de classes. Vamos analisar a enumeração <strong>DiaDaSemana</strong>: repare que temos, ao todo, sete constantes, que representam os dias da semana, de domingo a sábado. Em muitos códigos, a definição desse tipo de constante auxilia na legibilidade, ao contrário de números de 0 a 6 para a representação dos dias da semana. Analise, agora, a enumeração <strong>NivelDeDificuldade </strong>mostrado acima, que define três constantes para o nível fácil, médio e difícil. Nesse caso, também poderíamos ter utilizado alguma outra representação, porém a grande maioria das demais representações perde em legibilidade para a enumeração. A ideia é utilizar enumeração sempre que houver valores que não podem ser trocados, como dias da semana, nomes dos meses, nomes de planetas, cartas do baralho, cores, entre outros.<br/></p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">Analise o Código 3.17 a seguir que nos mostra como criar um objeto do tipo enumeração. Ao observar esse código, perceba que na linha 3 a criação de uma enumeração é bem simples. Inicialmente, temos o tipo do <em>enum </em>(DiaDaSemana) seguido do nome da variável (dia) e, então, a constante que será atribuída (DiaDaSemana.TER). Da linha 4 a 20, temos um <em>switch-case</em>, que, baseado no valor de entrada, imprime o dia da semana equivalente. <br/></p>
+<p class="text-left">Diante disso, implemente esse código e faça algumas alterações na variável dia e analise a saída impressa; repare o quanto se ganha em termos de legibilidade de código ao se utilizar a enumeração.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.17 | Demonstração de uma simples aplicação com enumeração </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class Main {
+    public static void main(String[] args) {
+        DiaDaSemana dia = DiaDaSemana.TER;
+        switch (dia) {
+            case DOM:
+                System.out.println("Domingo"); break;
+            case SEG:
+                System.out.println("Segunda"); break;
+            case TER:
+                System.out.println("Terça"); break;
+            case QUA:
+                System.out.println("Quarta"); break;
+            case QUI:
+                System.out.println("Quinta"); break;
+            case SEX:
+                System.out.println("Sexta"); break;
+            case SAB:
+                System.out.println("Sábado"); break;
+        }
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Interfaces <br/></h3>
+<p class="mb-3">Nas seções anteriores, estudamos a herança e as classes abstratas. A linguagem Java permite que uma classe herde de apenas uma classe, ou seja, não permite heranças múltiplas, e para sanar essa “limitação”, o Java dá suporte ao conceito de interfaces. Uma interface estabelece um contrato que deve ser seguido ao desenvolver as classes que implementam as interfaces. <br/></p>
+<p class="mb-3">A linguagem Java possui algumas importantes interfaces implementadas. A seguir, apresentaremos uma breve descrição de três delas, que são: Comparable, Runnable e Serializable.<br/></p>
+<ul>
+<li class="mb-3"><strong>Comparable:</strong> é utilizada para impor uma ordem nos objetos de uma determinada classe que a implementa. Para definir essa ordem, o método <em>compareTo </em>deve ser implementado, e nele serão estabelecidos os critérios da comparação. Um vetor ou uma lista de objetos que implementa essa interface pode ser ordenada automaticamente por métodos de ordenação disponíveis no Java.<br/></li>
+<li class="mb-3"><strong>Runnable: </strong>é utilizada para especificar alguma tarefa a ser realizada. Para se definir essa tarefa, o método <em>run </em>deve ser implementado, e nele será estabelecida a tarefa a ser executada. De forma geral, os objetos dessa classe são executados em paralelo, utilizando-se várias <em>threads</em>. <br/></li>
+<li class="mb-3"><strong>Serializable:</strong> é utilizada para identificar classes em que os objetos podem ser gravados (também chamados de serializados) ou lidos (também chamados de desserializados) de algum dispositivo de armazenamento, como HD. A interface Serializable não possui métodos ou campos e serve apenas para identificar a semântica de ser serializável.<br/></li>
+</ul>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Assimile</strong><br/></h6>
+<p class="text-left">O Código 3.18 nos mostra alguns trechos das interfaces Comparable, Runnable e Serializable. É importante destacarmos aqui que a declaração de uma interface utiliza a palavra-reservada <em>interface</em>. De forma geral, as interfaces possuem apenas as assinaturas dos métodos e podem também conter atributos. A classe que implementar a interface é que deverá sobrescrever os métodos. A interface Comparable é genérica, pois recebe o tipo da classe ao utilizar o operador &lt;&gt;. A ideia de classes e interfaces genéricas não será explorada neste livro, assim, esses detalhes de implementação deverão ser abstraídos pelo aluno. A interface Comparable possui apenas um método, que é o <em>compareTo</em>, e a interface Runnable possui apenas um método, chamado <em>run()</em>. Repare que a interface Serializable não possui nada em seu corpo, dessa forma, essa interface foi utilizada como um recurso apenas semântico, já o polimorfismo auxilia nos métodos que serão serializáveis. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 3.18 | Trechos das interfaces Comparable, Runnable e Serializable </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public interface Comparable&lt;T extends Object&gt; {
+    public int compareTo(T o);
+}
+</code></pre><pre><code class="java hljs">public interface Runnable {
+    public void run();
+}
+</code></pre><pre><code class="java hljs">public interface Serializable {
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+</div>
+<p class="text-left">O Código 3.19 ilustra um exemplo em que temos uma classe chamada Livro que implementa a interface <em>Comparable</em>. Uma classe implementa uma interface utilizando, para isso, a palavra-reservada <em>implements</em>. Aqui, é importante destacarmos que foi colocado entre os símbolos &lt; e &gt; o nome da classe. Esse procedimento poderia ter sido omitido se quiséssemos, mas ele simplifica o processo, evitando-se um <em>casting </em>(conversão de objetos). </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 3.19 | Exemplo de classe que implementa a interface Comparable do Java </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class Livro implements Comparable&lt;Livro&gt; {
+    public String nome;
+    public double custo;
+    public Livro(String nome, double custo) {
+        this.nome = nome;
+        this.custo = custo;
+    }
+    @Override
+    public int compareTo(Livro livro) {
+        if (Math.abs(custo - livro.custo) &lt; 0.001) {
+            return 0;
+        } else if (custo &gt; livro.custo) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Livro l1 = new Livro("Alice no País das Maravilhas", 38);
+        Livro l2 = new Livro("O Senhor dos Anéis", 44);
+        Livro l3 = new Livro("Harry Potter", 38);
+        int compL1L2 = l1.compareTo(l2);
+        int compL1L3 = l1.compareTo(l3);
+        int compL2L3 = l2.compareTo(l3);
+        System.out.println("Comparação l1 e l2: " + compL1L2);
+        System.out.println("Comparação l1 e l3: " + compL1L3);
+        System.out.println("Comparação l2 e l3: " + compL2L3);
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">O ponto principal a ser destacado no Código 3.19 é a sobrescrita do método <em>compareTo </em>(mostrado nas linhas 8 a 17), que recebe um objeto do tipo <em>Livro </em>como argumento. Esse método compara o preço de dois livros, e se a diferença de preço for menor que um determinado valor limite (0.001), então, o resultado 0 será retornado, indicando que os dois livros têm o mesmo preço. Essa comparação foi feita dessa forma pois a comparação de valores de ponto flutuante tem algumas limitações no computador. Se o preço do livro corrente (atual) for maior do que o preço do livro passado como argumento, então, o resultado 1 será retornado, caso contrário, se o preço do livro corrente for menor do que o preço do livro passado como argumento, o resultado -1 será retornado. Nas linhas 19 a 31, temos a criação de uma classe principal para testar o código. Repare que três objetos do tipo livro foram criados e, em seguida, três testes foram realizados. Caro aluno, reflita sobre qual será a saída do código acima e o que significam esses valores. <br/></p>
+<p class="mb-3">É imprescindível que você compreenda que, ao implementar a interface <em>Comparable </em>e sobrescrever o método <em>compareTo</em>, você poderá fazer comparações diretas entre dois livros. Nesse exemplo, as comparações foram baseadas no preço, mas poderiam ter sido baseadas em outros critérios, como, por exemplo, o nome do livro. Frente a isso, implemente o Código 3.19 e tente adaptá-lo para fazer comparações baseadas no nome, em que o nome que vem antes, de acordo com o alfabeto, deve ser menor do que os nomes que vêm depois. <br/></p>
+<p class="mb-3">Agora, considere este novo exemplo em que temos um carrinho de brinquedo movido à bateria e que é controlado por radiofrequência (RF). Vamos imaginar que, para que esse carrinho se mova, devemos agendar um conjunto de movimentos, e que após cada um dos movimentos executados, 1% da bateria foi gasto. Inicialmente, o carrinho está com sua bateria totalmente carregada (100%). Dito isso, observe a Figura 3.6. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 3.6 | Exemplo de aplicação que controla um carro rádio controlado</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/figura_3.6.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">A Figura 3.6 nos mostra, no quadro (1), como seria esse controle e o carro controlado por RF. Em seguida, no quadro (2), percebemos o estado inicial do carro com 100% da bateria. Posteriormente, no quadro (3), temos um exemplo em que quatro movimentos foram agendados, que foram: cima, direita, cima e esquerda. Após a execução desses quatro movimentos, a bateria caiu para 96%. Lembre-se, a bateria cai 1% a cada movimento executado, conforme as regras descritas acima. Então, no quadro (4), temos mais três movimentos agendados, que foram: baixo, esquerda e esquerda, e após a execução desses três movimentos, o nível de bateria caiu para 93%. Por meio desse exemplo lúdico, podemos explorar uma série de conceitos em Java. Dessa maneira, analise o Código 3.20 que ilustra esse exemplo descrito. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 3.20 | Exemplo de classe que implementa a interface Runnable do Java </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">import java.util.Arrays;
+public class CarroRF implements Runnable {
+    private int nivelBateria;
+    private int numMovimentos;
+    public CarroRF() {
+        this.nivelBateria = 100;
+        this.numMovimentos = 0;
+    }
+    public void agendarMovimentos(Direcao... direcoesMovimentos) {
+        String msg = String.format("Lista movimentos agendados:%s",
+                     Arrays.toString(direcoesMovimentos));
+        System.out.println(msg);
+        numMovimentos += direcoesMovimentos.length;
+    }
+    @Override
+    public void run() {
+        System.out.println("Executando movimentos ...");
+        //execução da movimentação do carro (abstrair)
+        nivelBateria -= numMovimentos;
+        numMovimentos = 0;
+    }
+    @Override
+    public String toString() {
+        return String.format("Nível da Bateria: %d%n" +
+                      "Movimentos a Executar: %d", 
+                      nivelBateria, numMovimentos);
+    }
+}
+
+public enum Direcao {
+    CIMA, BAIXO, ESQUERDA, DIREITA;   
+}
+
+import static code.unidade3.secao2.ex3.Direcao.*;
+public class Main {
+    public static void main(String[] args) {
+        CarroRF carro = new CarroRF();
+        carro.agendarMovimentos(CIMA, DIREITA, CIMA, ESQUERDA);
+        System.out.println(carro);
+        carro.run();
+        System.out.println(carro);
+        carro.agendarMovimentos(BAIXO, ESQUERDA, ESQUERDA);
+        System.out.println(carro);
+        carro.run();
+        System.out.println(carro);
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">No Código 3.20, a primeira classe apresentada chama-se CarroRF, que modela o carro controlado por radiofrequência e implementa a interface Runnable (executável). Nas linhas 3 a 9, temos dois atributos que modelam o nível da bateria e o número de movimentos agendados. Nas linhas 9 a 14, temos o método agendarMovimentos, que recebe uma <em>varargs </em>de direções possíveis. Nas linhas 15 a 21, temos o método <em>run</em>, que deve ser sobrescrito devido à implementação da interface Runnable. Como esse exemplo é apenas didático, não foi feita nenhuma movimentação do carro, contudo, se fosse implementado o método, este seria feito ali. Dessa maneira, foi dado destaque apenas ao nível corrente da bateria e ao número de movimentos agendados. Nas linhas 30 a 32, um tipo de enumeração foi criado, contendo as quatro direções em que o carro pode ser movimentado. Por fim, nas linhas 34 a 47, temos uma classe para testar a aplicação. Frente a isso, implemente esse código, faça algumas alterações nas direções movidas do carro e analise com calma a saída impressa.<br/></p>
+<p class="mb-3">Vamos, agora, ilustrar um exemplo em que criamos a nossa própria interface. Assim, considere que estamos criando uma aplicação para tocar música, que poderá ser executada por um conjunto de instrumentos diferentes. Nesse exemplo, os instrumentos suportados são: piano, violoncelo e violão. A música tocada se baseará em alguma melodia que será passada para cada um dos instrumentos. Analise a Figura 3.7, em que temos quatro classes e uma interface. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 3.7 | Exemplo de aplicação que toca música a partir de diferentes instrumentos</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A figura ilustra a aplicação que toca música. Nela são mostradas a interface instrumento que possui dois métodos tocar e setvolume, as classes Piano, Violoncelo, Violão, a classe meolodia com os métodos musica e tocarNota e a Classe Main com o método main. Das classes piano, violoncelo e violão, saem setas tracejadas com ponta fechada que apontam para a interface instrumento. Da classe Main saem setas com ponta aberta que apontam para as classes piano, violoncelo, violão e melodia." class="img-fluid mb-0" src="assets/img/figura_3.7.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Analise, agora, o Código 3.21, que foi construído a partir da descrição acima e da Figura 3.7.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 3.21 | Exemplo que toca música e criação da interface Instrumento </figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public interface Instrumento {
+    public void tocar(Melodia melodia);
+    public void setVolume(int volume);
+}
+
+import javax.sound.midi.MidiChannel;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Synthesizer;
+public class Piano implements Instrumento {
+    private int volume;
+    private final Synthesizer sintetizador;
+    public Piano() throws MidiUnavailableException {
+        sintetizador = MidiSystem.getSynthesizer();
+    }
+    @Override
+    public void tocar(Melodia melodia) {
+        try {
+            sintetizador.open();
+            MidiChannel canal = sintetizador.getChannels()[0];
+            canal.programChange(1);//código ID do piano
+            melodia.musica(canal, volume);
+            sintetizador.close();
+        } catch (MidiUnavailableException | 
+                 InterruptedException ex) {
+            System.out.println(ex);
+            sintetizador.close();
+        }
+    }
+    @Override
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+}
+
+public class Violoncelo implements Instrumento {
+    //o código foi omitido, pois é similar a classe Piano
+    //acesse https://github.com/jesimar/Livro-POO-Java
+}
+
+public class Violao implements Instrumento {
+    //o código foi omitido, pois é similar a classe Piano
+    //acesse https://github.com/jesimar/Livro-POO-Java
+}
+
+import javax.sound.midi.MidiChannel;
+public class Melodia {
+    private final static int DO = 60;
+    private final static int RE = 62;
+    private final static int MI = 64;
+    private final static int FA = 65;
+    private final static int SOL = 67;
+    private final static int SILENCIO = 0;
+    private final int UM_TEMPO;
+    private final int DOIS_TEMPOS;
+    public Melodia(double velocidade) {
+        UM_TEMPO = (int)(250/velocidade);
+        DOIS_TEMPOS = (int)(500/velocidade);
+    }
+    public void musica(MidiChannel canal, int volume) 
+                throws InterruptedException{
+        tocarNota(canal, DO, UM_TEMPO, volume);
+        tocarNota(canal, RE, UM_TEMPO, volume);
+        tocarNota(canal, MI, UM_TEMPO, volume);
+        tocarNota(canal, FA, DOIS_TEMPOS, volume);
+        tocarNota(canal, FA, UM_TEMPO, volume);
+        tocarNota(canal, FA, UM_TEMPO, volume);
+        tocarNota(canal, SILENCIO, UM_TEMPO, volume);
+    }
+    private static void tocarNota(MidiChannel canal, int nota, 
+            int tempo, int volume) throws InterruptedException {
+        canal.noteOn(nota, volume);
+        Thread.sleep(tempo);
+        canal.noteOff(nota, volume);
+    }            
+}
+
+import javax.sound.midi.MidiUnavailableException;
+public class Main {
+    public static void main(String[] args) 
+                throws MidiUnavailableException {
+        System.out.println("Tocando melodia piano vel. normal");
+        Melodia melodiaNormal = new Melodia(1.00);
+        Piano piano = new Piano();
+        piano.setVolume(75);
+        piano.tocar(melodiaNormal);
+        System.out.println("Tocando melodia celo vel. rápida");
+        Melodia melodiaRapida = new Melodia(1.25);
+        Violoncelo violoncelo = new Violoncelo();
+        violoncelo.setVolume(100);
+        violoncelo.tocar(melodiaRapida);
+        System.out.println("Tocando melodia violão vel. lenta");
+        Melodia melodiaLenta = new Melodia(0.75);
+        Violao violao = new Violao();
+        violao.setVolume(50);
+        violao.tocar(melodiaLenta);
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3 page-break">No Código 3.21, nas linhas 1 a 4, temos a interface Instrumento, que possui a assinatura de dois métodos, que são: tocar e setVolume. Nas linhas 6 a 34, temos a classe Piano, que implementa a interface Instrumento criada. Você deve ter reparado que um conjunto de classes do pacote <em>javax.sound.midi</em> foi utilizado. Não será explicado em detalhes como funcionam as classes desse pacote, mas, por hora, você apenas precisa saber que elas manipulam dados para tocar notas musicais em um determinado canal de saída. Assim, para que esse código funcione, o computador que executá-lo deverá ter caixas de som para saída do áudio. Nas linhas 36 a 44, temos as classes Violoncelo e Violao, que foram omitidas por serem semelhantes à classe Piano. Nas linhas 46 a 76, temos a classe Melodia, que define a música a ser tocada fazendo uso das notas musicais. Por fim, nas linhas 78 a 98, temos a classe responsável por organizar a execução da aplicação. Diante disso, analise com calma as linhas desse código e tente compreender a sua lógica.<br/></p>
+<p class="mb-3">Ao desenvolvermos um código, às vezes, ficamos confusos sobre qual recurso utilizarmos: classe abstrata ou interface, mas, quanto a isso, fique tranquilo, isso é natural, às vezes, podemos utilizar um ou outro, e ambos funcionarão, desde que utilizados da forma correta. O Quadro 3.10 sintetiza de forma bastante objetiva algumas das características entre as classes abstratas e as interfaces em Java. Analise com cautela esse quadro, mas não se preocupe em memorizar todas as informações, em geral, isso não é necessário.<br/></p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 3.10 | Síntese de algumas características de classes abstratas e interfaces</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Características</strong><br/></th>
+<th class='text-center scope="col"'><strong>Classe Abstrata</strong><br/></th>
+<th class="text-center"><strong>Interface </strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Pode possuir construtores</td>
+<td class="text-center">Sim</td>
+<td class="text-center"><span class="tx-grey">Não</span></td>
+</tr>
+<tr>
+<td>Pode possuir métodos concretos</td>
+<td class="text-center">Sim</td>
+<td class="text-center"><span class="tx-grey">Não</span></td>
+</tr>
+<tr>
+<td>Pode possuir métodos abstratos</td>
+<td class="text-center">Sim</td>
+<td class="text-center">Sim</td>
+</tr>
+<tr>
+<td>Pode possuir métodos final</td>
+<td class="text-center">Sim</td>
+<td class="text-center"><span class="tx-grey">Não</span></td>
+</tr>
+<tr>
+<td>Pode possuir métodos não-final</td>
+<td class="text-center">Sim</td>
+<td class="text-center">Sim</td>
+</tr>
+<tr>
+<td>Pode possuir métodos estáticos</td>
+<td class="text-center">Sim</td>
+<td class="text-center">Sim</td>
+</tr>
+<tr>
+<td>Pode possuir atributos final</td>
+<td class="text-center">Sim</td>
+<td class="text-center">Sim</td>
+</tr>
+<tr>
+<td>Pode possuir atributos não-final</td>
+<td class="text-center">Sim</td>
+<td class="text-center"><span class="tx-grey">Não</span></td>
+</tr>
+<tr>
+<td>Pode possuir atributos estáticos</td>
+<td class="text-center">Sim</td>
+<td class="text-center">Sim</td>
+</tr>
+<tr>
+<td>Pode possuir atributos não-estáticos</td>
+<td class="text-center">Sim</td>
+<td class="text-center"><span class="tx-grey">Não</span></td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">O Quadro 3.11 a seguir apresenta uma síntese da comparação entre as classes abstratas e as interfaces. Caro aluno, analise este quadro.<br/></p>
+<div class="my-5 page-break"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 3.11 | Comparação entre as classes abstratas e interfaces em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Características</strong><br/></th>
+<th class='text-center scope="col"'><strong>Classe Abstrata</strong><br/></th>
+<th class="text-center"><strong>Interface</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Palavra-reservada utilizada.</td>
+<td><code class="tx-blue">Abstract</code></td>
+<td><code class="tx-blue">interface</code></td>
+</tr>
+<tr>
+<td>Exemplo de declaração.</td>
+<td><code><code class="tx-blue">public abstract class</code> X</code></td>
+<td><code><code class="tx-blue">public interface</code> X</code></td>
+</tr>
+<tr>
+<td>Exemplo de utilização.</td>
+<td><code><code class="tx-blue">public class</code> Y <code class="tx-blue">extends</code> X</code></td>
+<td><code><code class="tx-blue">public class</code> Y <code class="tx-blue">implements</code> X </code></td>
+</tr>
+<tr>
+<td>Relação de herança.</td>
+<td>Uma classe abstrata pode herdar apenas uma classe (abstrata ou não).</td>
+<td>Uma interface pode herdar de múltiplas interfaces.</td>
+</tr>
+<tr>
+<td>Relação de implementação.</td>
+<td>Uma classe pode herdar apenas uma classe abstrata.</td>
+<td>Uma classe pode implementar múltiplas interfaces.</td>
+</tr>
+<tr>
+<td>Modificador de acesso dos métodos e atributos.</td>
+<td>Pode ser público, <em>default</em>, protegido ou privado.</td>
+<td>É público por padrão. </td>
+</tr>
+<tr>
+<td>Modificador dos atributos.</td>
+<td>Pode ser final, não final, estático ou não estático.</td>
+<td>É final por padrão. É estático por padrão.</td>
+</tr>
+<tr>
+<td>Instanciação.</td>
+<td>Não permitida.</td>
+<td>Não permitida.</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">A linguagem Java ganha em aspectos de reusabilidade de código ao dar suporte à herança, classe abstrata e interface, e o polimorfismo também pode ser utilizado com interfaces. Dessa maneira, pode-se criar um objeto do tipo da interface com a instanciação do objeto do tipo da classe que implementa a interface. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Saiba mais</strong><br/></h6>
+<p class="text-left">Até agora, nada foi dito a respeito da identação de código. É importante que os códigos desenvolvidos sejam indentados corretamente, uma vez que colaboram muito na identificação de erros. <br/></p>
+<p class="text-left">Dica: muitos Ambientes de Desenvolvimento Integrados (IDEs) têm recursos de autoidentação. No Netbeans, basta ir no menu <strong>Código-Fonte</strong> e, em seguida na opção <strong>Formatar </strong>(ou, então, no atalho <em>Alt+Shift+F</em>). No Eclipse, o atalho é <em>Ctrl+Shift+F</em>; já no IntelliJ IDEA, o atalho é <em>Ctrl+Alt+I</em>.<br/></p>
+</div>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Pesquise mais</strong><br/></h6>
+<p class="text-left">O texto apresentou brevemente o conteúdo de enumeração em Java. Este assunto, apesar de simples, é muito importante. Dessa maneira, assista ao vídeo sugerido abaixo para entender melhor como aplicar na prática esse conteúdo. <br/></p>
+<p class="text-left">LOIANE GRONER. <strong>Curso de Java 53: </strong>enumeradores (Enum). 2016. <br/></p>
+<p class="text-left">LOIANE GRONER. <strong>Curso de Java 54: enumeradores como classe (construtor e métodos)</strong>. 2016. <br/></p>
+<p class="text-left">LOIANE GRONER. <strong>Curso de Java 55:</strong> Enum: métodos value e valueOf. 2016. <br/></p>
+</div>
+<p class="mb-3">Caro estudante, nesta seção você estudou os conteúdos relacionados à documentação com <em>javadoc</em>, ao comando <em>for each</em>, ao método com argumentos variáveis, à enumeração, a interfaces e à comparação entre classes abstratas e interfaces, bem como foram mostrados diversos exemplos desses conceitos em Java. Aprenderemos, na próxima seção, como construir aplicações que utilizam interfaces gráficas, avançando ainda mais no entendimento da linguagem Java.</p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Referências<br/></h4>
+<p class="mb-3">CURSO EM VÍDEO. <strong>Curso de Java para iniciantes</strong> – grátis, completo e com certificado. 2019. Disponível em: <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank">https://bit.ly/35ykFEQ</a>. Acesso em: 20 ago. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Interface Comparable&lt;T&gt;</strong>. [s.d.]. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Comparable.html" target="_blank">https://bit.ly/35Acisd</a>. Acesso em: 20 ago. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Interface Runnable</strong>. [s.d.]. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Runnable.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/3mjUaJh</span></a>. Acesso em: 20 ago. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Interface Serializable</strong>. [s.d.]. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/io/Serializable.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2ZArCl5</span></a>. Acesso em: 20 ago. 2020.<br/></p>
+<p class="mb-3">PYTHON TUTOR. <strong>Java Tutor - visualize Java code execution to learn Java online</strong>. [s.d.]. Disponível em: <a href="http://www.pythontutor.com/java.html" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2FryN84</span></a>. Acesso em: 24 jul. 2020.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>

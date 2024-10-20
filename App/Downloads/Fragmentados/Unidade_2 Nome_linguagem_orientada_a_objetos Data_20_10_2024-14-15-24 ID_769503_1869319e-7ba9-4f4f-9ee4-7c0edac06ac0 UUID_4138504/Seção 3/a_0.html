@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>template</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet"/>
+<link href="assets/fonts/font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/line-awesome.min.css" rel="stylesheet"/>
+<link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet"/>
+<link href="assets/fonts/fontawesome5-overrides.min.css" rel="stylesheet"/>
+<link href="assets/css/annotator.touch.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/annotator.min.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/contraste_funcoes.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/formulario.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/lightbox.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/navbar.css" rel="stylesheet"/>
+<link href="assets/css/css-externo/print.css" rel="stylesheet"/>
+<link href="assets/css/fmt-verde.css" rel="stylesheet"/>
+<link href="assets/css/master.css" rel="stylesheet"/>
+<link href="assets/css/Menu-Lateral---Colaborar.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180865228-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180865228-1');
+</script>
+<!-- Hotjar Tracking Code for cm-kls-content.s3.amazonaws.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1821961,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body id="geral">
+<section class="d-none d-print-none float-none d-sm-none d-md-none d-lg-none d-xl-none app-content-wrapper">
+<div class="p-2 topo-comentario mb-3">
+<p class="mb-0"><i class="fas fa-highlighter"></i> <strong>Comentários</strong></p>
+</div>
+<div class="container" id="comentario_geral"></div>
+</section>
+
+<section class="image-bg">
+<div class="container">
+<article>
+
+</article>
+</div>
+</section>
+<section class="conteudo" id="conteudo">
+<div class="container conteudo-bloco" id="content-1">
+<section>
+<div class="row mb-4">
+<div class="col">
+<h2 class="text-uppercase text-primary">Estrutura organizacional de pacote</h2>
+<p class="text-left texto-destaque">A linguagem Java utiliza pacotes para fazer a organização das classes e recursos.<br/></p><img class="img-fluid mx-auto d-block" src="assets/img/npf_u3s1_img_capa.jpg"/>
+<p class="text-center mt-2 mb-0 figure-caption">Fonte: Shutterstock.</p>
+<p class="text-center my-3"><strong>Deseja ouvir este material?</strong></p>
+<p class="text-center d-none d-print-block d-sm-none d-md-none d-lg-none d-xl-none">Áudio disponível no material digital.</p><audio class="d-print-none mx-auto d-block" controls="">
+<source src="audio/npf_u2s3.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+</div>
+</section>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Praticar para aprender<br/></h4>
+<p class="mb-3">Prezado aluno, bem-vindo a mais uma seção do livro <em>Linguagem Orientada a Objetos</em>. Nesta seção, alguns dos conceitos fundamentais da Orientação a Objetos (OO) serão apresentados. Qual programador não gosta de desenvolver códigos reutilizáveis, bem organizados e que possam ser facilmente utilizados por outros programadores? A maioria dos desenvolvedores, se não todos, gosta desses aspectos em seus sistemas, mas, afinal, como construir softwares reutilizáveis, como organizar melhor a aplicação Java e como incorporar bibliotecas desenvolvidas por outros desenvolvedores? Nesta seção, você terá a oportunidade de responder a essas e outras perguntas.<br/></p>
+<p class="mb-3">De forma a contextualizar sua aprendizagem, lembre-se de que você trabalha em uma <em>startup </em>e que seu chefe quer desenvolver um simulador completo de robô em Java que seja capaz de transportar caixas em uma sala. Para tanto, mais uma vez, o seu chefe se reuniu com você e pediu para que organizasse melhor o seu projeto, utilizando a estrutura de pacotes que o Java fornece. Ele analisou as classes que você implementou e percebeu que, praticamente, nenhum modificador de acesso foi utilizado. Dessa maneira, ele pediu a você que colocasse modificadores de acessos adequados aos atributos e métodos, e ao analisar as classes, percebeu que os atributos estavam sendo acessados diretamente, logo, solicitou que criasse métodos <em>getters</em> e <em>setters </em>onde fossem necessários, de forma a encapsular melhor os atributos. Ele também analisou as suas classes e percebeu que você não utilizou herança em nenhum lugar, solicitando a você que começasse a utilizar mais esse conceito em sua aplicação, bem como começasse a sobrescrever os métodos <em>toString </em>e <em>equals </em>e continuasse a utilizar GitHub e a estudar alguns clientes GUI para o GitHub, de forma a melhorar a utilização desse gerenciador de repositório.<br/></p>
+<p class="mb-3">Diante do desafio que lhe foi apresentado, como você irá organizar o seu código? O que são pacotes? O que são modificadores de acesso? Como você definirá os modificadores para os seus atributos? O que são métodos <em>getters </em>e <em>setters </em>e como criá-los? O que é herança e como você irá utilizá-la? O que são clientes GUI para GitHub? <br/></p>
+<p class="mb-3">Acalme-se. Esta seção irá ajudá-lo a ter um maior domínio dos conteúdos mencionados.<br/></p>
+<p class="mb-3">Agora, uma vez que foi apresentado à sua nova situação-problema, estude esta seção e compreenda os três grandes pilares da orientação a objetos, que são: encasulamento, herança e polimorfismo. Esses conceitos somados aos conceitos de classe, objeto, método e atributo englobam as ideias centrais da OO. E aí, vamos juntos compreender esses conceitos e resolver esse desafio?<br/></p>
+<p class="mb-3">Bom estudo! <br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Conceito-chave<br/></h4>
+<p class="mb-3">As linguagens Orientadas a Objetos (OO), como Java, possuem três importantes pilares, que são: o encapsulamento, a herança e o polimorfismo, e outro conceito presente na linguagem Java diz respeito aos modificadores de acesso. Esses são alguns dos conceitos abordados em mais detalhes nesta seção, porém, antes de darmos continuidade, gostaríamos de ressaltar um ponto importante. Alguns dos exemplos apresentados nesta seção são apenas fragmentos de código. Dessa maneira, é importante que o aluno implemente o restante da aplicação, por exemplo, criando a classe e o método <em>main</em>. </p>
+<h3 class="text-uppercase mb-3 marcador mt-80">Organização de pacotes <br/></h3>
+<p class="mb-3">Antes de avançarmos nesta seção, você deve ter em mente que a linguagem Java tem a capacidade de desenvolver aplicações que podem crescer bastante. Até este momento, desenvolvemos aplicações com poucas classes, mas imagine que você está desenvolvendo uma aplicação que está crescendo e que conta com 10 classes, logo, começa a ficar incomodado com a organização. No entanto, você ainda não faz nada e ela continua a crescer, agora, ela tem 20 classes. Nesse ponto, você pensa que não dá mais para continuar a desenvolver sem antes organizar as classes em estruturas que simplifiquem o processo. <br/></p>
+<p class="mb-3">A fim de entendermos como é desenvolvido um grande projeto em Java, em primeiro lugar, vamos apresentar uma visão geral de como é feita a organização de um projeto qualquer. Sendo assim, a Figura 2.7 mostra a organização da estrutura de um projeto qualquer desenvolvido em Java.<br/></p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Figura 2.7 | Organização da estrutura de um projeto qualquer na linguagem Java</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><img class="img-fluid mb-0" src="assets/img/Figura%202.7.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">De acordo com a Figura 2.7, o projeto é subdividido em algumas partes. Inicialmente, temos o nome do projeto e, em seguida, temos o local em que ficam armazenados os códigos-fonte desenvolvidos pelo usuário. Conforme o código desenvolvido cresce, faz-se necessário criar uma estrutura para organizar as classes. Chamamos essa estrutura organizacional de pacote. Nesse exemplo, temos os seguintes pacotes: <em>core</em>, <em>struct</em>, <em>util </em>e <em>Windows </em>dentro do pacote <em>code</em>, os pacotes <em>img </em>e <em>audio </em>dentro do pacote <em>resources </em>e, por fim, temos o pacote <em>icon </em>dentro do pacote <em>img</em>. O ideal é que cada pacote contenha classes relacionadas ao nome do pacote. Nesse exemplo, dentro do pacote <em>code.struct</em> temos três classes, que são: Data, Parse e Point. Em seguida, temos o local em que ficam armazenadas as bibliotecas, e nesse local, existem dois tipos de bibliotecas, que são as bibliotecas padrão e as bibliotecas não padrão do Java. No exemplo acima, a biblioteca não padrão, chamada <em>jdom.jar</em>, foi importada para utilização e o conjunto de bibliotecas padrão do JDK também foi importado, uma vez que essas bibliotecas padrão são sempre importadas em qualquer projeto Java. </p>
+<div class="olho">
+<p class="text-center mb-0">A linguagem Java utiliza pacotes para fazer a organização das classes e recursos.</p>
+</div>
+<p class="mb-3">Uma forma de se pensar em um pacote é pensar em um diretório no sistema de arquivos do Sistema Operacional (SO). O diretório, de forma geral, serve para agrupar um determinado conjunto de arquivos, assim como um pacote em Java serve para agrupar um determinado conjunto de classes. Dessa maneira, os pacotes são utilizados também para se fazer o encapsulamento de um grupo de classes.</p>
+<div class="box page-break">
+<h6 class="text-uppercase text-primary"><strong>Lembre-se</strong><br/></h6>
+<p class="text-left">O separador utilizado na organização de um pacote é o ponto (.). Conforme dito acima, no sistema de arquivos do computador, um pacote corresponde a um diretório, ou seja, cada vez que você utiliza um ponto para separar um nome de pacote, um novo diretório é criado no computador. Por exemplo, o pacote <em>code.struct </em>possui duas pastas, uma chamada <em>code </em>e outra <em>struct </em>(que fica dentro da pasta <em>code</em>). Uma dica para entender melhor o que foi explicado é fazer navegação por meio do sistema de arquivos do seu computador pelas pastas (pacotes) e, enquanto isso, criar pacotes no Java (por meio da IDE) para ver como ficaram organizados os diretórios do projeto.</p>
+</div>
+<p class="mb-3">Ainda com relação à Figura 2.7, vamos considerar a classe Data que está dentro do pacote <em>code.struct</em>. Em Java, é necessário informar, no início da declaração da classe, em qual pacote ela se encontra. Para isso, a palavra reservada <em>package </em>é utilizada, seguida pelo nome do pacote. Analise o trecho de código abaixo da classe Data. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.10 | Trecho do código da classe Data</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">package code.struct; // definição da localização do pacote da classe
+public class Data {  // declaração da classe Data
+    ...              // restante do código da classe Data
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">No texto acima, destacamos como é feita a organização de pacotes definidos pelo usuário durante o desenvolvimento do seu projeto. A linguagem Java é extremamente rica em bibliotecas nativas ou, ainda, <em>Application Programming Interfaces</em> (APIs) disponíveis para utilização. Dessa maneira, é importante destacarmos também como estão organizados os pacotes nativos da linguagem Java. O pacote nativo mais importante do Java é o <em>java.lang</em>, que agrupa as classes fundamentais para o projeto da linguagem Java, sendo elas: Object, Class, System, Math, String, Double, Float, Integer, etc. (ORACLE, 2020). Alguns outros pacotes importantes do Java são: <em>java.io</em>, <em>java.net</em> e <em>java.util</em>. <br/></p>
+<p class="mb-3">Na Figura 2.8 vemos os principais pacotes nativos da linguagem Java. <br/></p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Figura 2.8 | Organização dos principais pacotes nativos da linguagem Java</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><img alt="A figura ilustra em formato de organograma os principais pacotes nativos da linguagem Java.  Na parte superior mostra o texto Bibliotecas e no topo do organograma está a Linguagem Java. No centro mostra o texto Pacotes e quatro ramificações horizontais que representam os pacotes lang, io, net e útil, na parte inferior mostra o texto Classes e para cada pacote há 3 ramificações, que representam suas classes, a saber, para o pacote lang estão relacionado as classes system, math e string, para o pacote io estão relacionas as classes File, reader e writer, para o pacote net estão relacionadas as classes socket, url e proxy e para o pacote útil, estão relacionadas as classes arraylist, linkedlist e random." class="img-fluid mb-0" src="assets/img/Figura%202.8.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<h4 class="text-uppercase mb-3 marcador mt-80">Importação de pacotes <br/></h4>
+<p class="mb-3">Na linguagem Java, toda vez que se for utilizar alguma classe que esteja em outro pacote diferente do pacote atual, sua importação deverá ser feita; para isso, será utilizada a palavra reservada <em>import </em>seguida pelo nome do pacote e, por fim, pelo nome da classe. O comando <em>import </em>do Java possui certa semelhança com o comando <em>include </em>da linguagem C. Considere o Quadro 2.14 a seguir com alguns exemplos de importação.</p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.14 | Exemplos de importações de classes de alguns pacotes nativos do Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Exemplo de Código</strong><br/></th>
+<th class='text-center scope="col"'><strong>Descrição sobre as Importações</strong><br/></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td><code><code class="txt-blue">import</code> java.io.File;</code></td>
+<td>Importação da classe File que está dentro pacote <em>java.io</em>.</td>
+</tr>
+<tr>
+<td><code><code class="txt-blue">import</code> java.net.Socket;</code></td>
+<td>Importação da classe Socket do pacote <em>java.net</em>.</td>
+</tr>
+<tr>
+<td><code><code class="txt-blue">import</code> java.util.Random;</code></td>
+<td>Importação da classe Random do pacote <em>java.util</em>.</td>
+</tr>
+<tr>
+<td><code><code class="txt-blue">import</code> java.lang.System;</code></td>
+<td>Importação da classe System do pacote<em> java.lang</em>. <br/><strong>OBS: </strong>esta importação é a única opcional, pois é feita de forma automática.<br/></td>
+</tr>
+<tr>
+<td><code><code class="txt-blue">import</code> java.io.*;</code></td>
+<td>Importação de todas as classes do pacote<em> java.io</em>. </td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Conforme ressaltado no Quadro 2.14, a única importação que não é necessária é a importação do pacote <em>java.lang</em>, pois já é feita de forma automática pelo compilador do Java. Nesse quadro, percebemos também que podemos utilizar o caractere curinga asterisco (*) (como em <em>import </em>java.io.*;) na importação de todas as classes de um determinado pacote. </p>
+<div class="box page-break">
+<h6 class="text-uppercase text-primary"><strong>Dica</strong><br/></h6>
+<p class="text-left">Você pode ficar pensando que programar em Java é difícil, pois é preciso saber fazer a importação de pacotes (e muitos pacotes possuem caminhos muito longos) e a indicação correta do nome do pacote em que uma determinada classe está inserida. No entanto, você pode ficar tranquilo, pois a maioria dos IDEs para Java disponíveis hoje em dia faz a busca e a indicação da importação necessária de forma automática, baseadas apenas no nome da Classe. Sendo assim, não é necessário saber os comandos <em>import </em>e <em>package </em>de memória.</p>
+</div>
+<p class="mb-3">Existe um tipo especial de importação que é a <strong>importação estática</strong>. Por meio dessa importação, podemos fazer a utilização direta de métodos e atributos estáticos sem utilizarmos o nome da classe.</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">A título de exemplo, vamos considerar o Código 2.11, que utiliza a importação tradicional e a importação estática.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.11 | Implementação com importação estática e tradicional</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">//pacote em que a classe TesteImportacao está.
+package code.unidade2.secao3;
+
+//importação tradicional de classes
+import java.util.Random;
+
+//importação estática de classes
+import static java.lang.System.out;
+import static java.lang.Math.*;
+ 
+public class TesteImportacao {
+    public static void main(String[] args) {
+        out.println("Numero(PI) = " + PI);
+        out.println("Numero(E) = " + E);
+        out.println("Raiz(25) = " + sqrt(25));
+        out.println("Pot(2^10) = " + pow(2, 10));
+        out.println("Log(100) = " + log10(100));
+        Random rnd = new Random();
+        out.println("Rnd = " + rnd.nextDouble());
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="text-left page-break">Na linha 2 do código acima, temos a especificação do pacote, em que se encontra a presente classe chamada de TesteImportacao; em seguida, na linha 5, temos a importação da classe Random, presente no pacote <em>java.util</em>; na linha 8, temos a importação estática do atributo estático <em>out</em>, que está localizado na classe System do pacote <em>java.lang</em>; na linha 9, temos a importação estática de todos os métodos e atributos estáticos presentes na classe Math do pacote <em>java.lang</em>; nas linhas 13 a 19 temos a utilização dos métodos e atributos estáticos importados — repare que a utilização das constantes PI e E foi feita de forma direta. Repare também que as chamadas aos métodos estáticos <em>sqrt</em>, que calcula a raiz quadrada, <em>pow</em>, que calcula a potência, e <em>log10</em>, que calcula o logaritmo na base 10, foram feitas de forma direta, sem a utilização da classe Math ponto (.) nome do método. Por fim, nas linhas 18 e 19, temos a declaração de um objeto (rnd) da classe Random seguida pela geração de um número aleatório entre 0 e 1, obtido por meio do método <em>nextDouble</em>.</p>
+</div>
+<p class="mb-3">É um bom hábito de programação estudar as bibliotecas nativas já disponíveis para uso, assim como procurar bibliotecas de terceiros que possam resolver o problema no qual estamos lidando. Vale lembrar que alguns desenvolvedores preferem desenvolver a sua própria solução e, assim, evitar a utilização de bibliotecas de terceiros. Essa segunda alternativa não é ruim, mas pode levar um maior tempo no desenvolvimento. Uma dica de onde consultar e baixar bibliotecas de terceiros é o MVN Repository</p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Exemplificando</strong><br/></h6>
+<p class="text-left">De forma a entender como pesquisar e incorporar uma biblioteca feita por outra pessoa em seu projeto, acesse o site MVN Repository e, em seguida, busque a seguinte biblioteca: <em>apache commons math</em>. Então, procure a versão mais recente da biblioteca e baixe o arquivo .jar disponível. Após isso, o arquivo deverá se chamar algo como <em>commons-math3-3.6.1.jar</em>, e para que possa incluir/importar esse arquivo .jar, um projeto novo na sua IDE de preferência deverá ser criado (<strong>observação: </strong>os passos para isso não foram mostrados pois, em cada IDE, os passos são ligeiramente diferentes). Após esses passos, desenvolva um código similar ao Código 2.12 abaixo. </p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.12 | Implementação que imprime todos os primos de 0 a 100</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">import org.apache.commons.math3.primes.Primes; 
+public class TesteBiliotecaTerceiros {
+    public static void main(String[] args) {
+        for (int i = 0; i &lt; 100; i++) {
+            if (Primes.isPrime(i)) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor. </figcaption>
+</figure>
+<p class="mb-3">O código acima utiliza uma biblioteca de matemática desenvolvida pela comunidade para o cálculo de todos os números primos de 0 a 100. Esse foi apenas um exemplo de utilização de biblioteca feita por outras pessoas em que há diversas classes que lidam com problemas relacionados à área de matemática. </p>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80">Modificadores de acesso <br/></h3>
+<p class="mb-3">Outro assunto muito importante a ser abordado refere-se aos modificadores de acesso. Por meio deles, podemos restringir ou permitir que um atributo, método, construtor e/ou classe seja acessado ou não. Em Java, temos quatro modificadores de acesso, que são: público, privado, protegido e <em>default</em>. O Quadro 2.15 sintetiza esses modificadores. </p>
+<div class="my-5"><span class="text-center figure-caption mx-auto d-block mb-2">Quadro 2.15 | Síntese dos modificadores de acesso presentes em Java</span>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th class='text-center scope="col"'><strong>Modificador</strong><br/></th>
+<th class='text-center scope="col"'><strong>Palavra-Reservada</strong><br/></th>
+<th class="text-center"><strong>Descrição da Visibilidade</strong></th>
+</tr>
+</thead>
+<tbody class="m-0">
+<tr>
+<td>Público</td>
+<td><em>public</em></td>
+<td>Aplicável à própria classe e a qualquer outra.</td>
+</tr>
+<tr>
+<td>Protegido</td>
+<td><em>protected</em></td>
+<td>Aplicável à própria classe, outras classes dentro do próprio pacote e dentro de subclasses em outros pacotes.</td>
+</tr>
+<tr>
+<td><em>Default</em></td>
+<td><em>-</em><br/></td>
+<td>Aplicável à própria classe e a outras classes dentro do mesmo pacote.</td>
+</tr>
+<tr>
+<td>Privado</td>
+<td><em>private</em><br/></td>
+<td>Aplicável à própria classe somente.</td>
+</tr>
+</tbody>
+</table>
+</div><span class="text-center figure-caption mx-auto d-block mt-2">Fonte: elaborado pelo autor.</span>
+</div>
+<p class="mb-3">Com base na descrição da visibilidade de cada um dos modificadores, podemos perceber que o modificador privado é o mais restritivo (seguido por <em>default</em>) e protegido; por fim, temos o público, que é o menos restritivo. </p>
+<h3 class="text-uppercase mb-3 marcador mt-80 page-break">Encapsulamento de código <br/></h3>
+<p class="mb-3">Acima, vimos como modificar a visibilidade dos códigos desenvolvidos, a fim de se ocultar/proteger informações que não devem ser acessadas por outras pessoas ou desenvolvedores. Dessa maneira, conseguimos encapsular um código mantendo acessível apenas o que consideramos importante, evitando-se “quebras” ou erros na aplicação. Ao restringir o acesso a algumas informações que visivelmente não são úteis a aplicações externas, simplificamos a utilização das classes desenvolvidas. <br/></p>
+<p class="mb-3">A principal ideia do encapsulamento de código é esconder os detalhes de implementação das classes e bibliotecas. De forma geral, assumimos como regra que um objeto nunca deve manipular diretamente os atributos de outro objeto. Em muitos casos, a manipulação direta pode ocasionar erros e gerar muitas inconsistências no programa desenvolvido. Dessa forma, devemos bloquear os atributos utilizando os modificadores de acesso <em>private</em>, <em>default </em>ou, ainda, <em>protected</em>, porém, após o bloqueio dos atributos, como acessá-los e modificá-los? Uma prática comum é a criação de métodos que chamamos de <em>getters </em>e <em>setters </em>ou, ainda, <em>gets </em>e <em>sets</em>. Os métodos <em>gets </em>servem para pegar alguma informação, já os métodos sets servem para definir alguma informação. A Figura 2.9 mostra um esquema didático que representa o encapsulamento de código em nível de classe e em nível de biblioteca/pacote. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.9 | Esquema representando o encapsulamento de código</figcaption>
+<div class="col p-0 rounded mx-auto d-block"><img alt="A figura ilustra o encapsulamento em nível de classe com a imagem de uma cápsula representando uma classe, dentro dela há círculos amarelos que representam os atributos e círculos verdes que representam os métodos. O encapsulamento em nível de biblioteca é ilustrado pela imagem de uma caixa  que representa uma biblioteca, dentro dela há cápsulas na cor azul que representam as classes e cápsulas na cor vermelha que representam as interfaces." class="img-fluid mb-0" src="assets/img/Figura%202.9.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3">A manipulação de uma determinada classe, geralmente, é feita por meio de métodos públicos. Quando necessário, o acesso a constantes pode ser feito de forma direta, ou seja, constantes podem ser declaradas como públicas, principalmente as constantes do tipo <em>static</em>. Acima, foi falado sobre métodos do tipo <em>getters </em>e <em>setters</em>, e para entendermos melhor como declará-los, considere a classe chamada Pessoa, mostrada no Código 2.13.</p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.13 | Classe pessoa com o atributo idade e seus métodos <em>get </em>e <em>set. </em></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class Pessoa {
+    private int idade;
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }   
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Em relação ao Código 2.13, queremos destacar que o atributo idade (linha 2) foi declarado como privado, assim, as chamadas para se obter o atributo idade é feita utilizando-se o método público getIdade (definido nas linhas 3 a 5). Caso seja necessário fazer alguma alteração na idade, podemos utilizar o método público setIdade (definido nas linhas 6 a 8). Posteriormente, veremos que podemos/devemos tratar alguns possíveis erros na manipulação de dados. Por exemplo, no método setIdade, poderíamos impedir a atribuição de uma idade negativa, visto que isso não faz sentido na aplicação.</p>
+<h3 class="text-uppercase mb-3 marcador mt-80">Operação de herança <br/></h3>
+<p class="mb-3">Outro assunto de extrema importância em Java é a <strong>herança</strong>. A ideia de herança foi brevemente abordada na seção 1 da unidade 2, quando falamos de sobreposição de métodos. A operação de herança envolve duas classes, em que uma das classes é chamada de <strong>subclasse </strong>e a outra é chamada de <strong>superclasse</strong>. Nessa operação, a subclasse herda todas as características definidas na superclasse. De forma geral, a subclasse personaliza a superclasse ao adicionar novos recursos e aspectos próprios. A linguagem Java suporta apenas herança simples, em que pode haver apenas uma superclasse. Linguagens como C++ e Python suportam herança múltipla, em que pode haver mais de uma superclasse. A fim de que possa compreender melhor o conceito de herança, vamos considerar o seguinte exemplo mostrado na Figura 2.10. </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.10 | Esquema representando a herança aplicada a figuras geométricas</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A figura ilustra em formato de organograma a explicação de herança aplicada as figuras geométricas. O tema está o Object, abaixo há duas ramificações: Geom2D e Geom3D e para cada uma dessas ramificações há três ramificações representando as figuras geométricas. Geom2D: Círculo, Triângulo e Retângulo. Geom3D: Esfera, Tetraedro e Cubo. Entre Object e Geom2d e Geom3D há uma linha pontilhada com a indicação de herança implícita, entre Geom2D e Geom3D e as ramificações das figuras geométricas há uma linha pontilhada com a indicação de herança explícita." class="img-fluid mb-0" src="assets/img/Figura%202.10.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+<p class="mb-3 page-break">Na Figura 2.10, as classes Círculo, Triângulo e Retângulo herdam as características da classe Geom2D. Por sua vez, as classes Esfera, Tetraedro e Cubo herdam as características da classe Geom3D. Por fim, as Classes Geom2D e Geom3D herdam, implicitamente (automaticamente), as características da classe Object. <br/></p>
+<p class="mb-3">O código 2.14 nos mostra a sintaxe básica usada na implementação de uma subclasse e uma superclasse qualquer. <br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.14 | Sintaxe básica para definição de subclasses e superclasses<br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">class SuperClasse {
+    ...  //código associado a superclasse
+}
+class SubClasse extends SuperClasse {  //operação de herança
+    ...  //código associado a subclasse 
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Em Java, todas as classes são automaticamente descendentes da classe Object. Essa herança é feita de forma implícita e, dessa forma, todos os métodos disponíveis em Object estão disponíveis em todas as outras classes implementadas do Java. Alguns exemplos de métodos disponíveis são: <em>toString</em>, <em>equals</em>, <em>clone </em>e <em>hashCode</em>. <br/></p>
+<p class="mb-3">O Código 2.15 mostra a implementação do esquema apresentado na Figura 2.10.<br/></p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.15 | Implementação das superclasses e subclasses do exemplo da Figura 2.10<br/></figcaption>
+<div class="col p-0 rounded mx-auto d-block"><pre><code class="java hljs">public class Geom2D { //herda implicitamente a classe Object
+    protected double perimetro;
+    protected double area;
+    public double calcPerimetro(){
+        return 0; //não existe perímetro em objeto abstrato
+    }
+    public double calcArea(){
+        return 0; //não existe área em objeto abstrato
+    }
+}
+
+public class Geom3D { //herda implicitamente a classe Object
+    protected double area;
+    protected double volume;
+    public double calcArea(){
+        return 0; //não existe área em objeto abstrato
+    }
+    public double calcVolume(){
+        return 0; //não existe volume em objeto abstrato
+    }
+}
+
+public class Retangulo extends Geom2D {
+    private final double base;
+    private final double altura;
+    public Retangulo(double lado) { 
+        this.base = lado;
+        this.altura = lado;
+    }
+    public Retangulo(double base, double altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+    @Override
+    public double calcPerimetro() {
+        super.perimetro = 2 * this.base + 2 * this.altura;
+        return super.perimetro;
+    }
+    @Override
+    public double calcArea() {
+        super.area = this.base * this.altura;
+        return super.area;
+    }
+    @Override
+    public String toString() {
+      return String.format("Rect:{\n peri: %.2f\n area: %.2f\n}", 
+                this.calcPerimetro(), this.calcArea());
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Retangulo) {
+            Retangulo r = (Retangulo)obj;
+            return (base == r.base) &amp;&amp; (altura == r.altura);
+        }else{
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        Retangulo rect1 = new Retangulo(4, 25);
+        Retangulo rect2 = new Retangulo(4, 26);
+        System.out.println(rect1); // invoca método toString
+        System.out.println(rect2); // invoca método toString
+        if (rect1.equals(rect2)) { // invoca método equals
+            System.out.println("Figuras Geométricas Iguais");
+        } else {
+            System.out.println("Figuras Geométricas Diferentes");
+        }
+    }
+}
+
+public class Cubo extends Geom3D {
+    private final double lado;
+    public Cubo(double lado) {
+        this.lado = lado;
+    }
+    @Override
+    public double calcArea() {
+        super.area = 6 * this.lado * this.lado;
+        return super.area;
+    }
+    @Override
+    public double calcVolume() {
+        super.volume = this.lado * this.lado * this.lado;
+        return super.volume;
+    } 
+    @Override
+    public String toString() {
+       return String.format("Cubo:{\n area: %.2f\n vol: %.2f\n}", 
+                this.calcArea(), this.calcVolume());
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Cubo){
+            Cubo cubo = (Cubo)obj;
+            return this.lado == cubo.lado;
+        }else{
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        Cubo cubo1 = new Cubo(1);
+        Cubo cubo2 = new Cubo(1);
+        System.out.println(cubo1); // invoca método toString
+        System.out.println(cubo2); // invoca método toString
+        if (cubo1.equals(cubo2)) { // invoca método equals
+            System.out.println("Figuras Geométricas Iguais");
+        } else {
+            System.out.println("Figuras Geométricas Diferentes");
+        }
+    }
+} 
+</code></pre></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Acima, nas linhas 1 a 10, temos a definição da classe Geom2D. Inicialmente, temos, nessa classe, dois atributos principais, que são o perímetro e a área. Como sabemos que toda figura geométrica 2D deve saber o seu perímetro, assim, definimos o método calcPerimetro. Da mesma forma, toda figura 2D deve saber a sua área, assim, definimos o método calcArea. Por enquanto, colocamos esses métodos apenas retornando um valor 0, mas, na próxima seção, mostraremos como alterar essa classe para se tornar uma classe abstrata, e então, teremos apenas a assinatura do método melhorando a legibilidade da implementação. <br/></p>
+<p class="mb-3">De forma semelhante à classe Geom2D, temos a classe Geom3D, que está definida nas linhas 12 a 21. Nessa classe, temos os atributos área e volume, que são atributos comuns de figuras geométricas 3D. <br/></p>
+<p class="mb-3">Já nas linhas 23 a 68, temos a definição da classe Retangulo. Repare que essa classe herda todas as características de Geom2D por meio da palavra-reservada <em>extends</em>. A classe Retangulo possui dois atributos, que são base e altura. Em seguida, foram definidos dois construtores, e os métodos calcPerimetro e calcArea foram sobrescritos/sobrepostos. A ideia de fazer a sobreposição de métodos vem do fato de que somente a classe Retangulo sabe como calcular o seu perímetro e a sua área. O método toString (lembre-se: esse método pertence à classe Object) foi sobrescrito nas linhas 44 a 48 e auxilia no momento de se fazer a impressão de informações da classe na tela; em seguida, o método <em>equals </em>(lembre-se: esse método também pertence à classe Object) foi sobrescrito nas linhas 49 a 57, a fim de auxiliar na comparação entre dois objetos; de forma geral, desejamos que dois objetos do mesmo tipo e que contêm o mesmo conteúdo sejam considerados iguais. Na linha 51, por sua vez, foi utilizada a palavra reservada <em>instanceof</em>, que podemos ler da seguinte forma: “é uma instância de" ou “é um". O comando <em>instanceof </em>é um operador que compara o tipo de uma variável a uma classe. No código acima, o tipo da variável <em>obj </em>é comparado com a classe Retangulo, então, na linha 52, foi feita uma operação de <em>casting</em>, de forma a converter o tipo Object (tipo menos específico) em tipo Retangulo (tipo mais específico). Para fecharmos o método <em>equals</em>, repare que foi considerado que dois retângulos são iguais quando possuem mesma base e mesma altura. Por fim, nas linhas 58 a 69, foi criado um método <em>main </em>para se testar a classe Retangulo. Aqui, temos dois pontos importantes a serem destacados: <br/></p>
+<ul class="page-break">
+<li class="mb-3">Nas linhas 61 e 62, temos uma chamada implícita ao método <em>toString </em>(esse método é sempre chamado quando se pede para imprimir informações da classe).<br/></li>
+<li class="mb-3">Na linha 63, temos uma chamada ao método <em>equals</em>, em que são comparados dois objetos do tipo Retangulo.<br/></li>
+</ul>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Reflita</strong><br/></h6>
+<p class="text-left">Gostaria de propor a você uma reflexão sobre a importância da sobrescrita dos métodos <em>toString </em>e <em>equals</em>. Talvez, ainda mais importante, seja descobrir, em nossa aplicação, quando devemos sobrescrever esses métodos. Gostaria de destacar que a implementação do método <em>equals </em>pode ser feita de diversas formas e que a escolha de uma forma ou outra é uma questão que deve ser respondida durante o projeto do software. Por exemplo, imagine uma classe que modele a entidade Pessoa: como definiremos que dois objetos do tipo Pessoa são iguais? Um primeiro jeito, não muito bom, pode ser utilizando-se o atributo nome da pessoa, porém todos sabemos que existem pessoas homônimas, dessa maneira, uma outra forma é utilizando-se o atributo CPF, que sabemos ser único.</p>
+</div>
+<p class="mb-3">Ainda com relação ao Código 2.15, nas linhas 71 a 101, temos a definição da classe Cubo, que herda todas as características de Geom3D. A explicação do funcionamento dessa classe é semelhante à classe Retangulo, logo, ela não será explicada. O restante das classes mostradas na Figura 2.10 não será exibido, mas gostaríamos de propor ao aluno que as implemente, pois, assim, terá a oportunidade de fixar o conteúdo. </p>
+<div class="box">
+<h6 class="text-uppercase text-primary"><strong>Assimile</strong><br/></h6>
+<p class="text-left">A operação de herança também pode ser estudada e entendida a partir de algumas classes nativas do Java, como mostrado na Figura 2.11. Algumas classes foram declaradas como <em>final</em>, de forma a impedir que outras classes tentem herdá-las. Por exemplo, pelo fato de a classe String ser declarada como <em>final</em>, não se pode criar uma classe que herde String. Ainda na Figura 2.11, percebemos que a classe Number foi declarada como <em>abstract</em>, isso implica a não construção de um objeto do tipo Number, ou seja, ela é uma classe abstrata. Estudaremos mais sobre classes abstratas na unidade seguinte.</p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Figura 2.11 | Esquema representando a herança em classes nativas do Java</figcaption>
+<div class="col text-center p-0 rounded mx-auto d-block"><img alt="A figura ilustra em formato de organograma um esquema que representa a herança em classes nativas do Java. No topo está o Object em um retângulo vermelho que representa uma classe pública, abaixo estão as ramificações Number em um retângulo verde que representa uma classe pública abstrata, Character, Boolean, String, Math em azul que representa uma classe pública final e três pontinhos. Como ramificação de Number estão Byte, short, Integer, Long, Float e Double. Também em azul." class="img-fluid mb-0" src="assets/img/Figura%202.11.png"/></div>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborada pelo autor.</figcaption>
+</figure>
+</div>
+<h3 class="text-uppercase mb-3 marcador mt-80 page-break">Poliformismo <br/></h3>
+<p class="mb-3">Assim como o encapsulamento e a herança, o polimorfismo é um dos pilares da Orientação a Objetos (OO). No polimorfismo, o tipo de variável de referência pode ser de um tipo diferente do tipo do objeto, mas, para isso, é necessário que a variável de referência seja uma superclasse do tipo do objeto. A ideia do polimorfismo está no fato de que uma referência pode assumir diversas formas diferentes. O polimorfismo caracteriza-se também por fazer com que duas ou mais classes tenham métodos com o mesmo nome, de forma que uma função possa utilizar um objeto de qualquer uma das classes polimórficas. Diante do que foi exposto, as seguintes linhas de código são possíveis e demostram comportamentos polimórficos: </p>
+<figure class="figure my-5 mx-auto d-block">
+<figcaption class="figure-caption text-center mb-2">Código 2.16 | Demonstração de comportamentos polimórficos</figcaption><pre><code class="java hljs">//Variável de Referência → Tipo do Objeto
+Geom2D geom1 = new Circulo(1);
+Geom2D geom2 = new Triangulo(3, 4, 5);
+Geom2D geom3 = new Retangulo(4, 10); 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">Nos exemplos acima, as variáveis de referência são geom1, geom2 e geom3, que são do tipo Geom2D. Por sua vez, os tipos de objetos são, respectivamente, Circulo, Triangulo e Retangulo. Aqui, é importante reparar que Geom2D é uma superclasse dos tipos de objetos, e de forma a tornar mais clara a ideia do polimorfismo, considere o exemplo de Código 2.17 mostrado a seguir.</p>
+<figure class="figure my-5 mx-auto d-block page-break">
+<figcaption class="figure-caption text-center mb-2">Código 2.17 | Exemplo de modelagem usando-se polimorfismo </figcaption><pre><code class="java hljs">public class TestePolimorfismo {
+    public static void main(String[] args) {
+        Geom2D objCirculo = new Circulo(2.9);
+        objCirculo.calcPerimetro();
+        Geom2D objTriangulo = new Triangulo(6);
+        objTriangulo.calcPerimetro();
+        Geom2D maxPeri = maxPerimetro(objCirculo, objTriangulo);
+        System.out.println("Maior Perimetro: " + maxPeri);
+        if (maxPeri instanceof Circulo){
+            Circulo max = (Circulo)maxPeri;
+            System.out.println("Max Circulo: " + max);
+        } else if (maxPeri instanceof Triangulo){
+            Triangulo max = (Triangulo)maxPeri;
+            System.out.println("Max Triangulo: " + max);
+        }
+    }
+    public static Geom2D maxPerimetro(Geom2D geom1, Geom2D geom2){
+        if (geom1.getPerimetro() &gt; geom2.getPerimetro()) {
+            return geom1; 
+        } else {
+            return geom2;
+        }
+    }    
+} 
+</code></pre>
+<figcaption class="figure-caption text-center mt-2">Fonte: elaborado pelo autor.</figcaption>
+</figure>
+<p class="mb-3">No Código 2.17, em específico nas linhas 3 e 5, temos a declaração de dois objetos polimórficos. Na linha 7, temos a chamada a um método que calcula e retorna o objeto com maior perímetro entre duas figuras geométricas 2D. Por fim, das linhas 9 a 15, temos um processamento feito baseado no tipo de objeto retornado; aqui, o tipo de objeto mais genérico é convertido para um tipo de objeto mais específico, e essa é uma das vantagens do polimorfismo: a capacidade que um objeto possui de assumir diversas formas diferentes. <br/></p>
+<p class="mb-3">Caro estudante, nesta seção, você estudou os conteúdos relacionados à organização de pacotes, à importação de pacotes, a modificadores de acesso, a encapsulamento, à herança e a polimorfismo, bem como foi mostrado diversos exemplos sobre a implementação desses conceitos em Java. Na seção seguinte, estudaremos o tratamento de exceção e o uso de classes abstratas, o que nos possibilitará avançar ainda mais no entendimento da linguagem Java.<br/></p>
+<h4 class="text-uppercase text-primary mb-3 mt-80">Referências<br/></h4>
+<p class="mb-3">ARANTES, J. da S. <strong>Github</strong>. 2020. Disponível em: <a href="https://github.com/jesimar/Livro-POO-Java/" target="_blank">https://bit.ly/3eiUMcF</a>. Acesso em: 20 mai. 2020.<br/></p>
+<p class="mb-3 page-break">ASLAM, A. Access Modifiers in Java. <strong>SlideShare</strong>, publicado em 28 fev. 2017. Disponível em: <a href="https://www.slideshare.net/AdilAslam4/access-modifiers-in-java-72656348" target="_blank"><span style="text-decoration: underline;">https://bit.ly/2QpeVV3</span></a>. Acesso em: 22 jul. 2020. <br/></p>
+<p class="mb-3">CAELUM. <strong>Java e orientação a objetos:</strong> curso FJ-11. [S.l.]: Caleum, [s.d.]. Disponível em: <a href="https://www.caelum.com.br/apostila-java-orientacao-objetos/" target="_blank">https://bit.ly/3iJX34d</a>. Acesso em: 17 mai. 2020. <br/></p>
+<p class="mb-3">CURSO de Java #01 - História do Java - Gustavo Guanabara. [<em>S.l.: s.n.</em>], 2015. 1 vídeo (36 min). Publicado pelo canal Curso em Vídeo. Disponível em: <a href="https://www.youtube.com/watch?v=sTX0UEplF54&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank">https://bit.ly/2YvIJDZ</a>. Acesso em: 22 jul. 2020. <br/></p>
+<p class="mb-3">CURSO POO Teoria #12a - Conceito Polimorfismo (Parte 1). [<em>S.l.: s.n.</em>]. 1 vídeo (28:42 min). Publicado pelo canal Curso em Vídeo. Disponível em: <a href="https://youtu.be/9-3-RMEMcq4" target="_blank">https://bit.ly/2YBc0wW</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">CURSO POO Teoria #13a - Conceito Polimorfismo (Parte 2). [<em>S.l.: s.n.</em>]. 1 vídeo (20:14 min). Publicado pelo canal Curso em Vídeo. Disponível em: <a href="https://youtu.be/hYek1xqWzgs" target="_blank">https://bit.ly/3b0hF4H</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">DEITEL, P. J.; DEITEL, H. M. <strong>Java: como programar</strong>. 10. ed. São Paulo: Pearson Education, 2016.<br/></p>
+<p class="mb-3">GITAHEAD. <strong>GitAhead</strong>. 2019. Disponível em: <a href="https://gitahead.github.io/gitahead.com/" target="_blank">https://bit.ly/3aVZihd</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">GITHUB. <strong>GitHub</strong>. 2020. Disponível em: <a href="https://github.com/" target="_blank">https://bit.ly/2ZSr1ud</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">GITKRAKEN. <strong>GitKraken Git GUI</strong>. 2020. Disponível em: <a href="https://www.gitkraken.com/" target="_blank">https://bit.ly/3huTDRI</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">MVN REPOSITORY. <strong>What’s new in maven</strong>. 2020. Disponível em: <a href="https://mvnrepository.com/" target="_blank">https://bit.ly/34zGEdT</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">ORACLE. <strong>Package java.lang</strong>. 2018. Disponível em: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/package-summary.html" target="_blank">https://bit.ly/31uQPi3</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">SOURCETREE. <strong>Sourcetree</strong>. 2020. Disponível em: <a href="https://www.sourcetreeapp.com/" target="_blank">https://bit.ly/3jlhELx</a>. Acesso em: 21 jul. 2020.<br/></p>
+<p class="mb-3">TORTOISEGIT. <strong>Tortoise Git</strong>. 2020. Windows Shell Interface to Git. Disponível em: <a href="https://tortoisegit.org/" target="_blank">https://bit.ly/2YCpvMT</a>. Acesso em: 21 jul. 2020.<br/></p>
+</div>
+</section>
+<section class="d-print-none mt-2 mb-4">
+<div class="container">
+<div class="row mb-4">
+<div class="col">
+<h5 class="text-right"><strong>Bons estudos!</strong></h5>
+</div>
+</div>
+<div class="row" id="controle-form">
+<div class="col">
+<div class="row cabecalho-form p-3 border-bottom rounded-top">
+<div class="col">
+<div>
+<h3 class="text-center mb-0" id="resultado02">AVALIE ESTE MATERIAL</h3>
+<h3 class="text-center mb-0" id="resultado"><strong>OBRIGADO PELO SEU FEEDBACK!</strong></h3>
+</div>
+</div>
+</div>
+<div class="row mt-2" id="form-oculto">
+<div class="col">
+<form id="formulario" method="post" name="form"><input id="software_resposta" name="software" type="hidden"/>
+<input id="tipo_produto_resposta" name="tipo_produto" type="hidden"/>
+<input id="disciplina_resposta" name="disciplina" type="hidden"/>
+<input id="semestre_resposta" name="semestre" type="hidden"/>
+<input id="unidade_resposta" name="unidade" type="hidden"/>
+<input id="secao_resposta" name="secao" type="hidden"/>
+<input id="prioridade_resposta" name="prioridade" type="hidden"/>
+<input id="midias_resposta" name="midias" type="hidden"/>
+<input id="url_acesso" name="url_acesso" type="hidden"/>
+<div id="element"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-4" id="happy">
+<div class="col align-self-center">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center happy-container mx-auto"><i class="icon-emotsmile d-table font-size-icon"></i></div>
+</div>
+</div>
+</div>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/annotator-full.min.js"></script>
+<script src="assets/js/annotator.offline.min.js"></script>
+<script src="assets/js/jquery.i18n.min.js"></script>
+<script src="assets/js/jquery.dateFormat.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/annotator.js"></script>
+<script src="assets/js/annotator.touch.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/view_annotator.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/highlightjs-line-numbers.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/form.js"></script>
+<script src="assets/js/dados_form.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bloco%20de%20código.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/acessibilidade.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/barra-progresso.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/constrate.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/questionario.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_annotator.js"></script>
+<script src="https://cm-kls-content.s3.amazonaws.com/DESEN_WEBAULA/BOOTSTRAP/js/script_form.js"></script>
+<script src="assets/js/Menu-Lateral---Colaborar.js"></script>
+</body>
+</html>
