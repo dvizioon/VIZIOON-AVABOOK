@@ -18,3 +18,10 @@
 2024-10-20 14:39:43: Elemento Nome Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="c7ed6c54be2bc04e6f882af6b8ee9831", element="f.62F755B102C1C8B7F47D90C1680C8862.d.7DBCDD67EEE068204D07EC4A0842CB54.e.3")>
 2024-10-20 14:39:43: Elemento Senha Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="c7ed6c54be2bc04e6f882af6b8ee9831", element="f.62F755B102C1C8B7F47D90C1680C8862.d.7DBCDD67EEE068204D07EC4A0842CB54.e.4")>
 2024-10-20 14:39:43: Elemento Submit Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="c7ed6c54be2bc04e6f882af6b8ee9831", element="f.62F755B102C1C8B7F47D90C1680C8862.d.7DBCDD67EEE068204D07EC4A0842CB54.e.12")>
+2024-10-20 17:25:33: Iniciando busca para o usuário 61439646376
+2024-10-20 17:25:35: Usuário 61439646376 buscando o livro da matéria Linguagem Orientada a Objetos
+2024-10-20 17:25:37: Busca de livro concluída.
+2024-10-20 17:25:37: User-Agent Aleatório:Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/121.0.2277.107 Version/17.0 Mobile/15E148 Safari/604.1
+2024-10-20 17:25:45: Elemento Nome Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="4b203286345d1fe37fc92eac2e888539", element="f.E3A764C63C37691405C86EDF7ED0F397.d.D6BFE24424F212C6949FB7BA246569EF.e.4")>
+2024-10-20 17:25:45: Elemento Senha Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="4b203286345d1fe37fc92eac2e888539", element="f.E3A764C63C37691405C86EDF7ED0F397.d.D6BFE24424F212C6949FB7BA246569EF.e.5")>
+2024-10-20 17:25:45: Elemento Submit Encontrado => <selenium.webdriver.remote.webelement.WebElement (session="4b203286345d1fe37fc92eac2e888539", element="f.E3A764C63C37691405C86EDF7ED0F397.d.D6BFE24424F212C6949FB7BA246569EF.e.13")>

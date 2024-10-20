@@ -1,57 +1,88 @@
 from PyQt5 import QtWidgets, QtCore
+import os
 
-def janelaMonitor(habilitarLogs,width,height,Time):
-    class MinhaJanela(QtWidgets.QMainWindow):
-        def __init__(self):
-            super().__init__()
+class LogMonitorWindow(QtWidgets.QWidget):
+    def __init__(self, habilitar_logs, update_interval):
+        super().__init__()
 
-            self.setWindowTitle("Visualizador de Log")  # Define o título da janela
-                
-            # Definindo a largura e a altura da janela
-            self.setFixedWidth(width)  # Substitua 800 pela largura desejada
-            self.setFixedHeight(height)  # Substitua 600 pela altura desejada
+        # Layout onde os logs serão adicionados
+        self.layout = QtWidgets.QVBoxLayout(self)
+        self.setLayout(self.layout)
 
-            # Cria um QScrollArea e configurações
-            self.scroll_area = QtWidgets.QScrollArea(self)
-            self.scroll_area.setGeometry(0, 0, width, height)  # Tamanho da área de rolagem
-            self.scroll_area.setWidgetResizable(True)  # Permite redimensionamento do widget dentro da área de rolagem
+        # Verifica se logs estão habilitados
+        if habilitar_logs:
+            # Configura o QTimer para atualizar os logs periodicamente
+            self.timer = QtCore.QTimer(self)
+            self.timer.timeout.connect(self.update_log)
+            self.timer.start(update_interval)
+        else:
+            self.limpar_logs()  # Limpa os logs quando desabilitado
+            self.mostrar_mensagem_desabilitado()  # Mostra a mensagem que logs estão desativados
 
-            # Oculta as barras de rolagem vertical e horizontal
-            self.scroll_area.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-            self.scroll_area.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+    def update_log(self):
+        caminho_arquivo = './App/Logs/webdriver.log'
+        try:
+            with open(caminho_arquivo, 'r') as f:
+                linhas = f.readlines()
 
-            # Cria um QWidget para adicionar ao QScrollArea
-            self.scroll_area_widget = QtWidgets.QWidget()
-            self.scroll_area.setWidget(self.scroll_area_widget)
+            # Limpa o layout atual antes de adicionar novas linhas
+            for i in reversed(range(self.layout.count())):
+                widget = self.layout.itemAt(i).widget()
+                if widget is not None:
+                    widget.deleteLater()
 
-            # Define um layout para o QWidget dentro do QScrollArea
-            self.scroll_area_layout = QtWidgets.QVBoxLayout(self.scroll_area_widget)
-
-            # Cria um QTimer para atualizar o log a cada segundo se habilitarLogs for True
-            if habilitarLogs:
-                self.timer = QtCore.QTimer(self)
-                self.timer.timeout.connect(self.monitorar_log)
-                self.timer.start(Time)  # Atualiza a cada segundo
+            # Se o arquivo estiver vazio, exibe uma mensagem de "Nenhum log disponível"
+            if not linhas:
+                label = QtWidgets.QLabel("Nenhum log disponível")
+                label.setAlignment(QtCore.Qt.AlignCenter)  # Centraliza o texto
+                self.layout.addWidget(label)
             else:
-                self.monitorar_log()
-
-        def monitorar_log(self):
-            caminho_arquivo = './App/Logs/webdriver.log'
-            try:
-                with open(caminho_arquivo, 'r') as f:
-                    linhas = f.readlines()
-
+                # Adiciona cada linha do log como um QLabel no layout
                 for linha in linhas:
-                    label = QtWidgets.QLabel(linha.strip(), self.scroll_area_widget)  # Cria o QLabel diretamente no widget
-                    self.scroll_area_layout.addWidget(label)  # Adiciona o QLabel ao layout do widget
-            except FileNotFoundError:
-                print("Arquivo de log não encontrado")
+                    label = QtWidgets.QLabel(linha.strip())
+                    self.layout.addWidget(label)
+                    
+        except FileNotFoundError:
+            print("Arquivo de log não encontrado")
+            # Limpa o layout se o arquivo não for encontrado
+            for i in reversed(range(self.layout.count())):
+                widget = self.layout.itemAt(i).widget()
+                if widget is not None:
+                    widget.deleteLater()
 
-    return MinhaJanela()
+            # Exibe uma mensagem de erro
+            label = QtWidgets.QLabel("Arquivo de log não encontrado")
+            label.setAlignment(QtCore.Qt.AlignCenter)  # Centraliza o texto
+            self.layout.addWidget(label)
+
+    def limpar_logs(self):
+        """Função que limpa o conteúdo do arquivo de log."""
+        caminho_arquivo = './App/Logs/webdriver.log'
+        try:
+            with open(caminho_arquivo, 'w') as f:
+                f.write('')  # Escreve um arquivo vazio para limpar os logs
+        except FileNotFoundError:
+            print("Arquivo de log não encontrado para limpar")
+
+    def mostrar_mensagem_desabilitado(self):
+        """Exibe uma mensagem informando que os logs estão desabilitados."""
+        # Limpa o layout atual
+        for i in reversed(range(self.layout.count())):
+            widget = self.layout.itemAt(i).widget()
+            if widget is not None:
+                widget.deleteLater()
+
+        # Adiciona uma QLabel com a mensagem e centraliza o texto
+        label = QtWidgets.QLabel("Habilite os logs para visualizar.")
+        label.setAlignment(QtCore.Qt.AlignCenter)  # Centraliza o texto
+        self.layout.addWidget(label)
+
+def janela_monitor(habilitar_logs, update_interval):
+    return LogMonitorWindow(habilitar_logs, update_interval)
 
 # if __name__ == "__main__":
 #     import sys
 #     app = QtWidgets.QApplication(sys.argv)
-#     janela = janelaMonitor(False,300, 200,1000)  # Passe True para habilitarLogs para atualizar o log a cada segundo
+#     janela = janela_monitor(False, 1000)  # Passe True para habilitar_logs para atualizar o log a cada segundo
 #     janela.show()
 #     sys.exit(app.exec_())

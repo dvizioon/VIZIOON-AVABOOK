@@ -33,8 +33,7 @@ def DowloadBook(nome_materia,url,Dialog,url_origin):
     chrome_options.binary_location = "./124.0.6367.91/chrome.exe"
     service = Service(options=chrome_options,executable_path='./chromedriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=chrome_options)
-    # driver.set_window_size(1920, 1080)
-    driver.maximize_window()
+    driver.set_window_size(1920, 1080)
 
     driver.get(url_origin)
     

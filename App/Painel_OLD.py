@@ -19,7 +19,7 @@ import queue
 
 #importação dos components necessarios
 
-from Components.Avamonitor import janelaMonitor
+from Components.Avamonitor import LogMonitorWindow
 from Modules.LimparLogs import limpar_arquivo_log
 from Components.AvaBuscarMateria import Janela_Busca
 from Server.MaquinaSCKT import iniciarMaquina
@@ -576,7 +576,7 @@ class Ui_Dialog(object):
         elif index == 1:
                 # print("Logs")
                #Abriar arquvio de log no ./App/Logs/webdriver.log
-                self.MonitorLogs = janelaMonitor(False,321, 331,1000)  # Passe True para habilitarLogs para atualizar o log a cada segundo
+                self.MonitorLogs = LogMonitorWindow(False,321, 331,1000)  # Passe True para habilitarLogs para atualizar o log a cada segundo
                         # print(MonitorLogs)
                 self.scrollArea_2.setWidget(self.MonitorLogs)  
 

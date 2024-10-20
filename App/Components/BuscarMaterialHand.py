@@ -51,6 +51,7 @@ def BuscarLivroHand(usuario,senha):
     service = Service(options=chrome_options,executable_path='./chromedriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.set_window_size(1920, 1080)
+    # driver.maximize_window()
 
 
     # Navegação até a URL especificada

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
+    <width>618</width>
     <height>517</height>
    </rect>
   </property>
@@ -331,9 +331,9 @@ QPushButton::hover {
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>80</y>
+     <y>10</y>
      <width>351</width>
-     <height>371</height>
+     <height>441</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -370,8 +370,8 @@ QPushButton::hover {
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>341</width>
-        <height>341</height>
+        <width>351</width>
+        <height>391</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -382,8 +382,8 @@ QPushButton::hover {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>339</width>
-         <height>339</height>
+         <width>349</width>
+         <height>389</height>
         </rect>
        </property>
        <widget class="QWidget" name="widget" native="true">
@@ -392,7 +392,7 @@ QPushButton::hover {
           <x>10</x>
           <y>10</y>
           <width>321</width>
-          <height>161</height>
+          <height>181</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -431,7 +431,7 @@ border-radius:50px;</string>
           </rect>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ANALISE ORIENTADA A OBJETO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ANALISE ORIENTADA...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
         <widget class="QLabel" name="data_card">
@@ -470,7 +470,7 @@ border-radius:50px;</string>
           </rect>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Email: daniel@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;EMAIL: daniel@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
         <widget class="QLabel" name="id_atividade">
@@ -522,7 +522,7 @@ QPushButton::hover {
 </string>
          </property>
          <property name="text">
-          <string>Exportar</string>
+          <string>Unificar Fragmentos</string>
          </property>
         </widget>
         <widget class="QPushButton" name="downloadbookExport_2">
@@ -549,7 +549,34 @@ QPushButton::hover {
 </string>
          </property>
          <property name="text">
-          <string>Unificar</string>
+          <string>Zip Fragmentos</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="downloadbookExport_3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>140</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 255);
+color: #fff;
+border-radius:2px;
+
+
+QPushButton::hover {
+    background-color: rgb(74, 101, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Vizualizar PDF</string>
          </property>
         </widget>
        </widget>
@@ -662,111 +689,6 @@ QPushButton::hover {
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="Connection">
-    <attribute name="title">
-     <string>Conexao</string>
-    </attribute>
-    <widget class="QFrame" name="ContainerWebEngine_3">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>361</width>
-       <height>471</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label_17">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>141</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Sockets Connections Events</string>
-      </property>
-     </widget>
-     <widget class="QScrollArea" name="scrollArea_5">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>40</y>
-        <width>321</width>
-        <height>261</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_5">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>319</width>
-         <height>259</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QLabel" name="label_18">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>390</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="config_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>310</y>
-        <width>321</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(85, 255, 127);
-border-radius:2px;
-color: rgb(0, 0, 0);
-QPushButton::hover {
-    background-color: rgb(74, 101, 255);
-}
-</string>
-      </property>
-      <property name="text">
-       <string>Relate Erros</string>
-      </property>
-     </widget>
-    </widget>
-   </widget>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -792,68 +714,6 @@ QPushButton::hover {
    </property>
    <property name="text">
     <string>Doe para o Criador</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>10</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CRF GERADO</string>
-   </property>
-  </widget>
-  <widget class="QScrollArea" name="scrollArea_3">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>30</y>
-     <width>331</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="widgetResizable">
-    <bool>true</bool>
-   </property>
-   <widget class="QWidget" name="scrollAreaWidgetContents_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>329</width>
-      <height>39</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>10</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>| AGENT AUTENTICADOR</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>10</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>| IP GERADO</string>
    </property>
   </widget>
  </widget>
